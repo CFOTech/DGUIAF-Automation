@@ -1,53 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>BUI API - GetToken</name>
+   <name>BUI API - GetBuiComprobante</name>
    <tag></tag>
-   <elementGuidId>047b4c59-a0f1-49f7-af7f-cd4af7e17011</elementGuidId>
+   <elementGuidId>c35317a9-bd01-4f50-9e85-f725d657dc9d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{ \n    \&quot;Nro\&quot;: \&quot;\&quot;, \n    \&quot;id\&quot;: \&quot;374fbbdc-d5da-431d-9ea3-9ce1d9181011\&quot;, \n    \&quot;CodBarra\&quot;: \&quot;\&quot; \n}&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/soap+xml</value>
+      <value>application/json</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Accept</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>utf-8</value>
+      <value>Basic amNhcmxvczphdXRvbWF0aW9uMTIzNA==</value>
    </httpHeaderProperties>
    <katalonVersion>7.9.1</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
-   <restRequestMethod></restRequestMethod>
-   <restUrl></restUrl>
-   <serviceType>SOAP</serviceType>
-   <soapBody>&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:tem=&quot;http://tempuri.org/&quot;>
-   &lt;soap:Header/>
-   &lt;soap:Body>
-      &lt;tem:GetTokenBUI>
-         &lt;tem:buId>c74ae029-74d7-4f39-9ef6-7595c59a91b1&lt;/tem:buId>
-         &lt;!--Optional:-->
-         &lt;tem:user>jcarlos&lt;/tem:user>
-         &lt;!--Optional:-->
-         &lt;tem:pass>automation1234&lt;/tem:pass>
-      &lt;/tem:GetTokenBUI>
-   &lt;/soap:Body>
-&lt;/soap:Envelope></soapBody>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>http://10.73.2.97:6748/SERVICE/api/BUI/GetBuiComprobante</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
    <soapHeader></soapHeader>
-   <soapRequestMethod>SOAP</soapRequestMethod>
-   <soapServiceEndpoint>http://10.73.2.97:2486/PagosService.asmx</soapServiceEndpoint>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
-   <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -60,6 +54,13 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
-   <wsdlAddress>http://10.73.2.97:2486/PagosService.asmx?WSDL</wsdlAddress>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+
+assertThat(response.getResponseText()).contains('Respuesta Exitosa')
+
+
+
+</verificationScript>
+   <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

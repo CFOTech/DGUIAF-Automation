@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET TOKEN BUI</name>
+   <name>BUI API - GetToken</name>
    <tag></tag>
    <elementGuidId>047b4c59-a0f1-49f7-af7f-cd4af7e17011</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,6 +18,13 @@
       <type>Main</type>
       <value>application/soap+xml</value>
    </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Accept</name>
+      <type>Main</type>
+      <value>utf-8</value>
+   </httpHeaderProperties>
    <katalonVersion>7.9.1</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <restRequestMethod></restRequestMethod>
@@ -29,9 +36,9 @@
       &lt;tem:GetTokenBUI>
          &lt;tem:buId>c74ae029-74d7-4f39-9ef6-7595c59a91b1&lt;/tem:buId>
          &lt;!--Optional:-->
-         &lt;tem:user>trivera&lt;/tem:user>
+         &lt;tem:user>&lt;/tem:user>
          &lt;!--Optional:-->
-         &lt;tem:pass>01021991..&lt;/tem:pass>
+         &lt;tem:pass>&lt;/tem:pass>
       &lt;/tem:GetTokenBUI>
    &lt;/soap:Body>
 &lt;/soap:Envelope></soapBody>

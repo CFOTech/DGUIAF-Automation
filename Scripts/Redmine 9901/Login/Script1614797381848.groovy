@@ -60,9 +60,9 @@ WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/button_Agregar')
 
 WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/button_Generar'))
 
-WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/canvas_unsupported browser'))
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/canvas_unsupported browser'))
+not_run: WebUI.takeElementScreenshot('C:/Users/Tatiana/Katalon Studio/BoletaUnica', findTestObject('Page_Boleta Unica/canvas_unsupported browser'))
 
 WebUI.closeBrowser()
 

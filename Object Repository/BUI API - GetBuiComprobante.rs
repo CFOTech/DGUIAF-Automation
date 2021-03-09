@@ -57,10 +57,7 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 
-assertThat(response.getResponseText()).contains('Respuesta Exitosa')
 
-
-
-</verificationScript>
+WS.verifyElementPropertyValue(response, 'respuesta.mensaje', &quot;Respuesta exitosa. &quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -14,4 +14,9 @@
       <initValue>'http://10.73.2.97:6748/WEB'</initValue>
       <name>url_BUIWEB</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.2.97:2486'</initValue>
+      <name>url_PEAPI</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

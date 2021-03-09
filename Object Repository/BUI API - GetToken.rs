@@ -34,7 +34,8 @@
    &lt;soap:Header/>
    &lt;soap:Body>
       &lt;tem:GetTokenBUI>
-         &lt;tem:buId>c74ae029-74d7-4f39-9ef6-7595c59a91b1&lt;/tem:buId>
+          &lt;!--&lt;tem:buId>${buiId}&lt;/tem:buId>-->
+        &lt;tem:buId>38c122ad-4e6b-4024-925a-21a4193ad16f&lt;/tem:buId>
          &lt;!--Optional:-->
          &lt;tem:user>jcarlos&lt;/tem:user>
          &lt;!--Optional:-->
@@ -48,6 +49,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>834d48ab-649d-44e8-be69-504ff255311a</id>
+      <masked>false</masked>
+      <name>buiId</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -60,6 +68,11 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+
+
+
+</verificationScript>
    <wsdlAddress>http://10.73.2.97:2486/PagosService.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

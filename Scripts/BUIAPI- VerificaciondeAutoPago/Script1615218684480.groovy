@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://10.73.2.97:2485/pago/mediodepago?token=5962c0b1-f764-49af-aaa3-49b7cb726558')
+WebUI.navigateToUrl(Url_AutoPago)
 
 WebUI.verifyTextNotPresent('Autopago', false)
 

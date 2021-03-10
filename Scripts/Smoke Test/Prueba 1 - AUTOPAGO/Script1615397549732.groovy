@@ -8,7 +8,7 @@ import java.lang.String as String
 import groovy.util.XmlSlurper as XmlSlurper
 import groovy.util.XmlParser as XmlParser
 
-ResponseObject response = WS.sendRequest(findTestObject('BUI API - Generar'))
+ResponseObject response = WS.sendRequest(findTestObject('Smoke Test/BUI API - Generar'))
 
 print(response.getResponseText())
 
@@ -18,7 +18,7 @@ String ResponseParsed = responsePreParsed.replace('"', '')
 
 print(ResponseParsed)
 
-ResponseObject response2 = WS.sendRequest(findTestObject('BUI API - GetToken', [('buiId') : ResponseParsed]))
+ResponseObject response2 = WS.sendRequest(findTestObject('Smoke Test/BUI API - GetToken', [('buiId') : ResponseParsed]))
 
 println(response2.getResponseBodyContent())
 

@@ -19,4 +19,9 @@
       <initValue>'http://10.73.2.97:2486'</initValue>
       <name>url_PEAPI</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.2.97:6748/service/api/BUI/'</initValue>
+      <name>url_BUIAPI</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

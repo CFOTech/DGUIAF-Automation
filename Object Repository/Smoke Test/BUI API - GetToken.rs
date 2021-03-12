@@ -34,8 +34,8 @@
    &lt;soap:Header/>
    &lt;soap:Body>
       &lt;tem:GetTokenBUI>
-          &lt;!--&lt;tem:buId>${buiId}&lt;/tem:buId>-->
-        &lt;tem:buId>38c122ad-4e6b-4024-925a-21a4193ad16f&lt;/tem:buId>
+         &lt;tem:buId>${buiId}&lt;/tem:buId>
+        &lt;!-- &lt;tem:buId>38c122ad-4e6b-4024-925a-21a4193ad16f&lt;/tem:buId>-->
          &lt;!--Optional:-->
          &lt;tem:user>jcarlos&lt;/tem:user>
          &lt;!--Optional:-->

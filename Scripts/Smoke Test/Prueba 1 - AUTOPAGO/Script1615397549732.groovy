@@ -23,11 +23,13 @@ ResponseObject response2 = WS.sendRequest(findTestObject('Smoke Test/BUI API - G
 println(response2.getResponseBodyContent())
 
 def tokenParser = new XmlSlurper().parseText(response2.getResponseBodyContent())
-//print tokenParser
-String tokenID = (tokenParser.toString()).replace('200OK','')
-//print(tokenID)
 
+//print tokenParser
+String tokenID = tokenParser.toString().replace('200OK', '')
+
+//print(tokenID)
 String urlAutopago = 'http://10.73.2.97:2485/pago/mediodepago?token=' + tokenID
+
 //print urlAutopago
 WebUI.callTestCase(findTestCase('BUIAPI- VerificaciondeAutoPago'), [('Url_AutoPago') : urlAutopago], FailureHandling.STOP_ON_FAILURE)
 

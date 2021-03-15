@@ -4,3 +4,8 @@
 /.settings/
 /.classpath
 .svn/
+.project
+Reports/
+*.log
+*.har
+/settings/internal/

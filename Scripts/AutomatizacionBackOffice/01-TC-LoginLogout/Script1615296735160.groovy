@@ -17,15 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://backofficesir-hml.dguiaf-gcba.gov.ar/Home/Acceder?ReturnUrl=%2f')
+WebUI.openBrowser(GlobalVariable.url_BackOffice)
 
 WebUI.waitForPageLoad(2)
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginUser'), 'jcarlos')
+WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginUser'), GlobalVariable.user)
 
-WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginPass'), 'automation1234')
+WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginPass'), GlobalVariable.password)
 
 WebUI.waitForElementPresent(findTestObject('ObjectsBackOffice/buttonLogin'), 3)
 

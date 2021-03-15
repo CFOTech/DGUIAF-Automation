@@ -29,4 +29,14 @@
       <initValue>'http://10.73.2.97:6748/service/api/BUI/'</initValue>
       <name>url_BUIAPI</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.2.97:7000/Home/'</initValue>
+      <name>url_BackOffice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://sir-hml.dguiaf-gcba.gov.ar/'</initValue>
+      <name>url_Portal</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

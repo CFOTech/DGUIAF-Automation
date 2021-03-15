@@ -17,15 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('http://10.73.2.97:6748/WEB/Usuario/SignIn')
+WebUI.openBrowser(GlobalVariable.url_BUIWEB)
 
 WebUI.waitForPageLoad(2)
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('ObjectsBUIWEB/userLogin'), 'jcarlos')
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/userLogin'), GlobalVariable.user)
 
-WebUI.sendKeys(findTestObject('ObjectsBUIWEB/passLogin'), 'automation1234')
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/passLogin'), GlobalVariable.password)
 
 //WebUI.waitForElementClickable(findTestObject('ObjectsBUIWEB/buttonLogin'), 3)
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogin'))

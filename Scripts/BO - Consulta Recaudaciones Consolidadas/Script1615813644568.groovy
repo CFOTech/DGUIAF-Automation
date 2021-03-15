@@ -18,13 +18,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://10.73.2.97:7000/Home/Acceder?ReturnUrl=%2fHome%2fAcceder%2f')
+WebUI.navigateToUrl(GlobalVariable.url_BackOffice)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Page_Acceder al Sistema/inputNombre'), 'jcarlos')
+WebUI.setText(findTestObject('Page_Acceder al Sistema/inputNombre'), GlobalVariable.user)
 
-WebUI.setEncryptedText(findTestObject('Page_Acceder al Sistema/inputContraseña'), 'x8YlipdcAoX+EPciFFGm8A==')
+WebUI.setText(findTestObject('Page_Acceder al Sistema/inputContraseña'), GlobalVariable.password)
 
 WebUI.click(findTestObject('Page_Acceder al Sistema/btnIngresar'))
 

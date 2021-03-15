@@ -18,7 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //abre el navegador y accede a la url
-WebUI.openBrowser('http://10.73.2.97:6748/WEB/Usuario/SignIn')
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl(GlobalVariable.url_BUIWEB)
 
 //hace un wait
 WebUI.waitForPageLoad(2)
@@ -27,10 +29,10 @@ WebUI.waitForPageLoad(2)
 WebUI.maximizeWindow()
 
 //ingresa el usuario
-WebUI.sendKeys(findTestObject('ObjectsBUIWEB/userLogin'), 'jcarlos')
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/userLogin'), GlobalVariable.user)
 
 //ingresa el pass
-WebUI.sendKeys(findTestObject('ObjectsBUIWEB/passLogin'), 'automation1234')
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/passLogin'), GlobalVariable.password)
 
 //espera que se cargue el elemento
 WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/buttonLogin'), 5)

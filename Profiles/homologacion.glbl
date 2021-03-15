@@ -6,8 +6,13 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'jsiebenberg'</initValue>
+      <initValue>'jcarlos'</initValue>
       <name>user</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'automation1234'</initValue>
+      <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

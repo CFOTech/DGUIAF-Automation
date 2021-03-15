@@ -14,15 +14,10 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('AutomatizacionBackOffice/01-TC-LoginLogout'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.navigateToUrl('http://10.73.2.97:6748/WEB/Usuario/SignIn?ReturnUrl=%2fWEB')
+WebUI.callTestCase(findTestCase('BO - Consulta Recaudaciones'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Object Repository/Page_GCBA - Boleta Unica/input_Login_txtUserName'), GlobalVariable.user)
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_GCBA - Boleta Unica/input_Login_txtPassword'), 'LFz5dfBeRZK6vrGnToThVA1RaZP1xpUu')
-
-WebUI.click(findTestObject('Object Repository/Page_GCBA - Boleta Unica/button_Ingresar'))
+WebUI.callTestCase(findTestCase('BO - Consulta Recaudaciones Consolidadas'), [:], FailureHandling.STOP_ON_FAILURE)
 

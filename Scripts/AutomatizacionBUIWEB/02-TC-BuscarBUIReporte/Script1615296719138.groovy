@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -39,20 +38,14 @@ WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/buttonLogin'), 5)
 //presiona el boton de login
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogin'))
 
-
 WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
-
 
 WebUI.click(findTestObject('ObjectsBUIWEB/linkReportes'))
 
 //WebUI.verifyElementPresent('ObjectsBUIWEB/labelTodos', 2)
-
 //WebUI.verifyElementClickable(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
-
 //presiona el boton de deslogueo
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogout'))
 
-//se cierra el navegador
 WebUI.closeBrowser()
-
 

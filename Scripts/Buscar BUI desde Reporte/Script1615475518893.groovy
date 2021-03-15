@@ -39,7 +39,7 @@ WebUI.setText(findTestObject('ObjectsBUIWEB/fldNumeroBoleta'), '2119-00004790')
 
 WebUI.click(findTestObject('ObjectsBUIWEB/btnBuscarReportes'))
 
-WebUI.delay(5)
+WebUI.delay(3)
 
 WebUI.closeBrowser()
 

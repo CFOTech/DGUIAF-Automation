@@ -28,17 +28,12 @@ WebUI.sendKeys(findTestObject('ObjectsBUIWEB/userLogin'), 'jcarlos')
 WebUI.sendKeys(findTestObject('ObjectsBUIWEB/passLogin'), 'automation1234')
 
 //WebUI.waitForElementClickable(findTestObject('ObjectsBUIWEB/buttonLogin'), 3)
-
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogin'))
-
 
 WebUI.waitForElementClickable(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
 
 //WebUI.verifyElementPresent('ObjectsBUIWEB/labelTodos', 2)
-
 //WebUI.verifyElementClickable(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
-
-
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogout'))
 
 WebUI.closeBrowser()

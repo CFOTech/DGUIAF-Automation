@@ -68,7 +68,7 @@
          &lt;!--Optional:-->
          &lt;tem:user>licenciasPE&lt;/tem:user>
          &lt;!--Optional:-->
-         &lt;tem:pass>ACAVALAPASSWORD&lt;/tem:pass>
+         &lt;tem:pass>l1c3nc14S&lt;/tem:pass>
          &lt;!--Optional:-->
                &lt;/tem:GetToken>
    &lt;/soap:Body>

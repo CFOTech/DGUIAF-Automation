@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Generación BUI</name>
+   <name>BO - Consulta Recaudaciones</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>b40f050a-f31d-4bc4-b684-551471efde0c</testCaseGuid>
+   <testCaseGuid>856d2f31-b1e8-4177-b0db-30f5ad7ad1ca</testCaseGuid>
 </TestCaseEntity>

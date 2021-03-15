@@ -23,3 +23,7 @@ WebUI.navigateToUrl(Url_AutoPago)
 
 WebUI.verifyTextNotPresent('Autopago', false)
 
+WebUI.delay(3)
+
+WebUI.closeBrowser()
+

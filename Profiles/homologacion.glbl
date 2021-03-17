@@ -39,4 +39,19 @@
       <initValue>'https://sir-hml.dguiaf-gcba.gov.ar/'</initValue>
       <name>url_Portal</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'qasirsirsir@gmail.com'</initValue>
+      <name>user_portal_mail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Dguiaf123'</initValue>
+      <name>user_portal_pass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://sir-hml.dguiaf-gcba.gov.ar/Tramite/Conceptos?idSeguridad=087848be-fc5b-3642-9679-ba0a7209f1da&amp;provider=MiBA'</initValue>
+      <name>url_Portal_Sin_Logueo</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

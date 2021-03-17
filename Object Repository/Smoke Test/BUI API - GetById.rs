@@ -22,7 +22,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://10.73.2.97:6748/service/api/BUI/GetById?ID=77cdc8ab-0f7d-4565-bcab-fa40bad30428</restUrl>
+   <restUrl>${DomainURL}/GetById?ID=77cdc8ab-0f7d-4565-bcab-fa40bad30428</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -31,6 +31,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.url_BUIAPI</defaultValue>
+      <description></description>
+      <id>0c6d3923-6f32-49db-bfa7-aa57a86e9a91</id>
+      <masked>false</masked>
+      <name>DomainURL</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

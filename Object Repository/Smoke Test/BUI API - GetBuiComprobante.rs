@@ -33,7 +33,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://10.73.2.97:6748/SERVICE/api/BUI/GetBuiComprobante</restUrl>
+   <restUrl>${DomainURL}/GetBuiComprobante</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -42,6 +42,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.url_BUIAPI</defaultValue>
+      <description></description>
+      <id>159497a0-3a69-4ba3-a59c-9fa4fef8eebb</id>
+      <masked>false</masked>
+      <name>DomainURL</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

@@ -1,6 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -19,42 +17,61 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
+//ingresa al portal portal con la direccion de un usuario ya logueado
+//url que se muestra luego de pasar por el logueo por mail de google
 WebUI.openBrowser(GlobalVariable.url_Portal_Sin_Logueo)
 
-WebUI.waitForPageLoad(2)
+WebUI.waitForPageLoad(5)
 
 WebUI.maximizeWindow()
 
+//selecciona el tramite para generar la boleta 'Direccion General de Defensa'
 WebUI.click(findTestObject('ObjectsPortal/linkDireccionGeneralDefensa'))
 
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkEvaluacionSistema'), 30)
+
+//selecciona la subopccion 'Evaluacion de sistema'
 WebUI.click(findTestObject('ObjectsPortal/linkEvaluacionSistema'))
 
+//presiona el boton continuar en la pantalla de conceptos a incluir
 WebUI.click(findTestObject('ObjectsPortal/btnContinuar'))
 
+//presiona el boton confirmar los datos y continuar
 WebUI.click(findTestObject('ObjectsPortal/btnConfirmarContinuar'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkPagarElectronicamente'), 10)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkPagarElectronicamente'), 30)
 
+//ingresa al link para pagar la boleta de forma online
 WebUI.click(findTestObject('ObjectsPortal/linkPagarElectronicamente'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioTarjetaVisa'), 10)
+//selecciona como va a pagar, con tarjeta de credito visa
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioTarjetaVisa'), 50)
 
 WebUI.click(findTestObject('ObjectsPortal/radioTarjetaVisa'))
 
+//Presiona el boton Realizar pago
 WebUI.click(findTestObject('ObjectsPortal/btnRealizarPago'))
 
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoNumeroTarjeta'), '4507 9900 0000 4905')
+//Carga los datos de la tarjeta
+//carga el numero de la tarjeta
+WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoNumeroTarjeta'), GlobalVariable.portal_tarjeta_numero)
 
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoFechaVencimiento'), '02 / 24')
+//carga la fecha de vencimiento
+WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoFechaVencimiento'), GlobalVariable.portal_tarjeta_fecha_vencimiento)
 
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoNombre'), 'John Voltar')
+//carga el nombre del usuario
+WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoNombre'), GlobalVariable.portal_tarjeta_nombre)
 
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoCodigoSeguridad'), '123')
+//carga el codigo de seguridad
+WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoCodigoSeguridad'), GlobalVariable.portal_tarjeta_codigo_seguridad)
 
+//presiona el boton Continuar para realizar el pago
 WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuar'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/labelTransaccionRealizada', 5))
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 30)
 
+//Valida que el contenido mostrado/obtenido es 'La transacción ha sido APROBADA / Transaction APPROVED'
 WebUI.verifyElementText(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 'La transacción ha sido APROBADA / Transaction APPROVED')
+
+WebUI.closeBrowser()
 

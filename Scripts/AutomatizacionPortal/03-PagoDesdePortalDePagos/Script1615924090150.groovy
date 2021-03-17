@@ -29,11 +29,11 @@ WebUI.click(findTestObject('ObjectsPortal/btnIngresarMiBA'))
 
 WebUI.click(findTestObject('ObjectsPortal/btnGoogleContinuar'))
 
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpGoogleUserMail'), GlobalVariable.user_portal_mail)
+WebUI.sendKeys(findTestObject('ObjectsPortal/inpGoogleUserMail'), GlobalVariable.portal_user_mail)
 
 WebUI.click(findTestObject('ObjectsPortal/btnGoogleSiguiente01'))
 
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpGoogleUserPass'), GlobalVariable.user_portal_pass)
+WebUI.sendKeys(findTestObject('ObjectsPortal/inpGoogleUserPass'), GlobalVariable.portal_user_pass)
 
 WebUI.click(findTestObject('ObjectsPortal/btnGoogleSiguiente02'))
 

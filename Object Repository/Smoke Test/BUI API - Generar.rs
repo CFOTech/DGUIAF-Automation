@@ -33,7 +33,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>http://10.73.2.97:6748/service/api/BUI/Generar</restUrl>
+   <restUrl>${DomainURL}/Generar</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -42,6 +42,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.url_BUIAPI</defaultValue>
+      <description></description>
+      <id>a09cbdcd-3a90-457f-bcb5-0347bba39147</id>
+      <masked>false</masked>
+      <name>DomainURL</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

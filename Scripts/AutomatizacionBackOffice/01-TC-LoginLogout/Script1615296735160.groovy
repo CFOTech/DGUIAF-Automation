@@ -17,23 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//ingresa al backoffice
 WebUI.openBrowser(GlobalVariable.url_BackOffice)
 
 WebUI.waitForPageLoad(2)
 
 WebUI.maximizeWindow()
 
+//ingresa el usuario para loguearse
 WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginUser'), GlobalVariable.user)
 
+//ingresa la contraseña
 WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginPass'), GlobalVariable.password)
 
 WebUI.waitForElementPresent(findTestObject('ObjectsBackOffice/buttonLogin'), 3)
 
+//presiona el boton Login para loguearse
 WebUI.click(findTestObject('ObjectsBackOffice/buttonLogin'))
 
 WebUI.verifyElementPresent(findTestObject('ObjectsBackOffice/labelBienvenido'), 5)
 
+//se desloguea
 WebUI.click(findTestObject('ObjectsBackOffice/buttonLogout'))
 
+//cierra el navegador
 WebUI.closeBrowser()
 

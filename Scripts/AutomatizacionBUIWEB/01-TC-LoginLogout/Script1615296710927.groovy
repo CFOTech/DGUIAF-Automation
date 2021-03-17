@@ -17,24 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//ingresa a BUI web
 WebUI.openBrowser(GlobalVariable.url_BUIWEB)
 
 WebUI.waitForPageLoad(2)
 
 WebUI.maximizeWindow()
 
+//ingresa el usuario para loguearse
 WebUI.sendKeys(findTestObject('ObjectsBUIWEB/userLogin'), GlobalVariable.user)
 
+//ingresa la contraseña
 WebUI.sendKeys(findTestObject('ObjectsBUIWEB/passLogin'), GlobalVariable.password)
 
-//WebUI.waitForElementClickable(findTestObject('ObjectsBUIWEB/buttonLogin'), 3)
+//se loguea
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogin'))
 
 WebUI.waitForElementClickable(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
 
 //WebUI.verifyElementPresent('ObjectsBUIWEB/labelTodos', 2)
-//WebUI.verifyElementClickable(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
+//WebUI.verifyElementPresent(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
+
+//se desloguea
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogout'))
 
+//cierra el navegador
 WebUI.closeBrowser()
 

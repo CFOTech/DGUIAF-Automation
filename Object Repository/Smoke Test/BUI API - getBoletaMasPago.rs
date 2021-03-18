@@ -22,7 +22,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://10.73.2.97:6748/service/api/BUI/getBoletaMasPago?ID=77cdc8ab-0f7d-4565-bcab-fa40bad30428</restUrl>
+   <restUrl>http://10.73.2.97:6748/service/api/BUI/getBoletaMasPago?ID=${idBoleta}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -31,6 +31,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>'bbbb5fd5-a01d-45ef-9db1-66c6d5112457'</defaultValue>
+      <description></description>
+      <id>08c54d1a-8217-4fa7-b600-4b6eeeb27903</id>
+      <masked>false</masked>
+      <name>idBoleta</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

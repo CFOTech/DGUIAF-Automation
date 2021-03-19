@@ -6,15 +6,14 @@
    <elementGuidId>51555a34-6123-4714-9495-1b3318824f9a</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;btnContinuar&quot;]</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

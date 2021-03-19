@@ -28,7 +28,7 @@ WebUI.maximizeWindow()
 //selecciona el tramite para generar la boleta 'Direccion General de Defensa'
 WebUI.click(findTestObject('ObjectsPortal/linkDireccionGeneralDefensa'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkEvaluacionSistema'), 30)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkEvaluacionSistema'), 50)
 
 //selecciona la subopccion 'Evaluacion de sistema'
 WebUI.click(findTestObject('ObjectsPortal/linkEvaluacionSistema'))
@@ -39,13 +39,13 @@ WebUI.click(findTestObject('ObjectsPortal/btnContinuar'))
 //presiona el boton confirmar los datos y continuar
 WebUI.click(findTestObject('ObjectsPortal/btnConfirmarContinuar'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkPagarElectronicamente'), 30)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkPagarElectronicamente'), 120)
 
 //ingresa al link para pagar la boleta de forma online
 WebUI.click(findTestObject('ObjectsPortal/linkPagarElectronicamente'))
 
 //selecciona como va a pagar, con tarjeta de credito visa
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioTarjetaVisa'), 50)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioTarjetaVisa'), 120)
 
 WebUI.click(findTestObject('ObjectsPortal/radioTarjetaVisa'))
 
@@ -53,6 +53,8 @@ WebUI.click(findTestObject('ObjectsPortal/radioTarjetaVisa'))
 WebUI.click(findTestObject('ObjectsPortal/btnRealizarPago'))
 
 //Carga los datos de la tarjeta
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/inpPagoNumeroTarjeta'), 120)
+
 //carga el numero de la tarjeta
 WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoNumeroTarjeta'), GlobalVariable.portal_tarjeta_numero)
 
@@ -68,7 +70,7 @@ WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoCodigoSeguridad'), GlobalVar
 //presiona el boton Continuar para realizar el pago
 WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuar'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 30)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 120)
 
 //Valida que el contenido mostrado/obtenido es 'La transacción ha sido APROBADA / Transaction APPROVED'
 WebUI.verifyElementText(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 'La transacción ha sido APROBADA / Transaction APPROVED')

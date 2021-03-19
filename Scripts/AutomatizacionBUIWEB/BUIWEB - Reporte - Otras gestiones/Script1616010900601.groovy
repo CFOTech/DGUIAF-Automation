@@ -35,8 +35,6 @@ WebUI.click(findTestObject('ObjectsBUIWEB/ddlDependencia'), FailureHandling.STOP
 
 WebUI.click(findTestObject('ObjectsBUIWEB/optionDependencia'))
 
-//new_value =findTestObject('ObjectsBUIWEB/optionDependencia', [('nombreDependencia') : dependencia])
-//WebUI.click(findTestObject(new_value))
 WebUI.setText(findTestObject('ObjectsBUIWEB/fldFechaDesde'), '01/03/2021')
 
 WebUI.setText(findTestObject('ObjectsBUIWEB/fldFechaHasta'), '10/03/2021')
@@ -45,7 +43,7 @@ WebUI.setText(findTestObject('ObjectsBUIWEB/fldNumero'), '2102-00005469')
 
 WebUI.click(findTestObject('ObjectsBUIWEB/btnBuscarListado'))
 
-WebUI.verifyAlertNotPresent(0)
+WebUI.click(findTestObject('ObjectsBUIWEB/gridResultado'))
 
 WebUI.delay(3)
 

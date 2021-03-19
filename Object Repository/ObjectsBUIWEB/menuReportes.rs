@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>linkReportes</name>
+   <name>menuReportes</name>
    <tag></tag>
    <elementGuidId>023ed9e7-5a64-4a83-9ee1-1b279d0f05cb</elementGuidId>
    <selectorCollection>
@@ -14,7 +14,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

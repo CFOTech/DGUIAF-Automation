@@ -9,35 +9,43 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('http://10.73.2.97:6748/WEB/Usuario/SignIn')
+WebUI.openBrowser(GlobalVariable.url_BUIWEB)
 
 WebUI.waitForPageLoad(3)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('ObjectsBUIWEB/userLogin'), 'jcarlos')
+WebUI.setText(findTestObject('ObjectsBUIWEB/userLogin'), GlobalVariable.user)
 
-WebUI.setText(findTestObject('ObjectsBUIWEB/passLogin'), 'automation1234')
+WebUI.setText(findTestObject('ObjectsBUIWEB/passLogin'), GlobalVariable.password)
 
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogin'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/menuReportes'), 5)
+WebUI.click(findTestObject('ObjectsBUIWEB/menuBoletaUnica'))
 
-WebUI.click(findTestObject('ObjectsBUIWEB/menuReportes'))
+WebUI.click(findTestObject('ObjectsBUIWEB/optionOtrasGestiones'))
 
-WebUI.click(findTestObject('ObjectsBUIWEB/btnPorNumero'))
+WebUI.click(findTestObject('ObjectsBUIWEB/ddlDependencia'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('ObjectsBUIWEB/fldNumeroBoleta'), '2119-00004790')
+WebUI.click(findTestObject('ObjectsBUIWEB/optionDependencia'))
 
-WebUI.click(findTestObject('ObjectsBUIWEB/btnBuscarReportes'))
+//new_value =findTestObject('ObjectsBUIWEB/optionDependencia', [('nombreDependencia') : dependencia])
+//WebUI.click(findTestObject(new_value))
+WebUI.setText(findTestObject('ObjectsBUIWEB/fldFechaDesde'), '01/03/2021')
+
+WebUI.setText(findTestObject('ObjectsBUIWEB/fldFechaHasta'), '10/03/2021')
+
+WebUI.setText(findTestObject('ObjectsBUIWEB/fldNumero'), '2102-00005469')
+
+WebUI.click(findTestObject('ObjectsBUIWEB/btnBuscarListado'))
+
+WebUI.verifyAlertNotPresent(0)
 
 WebUI.delay(3)
 

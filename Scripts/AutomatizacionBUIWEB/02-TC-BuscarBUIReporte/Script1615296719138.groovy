@@ -42,7 +42,7 @@ WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogin'))
 
 WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
 
-WebUI.click(findTestObject('ObjectsBUIWEB/linkReportes'))
+WebUI.click(findTestObject('ObjectsBUIWEB/menuReportes'))
 
 //WebUI.verifyElementPresent('ObjectsBUIWEB/labelTodos', 2)
 //WebUI.verifyElementClickable(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)

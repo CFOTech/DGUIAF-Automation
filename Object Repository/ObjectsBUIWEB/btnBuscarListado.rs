@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>buttonGenerar (1)</name>
+   <name>btnBuscarListado</name>
    <tag></tag>
    <elementGuidId>be62a2c4-bc2d-42c4-a65b-9add53a475fa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;btnGenerar&quot;]</value>
+         <value>//button[@id='btnBuscar']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value>//*[@id = 'btnBuscar']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +21,13 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;btnGenerar&quot;]</value>
+      <value>//button[@id='btnBuscar']</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>btnBuscar</value>
    </webElementProperties>
 </WebElementEntity>

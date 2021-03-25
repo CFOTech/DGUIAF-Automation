@@ -69,7 +69,7 @@
       <guid>5cfe3787-d0d7-4498-ac96-8b258957db4e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/Buscar BUI desde Reporte</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/Buscar BUI desde Reporte - Otras gestiones</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0697bebb-90d5-4232-ac4d-3d0e3492f07d</guid>

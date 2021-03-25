@@ -95,4 +95,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/BUI WEB/Escenarios/Buscar BUI desde Reporte - Por listado</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>44b94794-5b65-4ce1-acc9-dfdef665c8bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/BUIWeb - Consultar PDF de boleta</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

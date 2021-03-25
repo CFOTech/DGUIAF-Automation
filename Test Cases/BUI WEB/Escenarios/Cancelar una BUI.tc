@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Cancelar una BUI</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>26ba89a3-0600-4dc9-9200-93501a698197</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8a662fe4-e575-4067-b49c-63bca9e8cf3c</id>
+      <masked>false</masked>
+      <name>text_legajo_electronico</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cd140159-651c-4458-8f57-41a603c98ca3</id>
+      <masked>false</masked>
+      <name>legajo_electronico</name>
+   </variable>
+</TestCaseEntity>

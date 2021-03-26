@@ -18,10 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 //WebUI.verifyElementPresent('ObjectsBUIWEB/labelTodos', 2)
 //WebUI.verifyElementPresent(findTestObject('ObjectsBUIWEB/buttonGenerar'), 2)
 //se desloguea
-WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/buttonLogout'), 5)
+//WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/btnSalir'), 5)
+WebUI.click(findTestObject('ObjectsBUIWEB/btnSalir'))
 
-WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogout'))
-
-//cierra el navegador
 WebUI.closeBrowser()
 

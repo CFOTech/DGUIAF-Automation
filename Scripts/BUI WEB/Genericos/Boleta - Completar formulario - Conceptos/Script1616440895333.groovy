@@ -17,11 +17,14 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/span_Concepto'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Boleta Unica/input_Codigo_txtCodigo'), '07.02.28')
+WebUI.verifyElementVisible(findTestObject('Page_Boleta Unica/input_Codigo_txtCodigo'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_Boleta Unica/input_Codigo_txtCodigo'), '07.02.28')
+
+WebUI.verifyElementVisible(findTestObject('Page_Boleta Unica/ddConceptoSeleccionado'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Boleta Unica/ddConceptoSeleccionado'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Boleta Unica/input_Codigo_txtCodigo'), '07.02.28 Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir')
-
+//WebUI.setText(findTestObject('Object Repository/Page_Boleta Unica/input_Codigo_txtCodigo'), '07.02.28 Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir')
 WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/button_Agregar'))
 

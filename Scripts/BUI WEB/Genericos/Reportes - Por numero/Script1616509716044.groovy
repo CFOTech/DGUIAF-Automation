@@ -27,5 +27,3 @@ WebUI.click(findTestObject('ObjectsBUIWEB/btnBuscarReportes'))
 
 WebUI.delay(3)
 
-WebUI.closeBrowser()
-

@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>64f2cfe6-efe9-49d3-b663-d08f1a60c546</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/BUI WEB/Escenarios/Generar una BUI</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -56,19 +56,19 @@
    <testCaseLink>
       <guid>3b749132-3fdb-425f-80e2-2231214aa507</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/BUI WEB/Escenarios/Cargar Conceptos</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f32077ec-3852-4c74-9a93-b99709f8106c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/BUI WEB/Escenarios/Buscar BUI desde Reporte - Otras gestiones</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3236324d-0224-48ba-ba5c-25aeee31b75d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/BUI WEB/Escenarios/Cancelar una BUI</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -84,21 +84,21 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>44b94794-5b65-4ce1-acc9-dfdef665c8bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/BUIWeb - Consultar PDF de boleta</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>c9fa59c5-da6c-4252-8d83-6c880e4b4bcc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/BUI WEB/Escenarios/Buscar BUI desde Reporte - Por numero</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>cad50df2-14b6-4dfa-954c-dcdb28785b00</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/BUI WEB/Escenarios/Buscar BUI desde Reporte - Por listado</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>44b94794-5b65-4ce1-acc9-dfdef665c8bc</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/BUIWeb - Consultar PDF de boleta</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

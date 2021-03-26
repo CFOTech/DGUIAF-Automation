@@ -19,11 +19,11 @@ WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Datos de la entidad'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Conceptos'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Datos del contribuyente'), [('dni') : '12345678'
         , ('apellidoYNombre') : 'juan carlos', ('correoElectronico') : 'jcarlos@test.com', ('direccion') : '', ('piso') : '1'
         , ('departamento') : '2', ('localidad') : 'caba', ('codigoPostal') : '1234'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Conceptos'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Generar boleta'), [:], FailureHandling.STOP_ON_FAILURE)
 

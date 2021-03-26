@@ -45,5 +45,5 @@ String urlAutopago = 'http://10.73.2.97:2485/pago/mediodepago?token=' + tokenID
 //print urlAutopago //Print de control
 
 //LLama al TC de auto pago donde verificará la existencia de la opción 'Autopago'
-WebUI.callTestCase(findTestCase('BUIAPI- VerificaciondeAutoPago'), [('Url_AutoPago') : urlAutopago], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Smoke Test - APIS/BUIAPI- VerificaciondeAutoPago'), [('Url_AutoPago') : urlAutopago], FailureHandling.STOP_ON_FAILURE)
 

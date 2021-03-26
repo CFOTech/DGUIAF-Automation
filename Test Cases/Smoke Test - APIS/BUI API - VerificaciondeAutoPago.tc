@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>BUIAPI- VerificaciondeAutoPago</name>
+   <name>BUI API - VerificaciondeAutoPago</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>bddc9824-f02a-4c46-96f9-f6147d5d7efa</testCaseGuid>

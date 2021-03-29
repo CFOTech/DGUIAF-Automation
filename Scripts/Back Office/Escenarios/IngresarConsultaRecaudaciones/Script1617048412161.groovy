@@ -17,29 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//ingresa al backoffice
-WebUI.openBrowser(GlobalVariable.url_BackOffice)
+//ingresa al back office
+WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(2)
+WebUI.waitForElementClickable(findTestObject('ObjectsBackOffice/menuReportes'), 5)
 
-WebUI.maximizeWindow()
+//despliega el menu reporte
+WebUI.click(findTestObject('ObjectsBackOffice/menuReportes'))
 
-//ingresa el usuario para loguearse
-WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginUser'), GlobalVariable.user)
+//selecciona la opcion Consulta Recaudaciones de reporte
+WebUI.click(findTestObject('ObjectsBackOffice/menuReportesConsultaRecaudaciones'))
 
-//ingresa la contraseña
-WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginPass'), GlobalVariable.password)
+//valida que se muestra el boton Buscar de consulta Recaudaciones
+WebUI.verifyElementPresent(findTestObject('ObjectsBackOffice/buttonBuscarConsultaRecaudaciones'), 5)
 
-WebUI.waitForElementPresent(findTestObject('ObjectsBackOffice/buttonLogin'), 3)
-
-//presiona el boton Login para loguearse
-WebUI.click(findTestObject('ObjectsBackOffice/buttonLogin'))
-
-WebUI.verifyElementPresent(findTestObject('ObjectsBackOffice/labelBienvenido'), 5)
-
-//se desloguea
-WebUI.click(findTestObject('ObjectsBackOffice/buttonLogout'))
-
-//cierra el navegador
-WebUI.closeBrowser()
+WebUI.callTestCase(findTestCase('Back Office/Genericos/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

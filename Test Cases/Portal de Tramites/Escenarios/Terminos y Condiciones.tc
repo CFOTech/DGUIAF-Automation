@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Verificar del área de Términos y Condiciones.
+1 - Ingresar al Portal de Pagos.
+2 - Hacer click sobre leyenda &quot;Términos y condiciones&quot;.
+3 - Verificar que existan los términos y condiciones.</description>
+   <name>Terminos y Condiciones</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e35f2153-1074-4180-b1f1-47e742f24200</testCaseGuid>
+</TestCaseEntity>

@@ -68,7 +68,7 @@ WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoNombre'), GlobalVariable.por
 WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoCodigoSeguridad'), GlobalVariable.portal_tarjeta_codigo_seguridad)
 
 //presiona el boton Continuar para realizar el pago
-WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuar'))
+WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuarNext'))
 
 WebUI.waitForElementPresent(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 120)
 

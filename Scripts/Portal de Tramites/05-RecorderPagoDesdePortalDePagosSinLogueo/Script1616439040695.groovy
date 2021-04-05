@@ -70,6 +70,6 @@ selenium.click("id=btnRealizarPago")
 
 WebUI.delay(10)
 
-WebUI.verifyElementText(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 'La transacción ha sido APROBADA / Transaction APPROVED')
+WebUI.verifyElementText(findTestObject('null'), 'La transacción ha sido APROBADA / Transaction APPROVED')
 
 

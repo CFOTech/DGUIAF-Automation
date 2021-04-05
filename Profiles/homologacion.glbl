@@ -74,4 +74,9 @@
       <initValue>'123'</initValue>
       <name>portal_tarjeta_codigo_seguridad</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'4517 7210 0485 6075'</initValue>
+      <name>portal_tarjeta_debito</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

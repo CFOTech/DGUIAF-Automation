@@ -28,7 +28,7 @@ WebUI.maximizeWindow()
 //selecciona el tramite para generar la boleta 'Direccion General de Defensa'
 WebUI.click(findTestObject('ObjectsPortal/linkDireccionGeneralDefensa'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkEvaluacionSistema'), 50)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkEvaluacionSistema'), 5)
 
 //selecciona la subopccion 'Evaluacion de sistema'
 WebUI.click(findTestObject('ObjectsPortal/linkEvaluacionSistema'))
@@ -53,19 +53,19 @@ WebUI.click(findTestObject('ObjectsPortal/radioTarjetaVisa'))
 WebUI.click(findTestObject('ObjectsPortal/btnRealizarPago'))
 
 //Carga los datos de la tarjeta
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/inpPagoNumeroTarjeta'), 120)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/inputPagoNumeroTarjeta'), 120)
 
 //carga el numero de la tarjeta
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoNumeroTarjeta'), GlobalVariable.portal_tarjeta_numero)
+WebUI.sendKeys(findTestObject('ObjectsPortal/inputPagoNumeroTarjeta'), GlobalVariable.portal_tarjeta_numero)
 
 //carga la fecha de vencimiento
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoFechaVencimiento'), GlobalVariable.portal_tarjeta_fecha_vencimiento)
+WebUI.sendKeys(findTestObject('ObjectsPortal/inputPagoNombre'), GlobalVariable.portal_tarjeta_nombre)
 
 //carga el nombre del usuario
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoNombre'), GlobalVariable.portal_tarjeta_nombre)
+WebUI.sendKeys(findTestObject('ObjectsPortal/inputPagoFechaVencimiento'), GlobalVariable.portal_tarjeta_fecha_vencimiento)
 
 //carga el codigo de seguridad
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpPagoCodigoSeguridad'), GlobalVariable.portal_tarjeta_codigo_seguridad)
+WebUI.sendKeys(findTestObject('ObjectsPortal/inputPagoCodigoSeguridad'), GlobalVariable.portal_tarjeta_codigo_seguridad)
 
 //presiona el boton Continuar para realizar el pago
 WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuar'))

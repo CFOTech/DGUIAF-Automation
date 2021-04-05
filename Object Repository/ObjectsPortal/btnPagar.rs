@@ -3,15 +3,15 @@
    <description></description>
    <name>btnPagar</name>
    <tag></tag>
-   <elementGuidId>14b09fc6-e3ab-4355-9c29-77a91e12036c</elementGuidId>
+   <elementGuidId>d0d3a66d-e462-44c8-b7fc-64d04eaf2b17</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//a[@id='btnPagar'])[33]</value>
+         <key>CSS</key>
+         <value>#btnPagar</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//a[@id='btnPagar']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,7 +24,7 @@
       <value>a</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
@@ -35,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-value</name>
       <type>Main</type>
-      <value>e2d93c4b-099a-4c10-adf7-aafa87f1a7b6</value>
+      <value>41662ad1-f221-4453-9f4c-f8ae63596bc2</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +52,7 @@
       <value>PagarBoleta(this)</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -63,14 +63,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;content1&quot;)/div[@class=&quot;card-body font-sans&quot;]/div[@class=&quot;table-responsive-sm pt-2&quot;]/table[@class=&quot;table table-bordered&quot;]/tbody[1]/tr[1]/td[5]/div[@class=&quot;row pl-2 center-flex&quot;]/a[@id=&quot;btnPagar&quot;]</value>
+      <value>id(&quot;btnPagar&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//a[@id='btnPagar'])[33]</value>
+      <value>//a[@id='btnPagar']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -84,7 +84,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:link</name>
       <type>Main</type>
-      <value>(//a[contains(text(),'Pagar')])[33]</value>
+      <value>//a[contains(text(),'Pagar')]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,8 +117,15 @@
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Pagar']/parent::*</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div[2]/div/div/table/tbody/tr/td[5]/div/a</value>
+      <value>//td[5]/div/a</value>
    </webElementXpaths>
 </WebElementEntity>

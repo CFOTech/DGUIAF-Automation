@@ -20,6 +20,8 @@ import java.lang.String as String
 import groovy.util.XmlSlurper as XmlSlurper
 import com.kms.katalon.core.testobject.ResponseObject as ResponseObject
 import groovy.json.JsonSlurper as JsonSlurper
+import java.util.Date as Date
+import java.text.SimpleDateFormat as SimpleDateFormat
 
 //Creacion de variables
 def IdGenerado
@@ -60,23 +62,25 @@ WebUI.click(findTestObject('ObjectsPortal/btnPagarUnaBoleta(BUI)'))
 
 WebUI.setText(findTestObject('ObjectsPortal/inpNroDeBoleta'), result.Numero)
 
+WebUI.click(findTestObject('ObjectsPortal/checkIncluirBoletas'))
+
 WebUI.click(findTestObject('ObjectsPortal/btnBuscarBoleta'))
 
 WebUI.click(findTestObject('ObjectsPortal/btnPagar'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioTarjetaVisaDebito'), 50)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioVisaDebito'), 50)
 
 WebUI.click(findTestObject('ObjectsPortal/radioTarjetaVisa'))
 
 WebUI.click(findTestObject('ObjectsPortal/btnRealizarPagoMakePayment'))
 
-WebUI.setText(findTestObject('ObjectsPortal/inpPagoNumeroTarjeta'), GlobalVariable.portal_tarjeta_numero)
+WebUI.setText(findTestObject('ObjectsPortal/inputPagoNumeroTarjeta'), GlobalVariable.portal_tarjeta_numero)
 
-WebUI.setText(findTestObject('ObjectsPortal/inpPagoNombre'), GlobalVariable.portal_tarjeta_nombre)
+WebUI.setText(findTestObject('ObjectsPortal/inputPagoNombre'), GlobalVariable.portal_tarjeta_nombre)
 
-WebUI.setText(findTestObject('ObjectsPortal/inpPagoFechaVencimiento'), GlobalVariable.portal_tarjeta_fecha_vencimiento)
+WebUI.setText(findTestObject('ObjectsPortal/inputPagoFechaVencimiento'), GlobalVariable.portal_tarjeta_fecha_vencimiento)
 
-WebUI.setText(findTestObject('ObjectsPortal/inpPagoCodigoSeguridad'), GlobalVariable.portal_tarjeta_codigo_seguridad)
+WebUI.setText(findTestObject('ObjectsPortal/inputPagoCodigoSeguridad'), GlobalVariable.portal_tarjeta_codigo_seguridad)
 
 WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuarNext'))
 
@@ -86,3 +90,38 @@ WebUI.verifyElementText(findTestObject('ObjectsPortal/labelTransaccionRealizada'
 
 WebUI.closeBrowser()
 
+//Consulto boleta abonada
+
+WebUI.openBrowser(GlobalVariable.url_Portal_Sin_Logueo)
+
+WebUI.maximizeWindow()
+
+WebUI.click(findTestObject('ObjectsPortal/btnINICIO'))
+
+WebUI.click(findTestObject('ObjectsPortal/btnConsultarBoletasYComprobantes'))
+
+WebUI.selectOptionByLabel(findTestObject('ObjectsPortal/lstDependencia'), 'Dirección General de Licencias', false)
+
+WebUI.selectOptionByLabel(findTestObject('ObjectsPortal/lstEstadoBoleta'), 'Pagada', false)
+
+//Obtengo fecha del dia de hoy. Esto devuelve la fecha y hora del dia actual.
+def date = new Date()
+
+//En la variable "fechaHOY" separo la fecha de la hora, ya que en "date" tenemos fecha y hora juntos. Y a esto le doy el formato dd/mm/yyyy.
+String fechaHOY = date.format('dd/MM/yyyy')
+
+println(fechaHOY)
+
+WebUI.setText(findTestObject('ObjectsPortal/inpFechaDesde'), fechaHOY)
+
+WebUI.setText(findTestObject('ObjectsPortal/inpFechaHasta'), fechaHOY)
+
+WebUI.click(findTestObject('ObjectsPortal/btnBuscarBoletaCreada'))
+
+WebUI.scrollToElement(findTestObject('ObjectsPortal/divTerminosYCondiciones'), 0)
+
+WebUI.verifyTextPresent(result.Numero , false)
+
+WebUI.delay(10)
+
+WebUI.closeBrowser()

@@ -15,7 +15,7 @@
 RESULTADO ESPERADO
 Se agrega el concepto a la dependencia.</description>
    <name>Cargar Conceptos</name>
-   <tag>regression</tag>
+   <tag>Regresion</tag>
    <comment></comment>
    <testCaseGuid>479e7b0b-c7ed-4e18-92c2-1cda185dbd9b</testCaseGuid>
 </TestCaseEntity>

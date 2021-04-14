@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/button_Generar'))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/button_Generar'))
 
 WebUI.delay(5)
 

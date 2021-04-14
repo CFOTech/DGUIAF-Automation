@@ -3,7 +3,7 @@
    <description></description>
    <name>inputLoginPass</name>
    <tag></tag>
-   <elementGuidId>187ed33d-a4b2-49fc-851a-7289db335805</elementGuidId>
+   <elementGuidId>ba9d9071-0f83-4c23-abbd-bb861afc846c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

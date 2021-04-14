@@ -3,7 +3,7 @@
    <description></description>
    <name>menuReportes</name>
    <tag></tag>
-   <elementGuidId>d364efd0-9695-48a1-af5e-bf04f111632d</elementGuidId>
+   <elementGuidId>bb501b65-eb8d-4d56-97a2-3987ef26a67c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

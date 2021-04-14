@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1. Ingresar a BUIWeb con usuario y password.
+
+2. Menu Admin / Atributos del Item.
+
+3. Seleccionar una dependencia.
+
+4. Buscar el concepto en el campo Item.
+
+5. Seleccionarlo y agregarlo.
+
+
+-------------------------------------
+RESULTADO ESPERADO
+Se agrega el concepto a la dependencia.</description>
+   <name>CargarConceptos</name>
+   <tag>Regresion</tag>
+   <comment></comment>
+   <testCaseGuid>479e7b0b-c7ed-4e18-92c2-1cda185dbd9b</testCaseGuid>
+</TestCaseEntity>

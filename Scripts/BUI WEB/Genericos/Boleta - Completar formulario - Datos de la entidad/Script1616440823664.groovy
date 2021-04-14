@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/span_ACA Libertador'))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/span_ACA Libertador'))
 
-WebUI.click(findTestObject('Object Repository/Page_Boleta Unica/li_Direccin General de Licencias'))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/li_Direccin General de Licencias'))
 

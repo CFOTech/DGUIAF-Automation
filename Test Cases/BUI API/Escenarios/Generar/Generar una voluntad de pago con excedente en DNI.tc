@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Generar una voluntad de pago con excedente de caracteres en campo &quot;Documento&quot; por método generar.</description>
-   <name>Generar una voluntad de pago con excedente en DNI</name>
-   <tag>Regresion</tag>
-   <comment></comment>
-   <testCaseGuid>62f57d0a-7643-4035-adf1-47f5b643f319</testCaseGuid>
-</TestCaseEntity>

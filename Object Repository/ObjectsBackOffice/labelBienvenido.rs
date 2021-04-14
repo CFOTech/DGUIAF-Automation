@@ -3,7 +3,7 @@
    <description></description>
    <name>labelBienvenido</name>
    <tag></tag>
-   <elementGuidId>e2ffe02b-8d38-4159-84e0-c16e1b26a123</elementGuidId>
+   <elementGuidId>55c01902-551e-41a8-92fb-6e1fa1d02075</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

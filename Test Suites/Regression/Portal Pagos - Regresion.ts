@@ -15,30 +15,30 @@
       <guid>83c6dbe4-9a99-4f87-9233-f62e2780e45d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Portal de Tramites/PagarBUIGeneradaConTarjetaCredito</testCaseId>
+      <testCaseId>Test Cases/Portal de Tramites/Escenarios/PagarBUIGeneradaConTarjetaCredito</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b0e88ae4-5e60-491e-83e7-36b333d09420</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Portal de Tramites/PagarBUIGeneradaConTarjetaDebito</testCaseId>
+      <testCaseId>Test Cases/Portal de Tramites/Escenarios/PagarBUIGeneradaConTarjetaDebito</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>02b4edfc-c121-4825-954a-491802339165</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Portal de Tramites/ConsultarBUIcreada</testCaseId>
+      <testCaseId>Test Cases/Portal de Tramites/Escenarios/ConsultarBUICreada</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>33f6d4cf-158c-479b-9563-d17b7b6257b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Portal de Tramites/Escenarios/Preguntas frecuentes</testCaseId>
+      <testCaseId>Test Cases/Portal de Tramites/Escenarios/PreguntasFrecuentes</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>902f96e6-dff2-40cc-b3e2-d5b4e5314a2f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Portal de Tramites/Escenarios/Terminos y Condiciones</testCaseId>
+      <testCaseId>Test Cases/Portal de Tramites/Escenarios/TerminosYCondiciones</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

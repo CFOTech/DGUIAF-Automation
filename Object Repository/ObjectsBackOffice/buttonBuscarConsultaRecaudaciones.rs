@@ -3,7 +3,7 @@
    <description></description>
    <name>buttonBuscarConsultaRecaudaciones</name>
    <tag></tag>
-   <elementGuidId>b1d6ed29-9cb4-488f-bb27-b7934dc3b847</elementGuidId>
+   <elementGuidId>7186eeac-b507-417d-834d-98460851bf9a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

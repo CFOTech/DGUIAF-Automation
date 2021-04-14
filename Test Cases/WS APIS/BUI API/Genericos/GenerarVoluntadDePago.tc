@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Generar una voluntad de pago respetando los caracteres en cada campo por método Generar</description>
+   <name>GenerarVoluntadDePago</name>
+   <tag>Regresion</tag>
+   <comment></comment>
+   <testCaseGuid>a3d18fb5-69d0-4755-9860-8c53d0506229</testCaseGuid>
+</TestCaseEntity>

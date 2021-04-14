@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Generar una voluntad de pago con campo &quot;Dirección&quot; NULL por método generar.</description>
+   <name>Generar voluntad de pago con dirección NULL</name>
+   <tag>regresion</tag>
+   <comment></comment>
+   <testCaseGuid>d0b60780-942c-4c1e-85a7-8f1a33772d7d</testCaseGuid>
+</TestCaseEntity>

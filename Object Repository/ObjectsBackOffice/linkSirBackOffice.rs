@@ -3,7 +3,7 @@
    <description></description>
    <name>linkSirBackOffice</name>
    <tag></tag>
-   <elementGuidId>59d019cf-da64-43ad-8a71-149716bd5f03</elementGuidId>
+   <elementGuidId>ed5dd550-8f74-481c-9cff-6393225b91e3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

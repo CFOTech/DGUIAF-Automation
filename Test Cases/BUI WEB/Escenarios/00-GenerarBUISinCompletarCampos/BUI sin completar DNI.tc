@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1. Ingresar a BUIWeb con usuario y password.
+
+2. Menu Boleta Unica / Crear Boleta.
+
+3. Seleccionar Dependencia.
+
+4. No Completar DNI
+
+5. Generar la BUI.</description>
+   <name>BUI sin completar DNI</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3bb771b-cb1a-4931-b08e-29fc3dc6b5c8</testCaseGuid>
+</TestCaseEntity>

@@ -3,7 +3,7 @@
    <description></description>
    <name>menuReportesConsultaRecaudacionesConsolidadas</name>
    <tag></tag>
-   <elementGuidId>24055776-dbb5-4bc8-a1ad-d3e0a768bcf2</elementGuidId>
+   <elementGuidId>ef9c75a6-20ed-4ba5-a6fa-cada74f497be</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>

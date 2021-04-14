@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Generar una voluntad de pago con campo &quot;Nombre&quot; NULL por método generar.</description>
-   <name>Generar una voluntad de pago con nombre NULL</name>
-   <tag>regresion</tag>
-   <comment></comment>
-   <testCaseGuid>5874bb09-abf3-4888-9a94-c52c7db37b5a</testCaseGuid>
-</TestCaseEntity>

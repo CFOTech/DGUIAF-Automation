@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Generar una voluntad de pago con letras en campo &quot;Documento&quot; por método generar.</description>
+   <name>Generar una voluntad de pago con letras en documento</name>
+   <tag>regresion</tag>
+   <comment></comment>
+   <testCaseGuid>fc1abf13-be9c-4363-a8f8-d9e7be554a12</testCaseGuid>
+</TestCaseEntity>

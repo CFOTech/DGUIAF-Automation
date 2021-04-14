@@ -22,35 +22,35 @@ WebUI.navigateToUrl(GlobalVariable.url_BackOffice)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Page_Acceder al Sistema/inputNombre'), GlobalVariable.user)
+WebUI.setText(findTestObject('ObjectsBUIWEB/00-Page_Acceder al Sistema/inputNombre'), GlobalVariable.user)
 
-WebUI.setText(findTestObject('Page_Acceder al Sistema/inputContraseña'), GlobalVariable.password)
+WebUI.setText(findTestObject('ObjectsBUIWEB/00-Page_Acceder al Sistema/inputContraseña'), GlobalVariable.password)
 
-WebUI.click(findTestObject('Page_Acceder al Sistema/btnIngresar'))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Acceder al Sistema/btnIngresar'))
 
-WebUI.click(findTestObject('Page_Home Page/menuReportes'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/menuReportes'))
 
-WebUI.click(findTestObject('Page_Home Page/optionConsultadeRecaudaciones'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/optionConsultadeRecaudaciones'))
 
-WebUI.click(findTestObject('Page_Consulta de Recaudaciones/dropdownDependencia'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownDependencia'))
 
-WebUI.click(findTestObject('Page_Consulta de Recaudaciones Consolidadas/li_30-Cementerio Chacarita'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/li_30-Cementerio Chacarita'))
 
-WebUI.click(findTestObject('Page_Consulta de Recaudaciones/dropdownPosDesde'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownPosDesde'))
 
-WebUI.click(findTestObject('Page_Consulta de Recaudaciones/optionDesdeCementerioChacarita'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionDesdeCementerioChacarita'))
 
-WebUI.click(findTestObject('Page_Consulta de Recaudaciones/dropdownPosHasta'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownPosHasta'))
 
-WebUI.click(findTestObject('Page_Consulta de Recaudaciones/optionHastaCementerioChacarita'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionHastaCementerioChacarita'))
 
-WebUI.setText(findTestObject('Page_Consulta de Recaudaciones Consolidadas/inputFechaCbteDesde'), '1/12/2020')
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputFechaCbteDesde'), '1/12/2020')
 
-WebUI.setText(findTestObject('Page_Consulta de Recaudaciones Consolidadas/inputNroZCons'), '1936')
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputNroZCons'), '1936')
 
-WebUI.click(findTestObject('Page_Consulta de Recaudaciones/buttonBuscar'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/buttonBuscar'))
 
-WebUI.scrollToElement(findTestObject('Page_Consulta de Recaudaciones/td_footer'), 3)
+WebUI.scrollToElement(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/td_footer'), 3)
 
 WebUI.delay(3)
 

@@ -3,7 +3,7 @@
    <description></description>
    <name>inputLoginUser</name>
    <tag></tag>
-   <elementGuidId>fe70b484-c57f-4f10-92ec-a14fc7e7f2e4</elementGuidId>
+   <elementGuidId>a6b920d2-0a84-42a1-be0d-f38166dfba99</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

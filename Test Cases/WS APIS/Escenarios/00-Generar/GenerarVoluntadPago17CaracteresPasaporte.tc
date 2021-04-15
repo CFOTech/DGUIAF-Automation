@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Generar una voluntad de pago con 17 caracteres en campo &quot;Documento&quot; por método generar.</description>
+   <name>GenerarVoluntadPago17CaracteresPasaporte</name>
+   <tag>regresion</tag>
+   <comment></comment>
+   <testCaseGuid>fb46ecc3-d8c3-4a17-911e-0085e8d3d45d</testCaseGuid>
+</TestCaseEntity>

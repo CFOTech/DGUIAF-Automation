@@ -19,7 +19,7 @@ WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/span_Concepto'))
 
 WebUI.verifyElementVisible(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/input_Codigo_txtCodigo'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/input_Codigo_txtCodigo'), '07.02.28')
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/input_Codigo_txtCodigo'), CodigoConcepto)
 
 WebUI.verifyElementVisible(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/ddConceptoSeleccionado'), FailureHandling.STOP_ON_FAILURE)
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BUIAPIVerificaciondeAutoPago</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bddc9824-f02a-4c46-96f9-f6147d5d7efa</testCaseGuid>
+   <variable>
+      <defaultValue>'http://10.73.2.97:2485/pago/mediodepago?token=\r\n'</defaultValue>
+      <description></description>
+      <id>ad06cdb6-43d2-4777-901b-af6e6b4d507c</id>
+      <masked>false</masked>
+      <name>Url_AutoPago</name>
+   </variable>
+</TestCaseEntity>

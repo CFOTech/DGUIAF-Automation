@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>(Se puede usar el número de cualquier bui)</description>
-   <name>Prueba 3 - BUIAPI - BUICODDEBARRAS</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>8f977f46-325a-4b9b-afc4-bb832efe9582</testCaseGuid>
-</TestCaseEntity>

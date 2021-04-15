@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Generar una voluntad de pago con excedente de caracteres en campo &quot;Departamento&quot; por método generar.</description>
+   <name>GenerarVoluntadPagoExcedenteDepartamento</name>
+   <tag>regresion</tag>
+   <comment></comment>
+   <testCaseGuid>aa8529b7-3e8c-4267-933d-64146caf5c4d</testCaseGuid>
+</TestCaseEntity>

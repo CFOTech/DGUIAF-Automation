@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Generar una voluntad de pago con un solo caracter en campo &quot;Documento&quot; por método generar.</description>
+   <name>GenerarVoluntadPagoUnSoloCaracterDocumento</name>
+   <tag>regresion</tag>
+   <comment></comment>
+   <testCaseGuid>26313468-99ee-4dc0-971d-640d78bba067</testCaseGuid>
+</TestCaseEntity>

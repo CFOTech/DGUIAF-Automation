@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ConsultaRecaudaciones</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>856d2f31-b1e8-4177-b0db-30f5ad7ad1ca</testCaseGuid>
+   <variable>
+      <defaultValue>'30-Cementerio Chacarita'</defaultValue>
+      <description></description>
+      <id>ccdf7ff7-910d-43e0-99c1-203083f10f44</id>
+      <masked>false</masked>
+      <name>dependencia</name>
+   </variable>
+   <variable>
+      <defaultValue>'011 - Cementerio Chacarita'</defaultValue>
+      <description></description>
+      <id>fbaab59f-e664-41f6-a992-48f58162d2af</id>
+      <masked>false</masked>
+      <name>posDesde</name>
+   </variable>
+   <variable>
+      <defaultValue>'- Cualquiera -'</defaultValue>
+      <description></description>
+      <id>401757d8-e8c0-4a4a-ac60-83bfc93070fb</id>
+      <masked>false</masked>
+      <name>posHasta</name>
+   </variable>
+   <variable>
+      <defaultValue>'1/12/2020'</defaultValue>
+      <description></description>
+      <id>ed1e4763-ed15-4ada-864a-8a6ab1f0a27f</id>
+      <masked>false</masked>
+      <name>fechaCbteDesde</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5a84eb1b-7d80-45a4-be08-0d947f413122</id>
+      <masked>false</masked>
+      <name>fechaCbteHasta</name>
+   </variable>
+   <variable>
+      <defaultValue>'1936'</defaultValue>
+      <description></description>
+      <id>e126e66e-fc52-4319-b167-f2c72d30fa6f</id>
+      <masked>false</masked>
+      <name>nroZ</name>
+   </variable>
+</TestCaseEntity>

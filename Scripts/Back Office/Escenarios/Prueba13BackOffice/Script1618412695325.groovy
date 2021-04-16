@@ -17,7 +17,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Back Office/Escenarios/LoginLogout'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Back Office/Escenarios/ConsultaRecaudaciones'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Back Office/Genericos/ConsultaRecaudaciones'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Back Office/Escenarios/ConsultaRecaudacionesConsolidadas'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Back Office/Genericos/ConsultaRecaudacionesConsolidadas'), [:], FailureHandling.STOP_ON_FAILURE)
 

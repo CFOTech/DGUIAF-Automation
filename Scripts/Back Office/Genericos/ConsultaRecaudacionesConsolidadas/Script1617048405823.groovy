@@ -16,8 +16,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/menuReportes'))
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/optionConsultadeRecaudacionesConsolidadas'))
@@ -38,6 +36,4 @@ WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/
 
 WebUI.scrollToElement(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/td_footerCons'), 
     3)
-
-WebUI.closeBrowser()
 

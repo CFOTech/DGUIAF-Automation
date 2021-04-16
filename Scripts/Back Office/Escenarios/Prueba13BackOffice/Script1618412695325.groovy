@@ -15,9 +15,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Back Office/Escenarios/LoginLogout'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Back Office/Genericos/ConsultaRecaudaciones'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Back Office/Genericos/ConsultaRecaudaciones'), [('dependencia') : '30-Cementerio Chacarita'
+        , ('posDesde') : '011 - Cementerio Chacarita', ('posHasta') : '- Cualquiera -', ('fechaCbteDesde') : '1/12/2020'
+        , ('fechaCbteHasta') : '', ('nroZ') : '1936'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Back Office/Genericos/ConsultaRecaudacionesConsolidadas'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Back Office/Genericos/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Back Office/Genericos/ConsultaRecaudacionesConsolidadas'), [('dependencia') : '30-Cementerio Chacarita'
+        , ('posDesde') : '011 - Cementerio Chacarita', ('fechaCbteDesde') : '1/12/2020', ('nroZ') : '1936'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Back Office/Genericos/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

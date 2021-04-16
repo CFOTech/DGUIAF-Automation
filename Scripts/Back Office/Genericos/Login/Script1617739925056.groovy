@@ -18,20 +18,15 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //ingresa al backoffice
-WebUI.openBrowser(GlobalVariable.url_BackOffice)
+WebUI.openBrowser('')
 
-WebUI.waitForPageLoad(2)
+WebUI.navigateToUrl(GlobalVariable.url_BackOffice)
 
 WebUI.maximizeWindow()
 
-//ingresa el usuario para loguearse
-WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginUser'), GlobalVariable.user)
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Acceder al Sistema/inputNombre'), GlobalVariable.user)
 
-//ingresa la contraseña
-WebUI.sendKeys(findTestObject('ObjectsBackOffice/inputLoginPass'), GlobalVariable.password)
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Acceder al Sistema/inputContraseña'), GlobalVariable.password)
 
-WebUI.waitForElementPresent(findTestObject('ObjectsBackOffice/buttonLogin'), 3)
-
-//presiona el boton Login para loguearse
-WebUI.click(findTestObject('ObjectsBackOffice/buttonLogin'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Acceder al Sistema/btnIngresar'))
 

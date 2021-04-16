@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ConsultaRecaudacionesConsolidadas</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5129f584-b798-4231-9933-c46608f8b793</testCaseGuid>
+   <variable>
+      <defaultValue>'30-Cementerio Chacarita'</defaultValue>
+      <description></description>
+      <id>11c74dcb-2c53-4606-b358-29f54360abaf</id>
+      <masked>false</masked>
+      <name>dependencia</name>
+   </variable>
+   <variable>
+      <defaultValue>'011 - Cementerio Chacarita'</defaultValue>
+      <description></description>
+      <id>01310998-3ac8-4dd5-b18e-7f22af18168f</id>
+      <masked>false</masked>
+      <name>posDesde</name>
+   </variable>
+   <variable>
+      <defaultValue>'1/12/2020'</defaultValue>
+      <description></description>
+      <id>ae57f90c-e60a-4a90-bc40-fb87029bb195</id>
+      <masked>false</masked>
+      <name>fechaCbteDesde</name>
+   </variable>
+   <variable>
+      <defaultValue>'1936'</defaultValue>
+      <description></description>
+      <id>39ec7cdd-8b79-4f2d-b5e7-5ec74deb2c94</id>
+      <masked>false</masked>
+      <name>nroZ</name>
+   </variable>
+</TestCaseEntity>

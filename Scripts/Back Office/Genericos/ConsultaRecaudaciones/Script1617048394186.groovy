@@ -16,17 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.url_BackOffice)
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('ObjectsBUIWEB/00-Page_Acceder al Sistema/inputNombre'), GlobalVariable.user)
-
-WebUI.setText(findTestObject('ObjectsBUIWEB/00-Page_Acceder al Sistema/inputContraseña'), GlobalVariable.password)
-
-WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Acceder al Sistema/btnIngresar'))
+WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/menuReportes'))
 
@@ -34,25 +24,27 @@ WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/optionConsultade
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownDependencia'))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/li_30-Cementerio Chacarita'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liDependenciaParametrizada', [('dependencia') : dependencia]))
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownPosDesde'))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionDesdeCementerioChacarita'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionPosDesdeParametrizada', [('posDesde') : posDesde]))
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownPosHasta'))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionHastaCementerioChacarita'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionPosHastaParametrizada', [('posHasta') : posHasta]))
 
-WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputFechaCbteDesde'), '1/12/2020')
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddCajero'))
 
-WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputNroZCons'), '1936')
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionCajero', [('cajero') : cajero]))
+
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputFechaCbteDesde'), fechaCbteDesde)
+
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputNroZCons'), nroZ)
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/buttonBuscar'))
 
 WebUI.scrollToElement(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/td_footer'), 3)
-
-WebUI.delay(3)
 
 WebUI.closeBrowser()
 

@@ -34,10 +34,6 @@ WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionPosHastaParametrizada', [('posHasta') : posHasta]))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddCajero'))
-
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionCajero', [('cajero') : cajero]))
-
 WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputFechaCbteDesde'), fechaCbteDesde)
 
 WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputNroZCons'), nroZ)

@@ -45,7 +45,7 @@
       <guid>3cee25a8-eef4-424e-bb20-aad6aac3de35</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/WS APIS/Escenarios/PEAPIGetTokenSinDatosSUACI(Prueba6)</testCaseId>
+      <testCaseId>Test Cases/WS APIS/Escenarios/PEAPIGetTokenDatosSUACI(Prueba6)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>728fb30c-e3e7-45a7-9126-ab955cba56a4</guid>
@@ -75,12 +75,12 @@
       <guid>0697bebb-90d5-4232-ac4d-3d0e3492f07d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Back Office/Escenarios/Prueba13BackOffice</testCaseId>
+      <testCaseId>Test Cases/Back Office/Escenarios/BackOffice(Prueba13)</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5dfb1479-3fa8-466c-97ae-29a0246b8e0e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/Prueba16GenerarBUIDesdePortalConLogin</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/GenerarBUIDesdePortalConLogin(Prueba16)</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -15,7 +15,7 @@
       <guid>678bcfca-2c66-4db9-80ec-eb4d32738d76</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Portal de Tramites/Escenarios/04-PagoDesdePortalDePagosSinLogueo</testCaseId>
+      <testCaseId>Test Cases/Portal de Tramites/Escenarios/PagoDesdePortalDePagosSinLogueo</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ec057ef7-9f17-4c06-9a1b-f2a3688e28b8</guid>
@@ -27,6 +27,6 @@
       <guid>99da1604-0b03-4fb6-86f7-865bf81708c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/Prueba16GenerarBUIDesdePortalConLogin</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/GenerarBUIDesdePortalConLogin(Prueba16)</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

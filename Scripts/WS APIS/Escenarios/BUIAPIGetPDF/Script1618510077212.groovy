@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-respuesta = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGetPDF', [('idBoleta') : 'f8a450bf-847a-480b-a5b0-4fe13af10bbc']))
+respuesta = WS.sendRequest(findTestObject('ObjectsWSApi/ObjectsBUIAPI/BUIAPIGetPDF', [('idBoleta') : 'f8a450bf-847a-480b-a5b0-4fe13af10bbc']))
 
 WS.verifyResponseStatusCode(respuesta, 200)
 

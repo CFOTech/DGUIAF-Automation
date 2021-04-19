@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ReportesPorListado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4298f6de-a2bd-4833-936c-fe30b201a76d</testCaseGuid>
+   <variable>
+      <defaultValue>'2102-00005469'</defaultValue>
+      <description></description>
+      <id>bb5dc143-8ebc-415f-b76b-5b40de4f2839</id>
+      <masked>false</masked>
+      <name>numeroBUI</name>
+   </variable>
+</TestCaseEntity>

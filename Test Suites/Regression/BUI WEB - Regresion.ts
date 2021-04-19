@@ -21,37 +21,37 @@
       <guid>ca1e33c4-5298-4d4a-adb3-18231f7c9149</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUI sin completar todos los campos requeridos</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUISinCompletarTodosCamposRequeridos</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>700a9518-7623-4a3e-8ec5-0d4f7867190b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUI sin completar nombre y apellido</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUISinCompletarNombreYApellido</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9c80ad05-b92f-4236-aa82-fe8ba3be12bb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUI sin completar DNI</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUISinCompletarDNI</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ffebcda3-792c-406a-a8ae-4f03a5f5620f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUI sin completar direccion</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUISinCompletarDireccion</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3f299809-0c07-4bbb-ad20-1b85dfa6e3d9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUI sin completar correo electronico</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUISinCompletarCorreoElectronico</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>42b9cb5a-762d-4faf-b6ef-ed4763924cba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUI sin completar codigo postal</testCaseId>
+      <testCaseId>Test Cases/BUI WEB/Escenarios/00-GenerarBUISinCompletarCampos/BUISinCompletarCodigoPostal</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3b749132-3fdb-425f-80e2-2231214aa507</guid>

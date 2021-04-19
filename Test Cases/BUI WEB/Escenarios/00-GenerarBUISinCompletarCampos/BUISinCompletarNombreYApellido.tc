@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1. Ingresar a BUIWeb con usuario y password.
+
+2. Menu Boleta Unica / Crear Boleta.
+
+3. Seleccionar Dependencia.
+
+4. No Completar nombre y apellido
+
+5. Generar la BUI.</description>
+   <name>BUISinCompletarNombreYApellido</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6ce3987b-00d2-4191-a627-360319754bad</testCaseGuid>
+</TestCaseEntity>

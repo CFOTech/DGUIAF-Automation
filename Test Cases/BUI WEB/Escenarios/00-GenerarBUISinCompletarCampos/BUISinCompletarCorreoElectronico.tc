@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1. Ingresar a BUIWeb con usuario y password.
+
+2. Menu Boleta Unica / Crear Boleta.
+
+3. Seleccionar Dependencia.
+
+4. No Completar email
+
+5. Generar la BUI.</description>
+   <name>BUISinCompletarCorreoElectronico</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a131add5-0d6d-4690-bb9a-5b921e5f7eac</testCaseGuid>
+</TestCaseEntity>

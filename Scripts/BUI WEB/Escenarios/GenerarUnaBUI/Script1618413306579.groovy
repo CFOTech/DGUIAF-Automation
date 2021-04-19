@@ -17,15 +17,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Datos de la entidad'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosEntidad'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Datos del contribuyente'), [('dni') : '12345678'
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosContribuyente'), [('dni') : '12345678'
         , ('apellidoYNombre') : 'juan carlos', ('correoElectronico') : 'jcarlos@test.com', ('direccion') : '123', ('piso') : '1'
         , ('departamento') : '2', ('localidad') : 'caba', ('codigoPostal') : '1234'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Conceptos'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioConceptos'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Generar boleta'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GenerarBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

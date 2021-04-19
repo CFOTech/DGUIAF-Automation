@@ -22,15 +22,15 @@ import org.openqa.selenium.Keys as Keys
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //ingresa los datos para crear una boleta con el generico Boleta-Completar formulario-Datos de la entidad
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Datos de la entidad'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosEntidad'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Datos del contribuyente'), [('dni') : '12345678'
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosContribuyente'), [('dni') : '12345678'
         , ('apellidoYNombre') : 'juan carlos', ('correoElectronico') : 'jcarlos@test.com', ('direccion') : '123', ('piso') : '1'
         , ('departamento') : '2', ('localidad') : 'caba', ('codigoPostal') : '1234'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Boleta - Completar formulario - Conceptos'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioConceptos'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Generar boleta'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GenerarBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //toma el string que contiene el legajo generado 
 def text_legajo_electronico = WebUI.getText(findTestObject('ObjectsBUIWEB/textElementLegajo'))
@@ -43,10 +43,10 @@ def legajo_electronico = text_legajo_electronico.substring(12, 25)
 println(legajo_electronico)
 
 //cierra el pdf desplegado
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/PDF Aceptar Cerrar'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/PDFAceptarCerrar'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //ingresa a la opcion Otras Gestiones del menu Ingresar Boleta
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Menu-IngresarBoleta-OtrasGestiones'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/MenuIngresarBoletaOtrasGestiones'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //realiza la busqueda por numero de legajo 
 WebUI.setText(findTestObject('ObjectsBUIWEB/00-ObjectsBuscarFiltrosOtrasGestiones/input_Nmero_Numero'), legajo_electronico)
@@ -54,7 +54,7 @@ WebUI.setText(findTestObject('ObjectsBUIWEB/00-ObjectsBuscarFiltrosOtrasGestione
 WebUI.click(findTestObject('ObjectsBUIWEB/00-ObjectsBuscarFiltrosOtrasGestiones/button_Buscar'))
 
 //cancela la boleta encontrada
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Cancelar Boleta encontrada'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/CancelarBoletaEncontrada'), [:], FailureHandling.STOP_ON_FAILURE)
 
 //se desloguea de la sesion
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Logout'), [:], FailureHandling.STOP_ON_FAILURE)

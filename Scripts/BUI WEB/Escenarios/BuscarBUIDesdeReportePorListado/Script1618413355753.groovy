@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Reportes - Por Listado'), [('numeroBUI') : '2102-00005469'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/ReportesPorListado'), [('numeroBUI') : '2102-00005469'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

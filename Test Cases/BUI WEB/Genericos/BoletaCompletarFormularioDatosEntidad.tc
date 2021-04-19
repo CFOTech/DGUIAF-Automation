@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BoletaCompletarFormularioDatosEntidad</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c5eed92e-f0a4-46bc-a9ff-0f1054158e9f</testCaseGuid>
+   <variable>
+      <defaultValue>'Dirección General de Licencias'</defaultValue>
+      <description></description>
+      <id>04720a40-27c5-4b40-8ec0-0cf7bc0ad069</id>
+      <masked>false</masked>
+      <name>Dependencia</name>
+   </variable>
+</TestCaseEntity>

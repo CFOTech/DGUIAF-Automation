@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Reportes - Otras gestiones'), [('numeroBUI') : '2102-00005469'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/ReportesOtrasGestiones'), [('numeroBUI') : '2102-00005469'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 

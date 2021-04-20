@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-def respuesta = WS.sendRequest(findTestObject('ObjectsWSApi/ObjectsPEAPI/PEAPIGetTokenSinDatosSUACI', [('DomainURL') : GlobalVariable.url_PEAPI]))
+def respuesta = WS.sendRequest(findTestObject('ObjectsWSApi/PEAPI/PEAPIGetTokenSinDatosSUACI', [('DomainURL') : GlobalVariable.url_PEAPI]))
 
 WS.verifyResponseStatusCode(respuesta, 200)
 

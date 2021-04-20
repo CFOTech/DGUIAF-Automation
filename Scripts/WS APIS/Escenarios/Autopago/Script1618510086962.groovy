@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 /*---------------------------------------------------------------------------------------------
 PRIMER PASO: Se genera la boleta y se obtiene el id de la misma
 Envía un RQ al WS GenerarBUI, y guarda el response en la variable response.*/
-ResponseObject response = WS.sendRequest(findTestObject('ObjectsWSApi/ObjectsBUIAPI/BUIAPIGenerar', [('DomainURL') : GlobalVariable.url_BUIAPI]) //Print de control//print(response.getResponseText())
+ResponseObject response = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGenerar', [('DomainURL') : GlobalVariable.url_BUIAPI]) //Print de control//print(response.getResponseText())
     )
 
 //Parsea el response, el mismo contiene el id para eenviar en el proximo Request body 
@@ -35,7 +35,7 @@ String ResponseParsed = responsePreParsed.replace('"', '')
 /*---------------------------------------------------------------------------------------------*/
 //Segundo Paso: Get Token
 // Almacena en la variable 'response2' el response de de GetToken. Y el request lo envia con la variable generada arriba 'responseParsed'
-ResponseObject response2 = WS.sendRequest(findTestObject('ObjectsWSApi/ObjectsBUIAPI/BUIAPIGetToken', [('buiId') : ResponseParsed]))
+ResponseObject response2 = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGetToken', [('buiId') : ResponseParsed]))
 
 //Print de control//println(response2.getResponseBodyContent())
 //parsea el response de GET TOKEN a string.

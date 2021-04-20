@@ -29,7 +29,7 @@ def IdGenerado
 def IdGeneradoParsed
 
 //Se guarda response en variable ResponseIdGenerado. Este response contiene el ID de la boleta que necesitamos
-ResponseObject responseIdGenerado = WS.sendRequest(findTestObject('ObjectsWSApi/ObjectsBUIAPI/BUIAPIGenerar'))
+ResponseObject responseIdGenerado = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGenerar'))
 
 //Convierto a cadena de texto el response
 IdGenerado = responseIdGenerado.getResponseText().toString()
@@ -38,7 +38,7 @@ IdGenerado = responseIdGenerado.getResponseText().toString()
 IdGeneradoParsed = IdGenerado.replace('"', '')
 
 //Se guarda segundo response en variable JsonBoleta. Este Json contiene el numero de la boleta que se genera por el ID anterior.
-ResponseObject JsonBoleta = WS.sendRequest(findTestObject('ObjectsWSApi/ObjectsBUIAPI/BUIAPIGetBoletaMasPago', [('idBoleta') : IdGeneradoParsed]))
+ResponseObject JsonBoleta = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGetBoletaMasPago', [('idBoleta') : IdGeneradoParsed]))
 
 //Se convierte a cadena de texto el response
 def JsonBoletaString = JsonBoleta.getResponseText().toString()

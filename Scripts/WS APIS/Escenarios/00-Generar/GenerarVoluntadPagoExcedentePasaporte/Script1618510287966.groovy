@@ -16,7 +16,7 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-ResponseObject response = WS.sendRequest(findTestObject('ObjectsWSApi/ObjectsBUIAPI/BUIAPIGenerar(Parametrizado)', [('DomainURL') : GlobalVariable.url_BUIAPI, ('dependenciaId') : 'E856123C-57C9-7847-89BF-02FD69A5B695'
+ResponseObject response = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGenerar(Parametrizado)', [('DomainURL') : GlobalVariable.url_BUIAPI, ('dependenciaId') : 'E856123C-57C9-7847-89BF-02FD69A5B695'
             , ('nombreDependencia') : 'Dirección General de Licencias', ('codigoDependencia') : '19', ('tipoDeDocumento_ID') : 'EC9D5AE2-1873-1445-A451-15D3DB26E64C'
             , ('tipoDeDocumento_Codigo') : 'PAS', ('tipoDeDocumento_Descripcion') : 'Pasaporte', ('tipoDeDocumento_Formato') : 'PAS'
             , ('nombre') : 'Juan Carlos', ('documento') : '86969989235957573534742354593887', ('email') : 'juanca@yopmail.com', ('direccion') : 'cuba 2222'

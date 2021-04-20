@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-def respuesta = WS.sendRequest(findTestObject('ObjectsWSApi/ObjectsSIRAPI/SIRAPIGetBuByDoc'))
+def respuesta = WS.sendRequest(findTestObject('ObjectsWSApi/SIRAPI/SIRAPIGetBuByDoc'))
 
 WS.verifyResponseStatusCode(respuesta, 200)
 

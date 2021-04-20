@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequestAndVerify(findTestObject('ObjectsWSApi/ObjectsBUIAPI/BUIAPIBUICodBarras', [('DomainURL') : GlobalVariable.url_BUIAPI]))
+WS.sendRequestAndVerify(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIBUICodBarras', [('DomainURL') : GlobalVariable.url_BUIAPI]))
 

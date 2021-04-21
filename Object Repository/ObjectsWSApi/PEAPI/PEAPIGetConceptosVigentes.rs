@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>PEAPIGetTokenBUIPE</name>
+   <name>PEAPIGetConceptosVigentes</name>
    <tag></tag>
-   <elementGuidId>4e5808d0-b71b-4881-9372-5eb3219bf8a8</elementGuidId>
+   <elementGuidId>79425d73-ed56-4b38-a100-fbceebeba101</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>0</connectionTimeout>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -18,44 +18,34 @@
       <type>Main</type>
       <value>application/soap+xml</value>
    </httpHeaderProperties>
-   <katalonVersion>7.9.0</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <katalonVersion>7.9.1</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
    <restRequestMethod></restRequestMethod>
    <restUrl></restUrl>
    <serviceType>SOAP</serviceType>
    <soapBody>&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:tem=&quot;http://tempuri.org/&quot;>
    &lt;soap:Header/>
    &lt;soap:Body>
-      &lt;tem:GetTokenBUIPE>
-         &lt;tem:buId>${buiId}&lt;/tem:buId>
+      &lt;tem:GetConceptosVigentes>
          &lt;!--Optional:-->
-         &lt;tem:user>jcarlos&lt;/tem:user>
+         &lt;tem:user>duplicadossuaci&lt;/tem:user>
          &lt;!--Optional:-->
-         &lt;tem:pass>automation1234&lt;/tem:pass>
-         &lt;tem:idMiBA>BEB8CEEC272C418F96717B08EFEB8676&lt;/tem:idMiBA>
-      &lt;/tem:GetTokenBUIPE>
+         &lt;tem:pass>duplicadossuaci&lt;/tem:pass>
+      &lt;/tem:GetConceptosVigentes>
    &lt;/soap:Body>
-&lt;/soap:Envelope>
-</soapBody>
+&lt;/soap:Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint>${DomainURL}/PagosService.asmx?WSDL</soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.url_PEAPI</defaultValue>
       <description></description>
-      <id>2b744e95-2f9d-455c-9214-3563269808ae</id>
+      <id>3cd83b90-c486-4632-82b3-550ef5eaa79e</id>
       <masked>false</masked>
       <name>DomainURL</name>
-   </variables>
-   <variables>
-      <defaultValue>'e6a99365-054d-497f-88a2-09ca988cff9b'</defaultValue>
-      <description></description>
-      <id>105107d9-b8b6-48c4-ac79-a0b5e88327f3</id>
-      <masked>false</masked>
-      <name>buiId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

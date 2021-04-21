@@ -38,6 +38,13 @@
       <masked>false</masked>
       <name>DomainURL</name>
    </variables>
+   <variables>
+      <defaultValue>'77cdc8ab-0f7d-4565-bcab-fa40bad30428'</defaultValue>
+      <description></description>
+      <id>311cf647-b9fa-42ab-b3a8-f2d8a9574711</id>
+      <masked>false</masked>
+      <name>idBoleta</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

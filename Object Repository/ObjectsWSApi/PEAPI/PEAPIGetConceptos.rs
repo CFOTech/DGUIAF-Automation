@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>PEAPIGetTokenBUIPE</name>
+   <name>PEAPIGetConceptos</name>
    <tag></tag>
-   <elementGuidId>4e5808d0-b71b-4881-9372-5eb3219bf8a8</elementGuidId>
+   <elementGuidId>a25a3674-80e2-4d1d-a021-bd67deb4cf18</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
@@ -18,7 +18,7 @@
       <type>Main</type>
       <value>application/soap+xml</value>
    </httpHeaderProperties>
-   <katalonVersion>7.9.0</katalonVersion>
+   <katalonVersion>7.9.1</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <restRequestMethod></restRequestMethod>
    <restUrl></restUrl>
@@ -26,17 +26,14 @@
    <soapBody>&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:tem=&quot;http://tempuri.org/&quot;>
    &lt;soap:Header/>
    &lt;soap:Body>
-      &lt;tem:GetTokenBUIPE>
-         &lt;tem:buId>${buiId}&lt;/tem:buId>
+      &lt;tem:GetConceptos>
          &lt;!--Optional:-->
-         &lt;tem:user>jcarlos&lt;/tem:user>
+         &lt;tem:user>duplicadossuaci&lt;/tem:user>
          &lt;!--Optional:-->
-         &lt;tem:pass>automation1234&lt;/tem:pass>
-         &lt;tem:idMiBA>BEB8CEEC272C418F96717B08EFEB8676&lt;/tem:idMiBA>
-      &lt;/tem:GetTokenBUIPE>
+         &lt;tem:pass>duplicadossuaci&lt;/tem:pass>
+      &lt;/tem:GetConceptos>
    &lt;/soap:Body>
-&lt;/soap:Envelope>
-</soapBody>
+&lt;/soap:Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint>${DomainURL}/PagosService.asmx?WSDL</soapServiceEndpoint>
@@ -46,16 +43,9 @@
    <variables>
       <defaultValue>GlobalVariable.url_PEAPI</defaultValue>
       <description></description>
-      <id>2b744e95-2f9d-455c-9214-3563269808ae</id>
+      <id>52390e0d-28d7-4e86-a2e5-a968e709190f</id>
       <masked>false</masked>
       <name>DomainURL</name>
-   </variables>
-   <variables>
-      <defaultValue>'e6a99365-054d-497f-88a2-09ca988cff9b'</defaultValue>
-      <description></description>
-      <id>105107d9-b8b6-48c4-ac79-a0b5e88327f3</id>
-      <masked>false</masked>
-      <name>buiId</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -70,5 +60,5 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
-   <wsdlAddress>http://10.73.2.97:2486/PagosService.asmx?WSDL</wsdlAddress>
+   <wsdlAddress>${DomainURL}/PagosService.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

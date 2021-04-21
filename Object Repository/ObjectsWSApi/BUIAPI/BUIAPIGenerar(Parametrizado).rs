@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;Dependencia\&quot;: {\n    \&quot;ID\&quot;: \&quot;${dependenciaId}\&quot;,\n    \&quot;Nombre\&quot;: \&quot;${nombreDependencia}\&quot;,\n    \&quot;Codigo\&quot;: ${codigoDependencia},\n    \&quot;BajaFecha\&quot;: null,\n    \&quot;Items\&quot;: []\n  },\n  \&quot;IDTramiteDependencia\&quot;: \&quot;\&quot;,\n  \&quot;DependenciaID\&quot;: \&quot;${dependenciaId}\&quot;,\n  \&quot;VencimientoDependencia\&quot;: null,\n  \&quot;Contribuyente\&quot;: {\n    \&quot;TipoPersona\&quot;: \&quot;Fisica\&quot;,\n    \&quot;TipoDocumento\&quot;: {\n      \&quot;ID\&quot;: \&quot;${tipoDeDocumento_ID}\&quot;,\n      \&quot;Codigo\&quot;: \&quot;${tipoDeDocumento_Codigo}\&quot;,\n      \&quot;Descripcion\&quot;: \&quot;${tipoDeDocumento_Descripcion}\&quot;,\n      \&quot;Regex\&quot;: \&quot;${regex}\&quot;,\n      \&quot;Formato\&quot;: \&quot;${tipoDeDocumento_Formato}\&quot;\n    },\n    \&quot;Nombre\&quot;: \&quot;${nombre}\&quot;,\n    \&quot;Documento\&quot;: \&quot;${documento}\&quot;,\n    \&quot;Email\&quot;: \&quot;${email}\&quot;,\n    \&quot;Direccion\&quot;: \&quot;${direccion}\&quot;,\n    \&quot;Piso\&quot;: \&quot;${piso}\&quot;,\n    \&quot;Departamento\&quot;: \&quot;${departamento}\&quot;,\n    \&quot;Localidad\&quot;: \&quot;${localidad}\&quot;,\n    \&quot;CodigoPostal\&quot;: \&quot;${codigoPostal}\&quot;\n  },\n  \&quot;NroExpediente\&quot;: \&quot;\&quot;,\n  \&quot;Conceptos\&quot;: [\n    {\n      \&quot;ID\&quot;: \&quot;0c44c864-3bfc-4725-8253-f9b90ecaef4d\&quot;,\n      \&quot;ItemID\&quot;: \&quot;b7184412-d8a1-4304-973d-b53895790c43\&quot;,\n      \&quot;Codigo\&quot;: \&quot;07.02.28\&quot;,\n      \&quot;Descripcion\&quot;: \&quot;Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir\&quot;,\n      \&quot;Cantidad\&quot;: 1,\n      \&quot;Importe\&quot;: 1500,\n      \&quot;Vigencia\&quot;: 0,\n      \&quot;Total\&quot;: 1500,\n      \&quot;Detalles\&quot;: []\n    }\n  ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;Dependencia\&quot;: {\n    \&quot;ID\&quot;: \&quot;${dependenciaId}\&quot;,\n    \&quot;Nombre\&quot;: \&quot;${nombreDependencia}\&quot;,\n    \&quot;Codigo\&quot;: ${codigoDependencia},\n    \&quot;BajaFecha\&quot;: null,\n    \&quot;Items\&quot;: []\n  },\n  \&quot;IDTramiteDependencia\&quot;: \&quot;\&quot;,\n  \&quot;DependenciaID\&quot;: \&quot;${dependenciaId}\&quot;,\n  \&quot;VencimientoDependencia\&quot;: null,\n  \&quot;Contribuyente\&quot;: {\n    \&quot;TipoPersona\&quot;: \&quot;Fisica\&quot;,\n    \&quot;TipoDocumento\&quot;: {\n      \&quot;ID\&quot;: \&quot;${tipoDeDocumento_ID}\&quot;,\n      \&quot;Codigo\&quot;: \&quot;${tipoDeDocumento_Codigo}\&quot;,\n      \&quot;Descripcion\&quot;: \&quot;${tipoDeDocumento_Descripcion}\&quot;,\n      \&quot;Regex\&quot;: \&quot;${regex}\&quot;,\n      \&quot;Formato\&quot;: \&quot;${tipoDeDocumento_Formato}\&quot;\n    },\n    \&quot;Nombre\&quot;: \&quot;${nombre}\&quot;,\n    \&quot;Documento\&quot;: \&quot;${documento}\&quot;,\n    \&quot;Email\&quot;: \&quot;${email}\&quot;,\n    \&quot;Direccion\&quot;: \&quot;${direccion}\&quot;,\n    \&quot;Piso\&quot;: \&quot;${piso}\&quot;,\n    \&quot;Departamento\&quot;: \&quot;${departamento}\&quot;,\n    \&quot;Localidad\&quot;: \&quot;${localidad}\&quot;,\n    \&quot;CodigoPostal\&quot;: \&quot;${codigoPostal}\&quot;\n  },\n  \&quot;NroExpediente\&quot;: \&quot;\&quot;,\n  \&quot;Conceptos\&quot;: [\n    {\n      \&quot;ID\&quot;: \&quot;\&quot;,\n      \&quot;ItemID\&quot;: \&quot;${idConcepto}\&quot;,\n      \&quot;Codigo\&quot;: \&quot;${codigoConcepto}\&quot;,\n      \&quot;Descripcion\&quot;: \&quot;${descripcionConcepto}\&quot;,\n      \&quot;Cantidad\&quot;: 1,\n      \&quot;Importe\&quot;: ${importeConcepto},\n      \&quot;Vigencia\&quot;: 0,\n      \&quot;Total\&quot;: ${totalConcepto},\n      \&quot;Detalles\&quot;: []\n    }\n  ]\n}&quot;,
   &quot;contentType&quot;: &quot;text/plain&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -20,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>text/plain</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -160,6 +160,41 @@
       <id>a442f24e-fbf0-4d8f-b389-ea5d073ec549</id>
       <masked>false</masked>
       <name>regex</name>
+   </variables>
+   <variables>
+      <defaultValue>'0c44c864-3bfc-4725-8253-f9b90ecaef4d'</defaultValue>
+      <description></description>
+      <id>0a3249f9-2ba1-4633-a8b6-b3233699360a</id>
+      <masked>false</masked>
+      <name>idConcepto</name>
+   </variables>
+   <variables>
+      <defaultValue>'07.02.28'</defaultValue>
+      <description></description>
+      <id>8db5d101-b488-4fe7-8e9b-0fc1b04d51d4</id>
+      <masked>false</masked>
+      <name>codigoConcepto</name>
+   </variables>
+   <variables>
+      <defaultValue>'Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir'</defaultValue>
+      <description></description>
+      <id>12cfaf04-cb18-4362-a88a-b5c17a666113</id>
+      <masked>false</masked>
+      <name>descripcionConcepto</name>
+   </variables>
+   <variables>
+      <defaultValue>'1500'</defaultValue>
+      <description></description>
+      <id>deac63af-31bd-4940-990e-5499f9e618dd</id>
+      <masked>false</masked>
+      <name>importeConcepto</name>
+   </variables>
+   <variables>
+      <defaultValue>'1500'</defaultValue>
+      <description></description>
+      <id>945c0585-ed52-4278-8d4f-0c80a2c2b68b</id>
+      <masked>false</masked>
+      <name>totalConcepto</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

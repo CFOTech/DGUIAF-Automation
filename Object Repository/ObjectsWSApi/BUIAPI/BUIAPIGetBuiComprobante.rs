@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{ \n    \&quot;Nro\&quot;: \&quot;\&quot;, \n    \&quot;id\&quot;: \&quot;374fbbdc-d5da-431d-9ea3-9ce1d9181011\&quot;, \n    \&quot;CodBarra\&quot;: \&quot;\&quot; \n}&quot;,
+  &quot;text&quot;: &quot;{ \n    \&quot;Nro\&quot;: \&quot;\&quot;, \n    \&quot;id\&quot;: \&quot;${idBoleta}\&quot;, \n    \&quot;CodBarra\&quot;: \&quot;\&quot; \n}&quot;,
   &quot;contentType&quot;: &quot;text/plain&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -48,6 +48,13 @@
       <id>159497a0-3a69-4ba3-a59c-9fa4fef8eebb</id>
       <masked>false</masked>
       <name>DomainURL</name>
+   </variables>
+   <variables>
+      <defaultValue>'374fbbdc-d5da-431d-9ea3-9ce1d9181011'</defaultValue>
+      <description></description>
+      <id>e181aa93-f8d0-4b4f-99df-b78d04f7d501</id>
+      <masked>false</masked>
+      <name>idBoleta</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

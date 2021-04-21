@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>InformeZ</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>00562ce4-a2d1-4894-8eaa-a925cecc4733</testCaseGuid>
+   <variable>
+      <defaultValue>'9/3/2021'</defaultValue>
+      <description></description>
+      <id>38956da0-d360-4387-ab4b-918083c8a5dc</id>
+      <masked>false</masked>
+      <name>fecha</name>
+   </variable>
+   <variable>
+      <defaultValue>'099 - Banco Ciudad'</defaultValue>
+      <description></description>
+      <id>9befe1de-5878-4946-98be-c10db27e67d3</id>
+      <masked>false</masked>
+      <name>pos</name>
+   </variable>
+   <variable>
+      <defaultValue>'Ciudad, Banco (00000888)'</defaultValue>
+      <description></description>
+      <id>a7c9dee9-71f3-49f9-a27f-2114545fd0f3</id>
+      <masked>false</masked>
+      <name>cajero</name>
+   </variable>
+   <variable>
+      <defaultValue>'2665'</defaultValue>
+      <description></description>
+      <id>91d7a955-36d8-451a-8f29-d84e588c2b1f</id>
+      <masked>false</masked>
+      <name>nroz</name>
+   </variable>
+</TestCaseEntity>

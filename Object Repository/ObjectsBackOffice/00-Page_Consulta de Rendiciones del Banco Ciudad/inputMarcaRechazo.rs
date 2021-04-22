@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iframVistaPrevia</name>
+   <name>inputMarcaRechazo</name>
    <tag></tag>
-   <elementGuidId>d4871c01-1093-43f2-840f-3659465522da</elementGuidId>
+   <elementGuidId>c80569fe-a34f-4f69-8ab2-e658402c5745</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#VistaPrevia-Content</value>
+         <value>#MarcaRechazo</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//iframe[@id='VistaPrevia-Content']</value>
+         <value>//input[@id='MarcaRechazo']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,41 +21,69 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>iframe</value>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>VistaPrevia-Content</value>
+      <value>MarcaRechazo</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>MarcaRechazo</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>filtrar por marca rechazo</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;VistaPrevia-Content&quot;)</value>
+      <value>id(&quot;MarcaRechazo&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//iframe[@id='VistaPrevia-Content']</value>
+      <value>//input[@id='MarcaRechazo']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='VistaPrevia']/iframe</value>
+      <value>//div[@id='WCContainer_MarcaRechazo']/div[2]/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//iframe</value>
+      <value>//div[5]/div/div[2]/div/input</value>
    </webElementXpaths>
 </WebElementEntity>

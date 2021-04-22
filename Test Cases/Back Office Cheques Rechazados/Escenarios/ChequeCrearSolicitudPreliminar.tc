@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ChequeCrearSolicitudPreliminar</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be7c3688-a752-427b-b630-a5ba99563c19</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ChequeListarSolicitudFiltroNroCheque</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2da92d5c-ecf8-4664-b234-17672ac219b5</testCaseGuid>
+</TestCaseEntity>

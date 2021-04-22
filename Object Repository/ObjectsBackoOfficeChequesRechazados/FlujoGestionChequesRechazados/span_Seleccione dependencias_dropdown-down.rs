@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Seleccione dependencias_dropdown-down</name>
+   <tag></tag>
+   <elementGuidId>58e9bb0e-236a-4d8a-831b-0fe22c56aed3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[2]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.dropdown-down</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown-down</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-reflect-ng-class</name>
+      <type>Main</type>
+      <value>dropdown-down</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/div[@class=&quot;container&quot;]/app-authorization[1]/div[@class=&quot;row animated fadeIn contenedor&quot;]/form[@class=&quot;ng-untouched ng-dirty ng-invalid&quot;]/div[@class=&quot;row text-center&quot;]/div[@class=&quot;col-md-12 form-group margin-sup&quot;]/ng-multiselect-dropdown[@class=&quot;custom-multiSelect-form ng-untouched ng-dirty ng-invalid&quot;]/div[@class=&quot;multiselect-dropdown&quot;]/div[1]/span[@class=&quot;dropdown-btn&quot;]/span[2]/span[@class=&quot;dropdown-down&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/span</value>
+   </webElementXpaths>
+</WebElementEntity>

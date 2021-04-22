@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Seleccione usuarios_dropdown-down2</name>
+   <tag></tag>
+   <elementGuidId>a4a19a57-07d2-453c-b460-ea6699b90ef1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[4]/ng-multiselect-dropdown/div/div/span/span[2]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown-down</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-reflect-ng-class</name>
+      <type>Main</type>
+      <value>dropdown-down</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/div[@class=&quot;container&quot;]/app-authorization[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;row animated fadeIn contenedor&quot;]/form[@class=&quot;ng-untouched ng-dirty ng-invalid&quot;]/div[@class=&quot;row text-center&quot;]/div[@class=&quot;col-md-12 form-group margin-sup&quot;]/ng-multiselect-dropdown[@class=&quot;custom-multiSelect-form ng-untouched ng-dirty ng-invalid&quot;]/div[@class=&quot;multiselect-dropdown&quot;]/div[1]/span[@class=&quot;dropdown-btn&quot;]/span[2]/span[@class=&quot;dropdown-down&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/ng-multiselect-dropdown/div/div/span/span[2]/span</value>
+   </webElementXpaths>
+</WebElementEntity>

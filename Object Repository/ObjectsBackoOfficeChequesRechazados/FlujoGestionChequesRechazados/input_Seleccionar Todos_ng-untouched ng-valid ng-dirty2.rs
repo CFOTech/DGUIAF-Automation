@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Seleccionar Todos_ng-untouched ng-valid ng-dirty2</name>
+   <tag></tag>
+   <elementGuidId>311da6e2-4879-45d4-965a-c5257e5e91f7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//input[@type='text'])[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input.ng-untouched.ng-valid.ng-dirty</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>multiselect-search</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ng-reflect-model</name>
+      <type>Main</type>
+      <value>Gil Elizabeth</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Buscar</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-untouched ng-valid ng-dirty</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/app-root[1]/div[@class=&quot;container&quot;]/app-authorization[@class=&quot;ng-star-inserted&quot;]/div[@class=&quot;row animated fadeIn contenedor&quot;]/form[@class=&quot;ng-untouched ng-dirty ng-invalid&quot;]/div[@class=&quot;row text-center&quot;]/div[@class=&quot;col-md-12 form-group margin-sup&quot;]/ng-multiselect-dropdown[@class=&quot;custom-multiSelect-form ng-untouched ng-dirty ng-invalid&quot;]/div[@class=&quot;multiselect-dropdown&quot;]/div[@class=&quot;dropdown-list&quot;]/ul[@class=&quot;item1&quot;]/li[@class=&quot;filter-textbox ng-star-inserted&quot;]/input[@class=&quot;ng-untouched ng-valid ng-dirty&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//input[@type='text'])[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/ng-multiselect-dropdown/div/div[2]/ul/li[2]/input</value>
+   </webElementXpaths>
+</WebElementEntity>

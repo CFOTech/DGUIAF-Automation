@@ -28,9 +28,9 @@ WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones 
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionPosDesdeParametrizada', [('posDesde') : posDesde]))
 
-WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputFechaCbteDesde'), '1/12/2020')
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputFechaCbteDesde'), fechaCbteDesde)
 
-WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputNroZ'), '1936')
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputNroZ'), nroZ)
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/buttonBuscar'))
 

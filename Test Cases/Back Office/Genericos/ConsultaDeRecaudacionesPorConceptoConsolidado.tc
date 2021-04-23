@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ConsultaDeRecaudacionesPorConceptoConsolidado</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e64f2ee2-3caa-40fd-8479-a5d00ed2f9c3</testCaseGuid>
+   <variable>
+      <defaultValue>'02-Registro Civil '</defaultValue>
+      <description></description>
+      <id>dddfa5db-6121-476d-9996-3fc012072c3c</id>
+      <masked>false</masked>
+      <name>Dependencia</name>
+   </variable>
+   <variable>
+      <defaultValue>'002 - Subsede Comunal Nº4 - cerrado'</defaultValue>
+      <description></description>
+      <id>bceb6b82-aa51-4616-9d54-5cad4f7a6e81</id>
+      <masked>false</masked>
+      <name>Pos</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cantidad descendiente'</defaultValue>
+      <description></description>
+      <id>74f64a54-d016-4f8b-8471-3efca3376439</id>
+      <masked>false</masked>
+      <name>Ordenamiento</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>09d33261-cec6-4258-a616-993d704221f9</id>
+      <masked>false</masked>
+      <name>codigo</name>
+   </variable>
+</TestCaseEntity>

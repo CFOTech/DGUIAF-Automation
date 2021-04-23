@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>optionDependencia</name>
+   <tag></tag>
+   <elementGuidId>04ea41ce-875d-4d32-ab55-a19fb2679d95</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[contains(@class, &quot;t-item&quot;) and text()='${Dependencia}']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 't-item' and (text() = '${Dependencia]' or . = '${Dependencia]')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[contains(@class, &quot;t-item&quot;) and text()='${Dependencia}']</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>t-item</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>${Dependencia]</value>
+   </webElementProperties>
+</WebElementEntity>

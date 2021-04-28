@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BoletaCompletarFormularioConceptosConMontoVariable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd092206-4ec1-4712-afb8-05a93b545cd0</testCaseGuid>
+   <variable>
+      <defaultValue>'07.02.28'</defaultValue>
+      <description></description>
+      <id>903788da-287e-4ec6-9a88-498e088fd482</id>
+      <masked>false</masked>
+      <name>CodigoConcepto</name>
+   </variable>
+   <variable>
+      <defaultValue>'1500\r\n'</defaultValue>
+      <description></description>
+      <id>fa408a15-e578-4142-b469-6d9ba1e3fcec</id>
+      <masked>false</masked>
+      <name>MontoVariable</name>
+   </variable>
+</TestCaseEntity>

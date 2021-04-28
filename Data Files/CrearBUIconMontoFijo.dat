@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>CrearBUIconMontoFijo</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>b3ece36b-ddf8-4828-aa23-cf980298b6bc</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>01.02.41 Registro+Civil</data>
+   <data>01.05.02 Registro+Civil</data>
+   <data>01.05.04 Registro+Civil</data>
+   <data>01.05.05 Registro+Civil</data>
+   <data>01.05.06 Registro+Civil</data>
+   <data>01.02.01 Registro+Civil</data>
+   <data>01.02.03 Registro+Civil</data>
+   <data>01.02.04 Registro+Civil</data>
+   <data>01.02.07 Registro+Civil</data>
+   <data>01.02.10 Registro+Civil</data>
+   <data>01.02.11 Registro+Civil</data>
+   <data>01.02.12 Registro+Civil</data>
+   <data>01.02.13 Registro+Civil</data>
+   <data>01.02.15 Registro+Civil</data>
+   <data>01.02.22 Registro+Civil</data>
+   <data>01.02.25 Registro+Civil</data>
+   <data>01.02.27 Registro+Civil</data>
+   <data>01.02.30 Registro+Civil</data>
+   <data>01.02.34 Registro+Civil</data>
+   <data>01.02.35 Registro+Civil</data>
+   <data>01.02.39 Registro+Civil</data>
+   <data>01.02.40 Registro+Civil</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>nroConcepto</name>
+      <size>22</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>Dependencia</name>
+      <size>22</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

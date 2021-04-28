@@ -30,14 +30,21 @@ for (def CantidaddeBUI = 1; CantidaddeBUI <= 10; CantidaddeBUI++) {
 
     for (def row = 1; row <= CantidaddeBUI /* findTestData('Datos de BUI').getRowNumbers()*/ ; row++) {
         int rndConcepto = (((Math.random() * 3) + 1) as int)
+
         def rndMonto = (((Math.random() * 4000) + 1) as int)
-		print rndMonto
+
+        print(rndMonto)
+
         WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioConceptosConMontoVariable'), [('CodigoConcepto') : findTestData(
-                    'Datos de BUI').getValue(1, rndConcepto), ('MontoVariable') : rndMonto.toString()], FailureHandling.STOP_ON_FAILURE)       
+                    'Datos de BUI').getValue(1, rndConcepto), ('MontoVariable') : rndMonto.toString()], FailureHandling.STOP_ON_FAILURE)
     }
-	WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GenerarBoleta'), [:], FailureHandling.STOP_ON_FAILURE)	
-	WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/Page_Boleta Unica/btnPDFAceptar'))
+    
+    WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GenerarBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GuardarNroBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/Page_Boleta Unica/btnPDFAceptar'))
 }
 
-//WebUI.closeBrowser()
+
 

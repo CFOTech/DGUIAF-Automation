@@ -45,8 +45,8 @@
 &lt;/soap:Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
-   <soapServiceEndpoint>http://10.73.2.97:2486/PagosService.asmx</soapServiceEndpoint>
-   <soapServiceFunction></soapServiceFunction>
+   <soapServiceEndpoint>${DomainURL}/PagosService.asmx?WSDL</soapServiceEndpoint>
+   <soapServiceFunction>GetConceptos</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
@@ -74,5 +74,5 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 
 </verificationScript>
-   <wsdlAddress>http://10.73.2.97:2486/PagosService.asmx?WSDL</wsdlAddress>
+   <wsdlAddress>${DomainURL}/PagosService.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

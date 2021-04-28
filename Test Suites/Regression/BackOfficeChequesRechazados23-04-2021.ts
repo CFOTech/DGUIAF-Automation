@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>BackOfficeChequesRechazados</name>
+   <name>BackOfficeChequesRechazados23-04-2021</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -24,6 +24,18 @@
       <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/ChequeCrearSolicitudPreliminar</testCaseId>
    </testCaseLink>
    <testCaseLink>
+      <guid>574983a5-1a5d-4580-a732-82cc05dc3b33</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/ChequeListarSolicitudFiltroApellidoSolicitante</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>17d393db-8496-485d-9ca7-ed73d4c35101</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/ChequeListarSolicitudFiltroNombreSolicitante</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>629bf02a-4a71-4bf3-8e1b-999d0895faab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -36,10 +48,10 @@
       <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/ChequeListarSolicitudFiltroNroCheque</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>17d393db-8496-485d-9ca7-ed73d4c35101</guid>
+      <guid>d104bd2c-60c8-49fa-987f-e79d71a0b960</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/ChequeSolicitudListarFiltroNombreSolicitante</testCaseId>
+      <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/ChequeModificarCampoLugar</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a718fd77-3db9-4a2e-93b7-063568ab6e71</guid>
@@ -64,5 +76,17 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/GestionAutorizanteEliminarFlujo</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f2ff2942-74b6-4d35-9291-601eaab2ceea</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/ReportesChequesRechazados</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a4348ad8-048c-4342-b5c2-8e425c54d63a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Back Office Cheques Rechazados/Escenarios/ReportesChequesRechazadosSinBUI</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

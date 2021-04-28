@@ -41,10 +41,10 @@ WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/
 
 WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/button_Buscar'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/td_Juan Carlos'), 
+WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/td_Nombre'), 
     5)
 
-WebUI.verifyElementText(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/td_Juan Carlos'), 
+WebUI.verifyElementText(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/td_Nombre'), 
     'Juan Carlos')
 
 WebUI.navigateToUrl('http://10.73.100.59:1030/')

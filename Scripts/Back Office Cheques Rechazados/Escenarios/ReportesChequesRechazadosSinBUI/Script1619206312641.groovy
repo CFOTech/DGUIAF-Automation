@@ -22,31 +22,28 @@ WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHand
 WebUI.callTestCase(findTestCase('Back Office Cheques Rechazados/Genericos/IngresarOpcionChequeRechazadosMenuCobranza'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Back Office Cheques Rechazados/Genericos/IngresarOpcionGestionChequeRechazados'), [:], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.waitForElementClickable(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/button_Mostrar Filtros'), 
+WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosReportes/a_Reportes'), 
     5)
 
-WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/button_Mostrar Filtros'))
+WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosReportes/a_Reportes'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/input_Nombre Sol._form-control custom-width-13 ng-valid ng-touched ng-dirty'), 
+WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosReportes/a_Reporte Cheques Rechazados sin BUI'), 
     5)
 
-WebUI.sendKeys(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/input_Nombre Sol._form-control custom-width-13 ng-valid ng-touched ng-dirty'), 
-    'Juan Carlos')
+WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosReportes/a_Reporte Cheques Rechazados sin BUI'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/button_Buscar'), 
+WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosReportes/button_Generar Reporte'), 
     5)
 
-WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/button_Buscar'))
+WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosReportes/button_Generar Reporte'))
 
-WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosEliminar/span_Preeliminar_glyphicon glyphicon-trash'))
-
-WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosEliminar/button_Si'))
-
-WebUI.verifyElementNotPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/td_Nombre'), 
+WebUI.verifyElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosReportes/label_ID Rendicin Detalle'), 
     5)
+
+WebUI.verifyElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosReportes/div_Registros por pgina'), 
+    5)
+
+WebUI.delay(5)
 
 WebUI.navigateToUrl('http://10.73.100.59:1030/')
 

@@ -48,14 +48,14 @@ WebUI.sendKeys(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechaz
 WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosSolicitud/input_Fecha Emisin_dateEmi'), 
     5)
 
-WebUI.sendKeys(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosSolicitud/input_Fecha Emisin_dateEmi'), 
-    '01/03/2021')
+WebUI.setText(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosSolicitud/input_Fecha Emisin_dateEmi'), 
+    '01032021')
 
 WebUI.sendKeys(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosSolicitud/input_Nombre Banco Emisor_nameBank'), 
     'Galicia')
 
-WebUI.sendKeys(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosSolicitud/input_Fh recepcin cheque_dateRep'), 
-    '01/03/2021')
+WebUI.setText(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosSolicitud/input_Fh recepcin cheque_dateRep'), 
+    '01032021')
 
 WebUI.sendKeys(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosSolicitud/input_Lugar Emisin_placeEmi'), 
     'Adrogue')

@@ -10,10 +10,10 @@
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>siri1</profileName>
-            <runConfigurationId>Firefox</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Regression/BackOfficeChequesRechazados</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Regression/BackOfficeChequesRechazados23-04-2021</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

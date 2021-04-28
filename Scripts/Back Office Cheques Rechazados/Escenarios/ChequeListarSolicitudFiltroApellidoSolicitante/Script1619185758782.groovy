@@ -30,23 +30,22 @@ WebUI.waitForElementClickable(findTestObject('ObjectsBackoOfficeChequesRechazado
 
 WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/button_Mostrar Filtros'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/input_Nombre Sol._form-control custom-width-13 ng-valid ng-touched ng-dirty'), 
+WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/input_Apellido Sol._form-control custom-width-13 ng-valid ng-dirty ng-touched'), 
     5)
 
-WebUI.sendKeys(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/input_Nombre Sol._form-control custom-width-13 ng-valid ng-touched ng-dirty'), 
-    'Juan Carlos')
+WebUI.sendKeys(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/input_Apellido Sol._form-control custom-width-13 ng-valid ng-dirty ng-touched'), 
+    'Automation')
 
 WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/button_Buscar'), 
     5)
 
 WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/button_Buscar'))
 
-WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosEliminar/span_Preeliminar_glyphicon glyphicon-trash'))
-
-WebUI.click(findTestObject('ObjectsBackoOfficeChequesRechazados/ChequesRechazadosEliminar/button_Si'))
-
-WebUI.verifyElementNotPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/td_Nombre'), 
+WebUI.waitForElementPresent(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/td_Apellido'), 
     5)
+
+WebUI.verifyElementText(findTestObject('ObjectsBackoOfficeChequesRechazados/ListarFiltrarChequesRechazados/td_Apellido'), 
+    'Automation')
 
 WebUI.navigateToUrl('http://10.73.100.59:1030/')
 

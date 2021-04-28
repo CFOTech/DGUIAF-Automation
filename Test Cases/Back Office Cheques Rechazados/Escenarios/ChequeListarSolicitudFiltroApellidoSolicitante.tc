@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ChequeListarSolicitudFiltroApellidoSolicitante</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90b903c4-1436-4d93-a6d9-602afa878ada</testCaseGuid>
+</TestCaseEntity>

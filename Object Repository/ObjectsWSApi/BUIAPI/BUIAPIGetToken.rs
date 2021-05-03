@@ -50,9 +50,16 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'5c856438-9c16-40c5-a365-62d56d316c0a'</defaultValue>
+      <defaultValue>GlobalVariable.url_PEAPI</defaultValue>
       <description></description>
-      <id>834d48ab-649d-44e8-be69-504ff255311a</id>
+      <id>d763cec3-94e6-4edc-8537-06e98a356d9b</id>
+      <masked>false</masked>
+      <name>DomainURL</name>
+   </variables>
+   <variables>
+      <defaultValue>'69431614-3fd2-435f-89df-01f052944607'</defaultValue>
+      <description></description>
+      <id>f469e16b-3460-4e0b-a6e5-a333d02219e7</id>
       <masked>false</masked>
       <name>buiId</name>
    </variables>

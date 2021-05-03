@@ -18,10 +18,15 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-ResponseObject response = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGenerar', [('DomainURL') : GlobalVariable.url_BUIAPI //Print de control//print(response.getResponseText())
-        ]))
+ResponseObject response = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGenerar(Parametrizado)', [('DomainURL') : GlobalVariable.url_BUIAPI
+            , ('dependenciaId') : 'E856123C-57C9-7847-89BF-02FD69A5B695', ('nombreDependencia') : 'Dirección General de Licencias'
+            , ('codigoDependencia') : '19', ('tipoDeDocumento_ID') : 'A3853F0E-6DA5-4949-870F-D2248B0D80D7', ('tipoDeDocumento_Codigo') : 'DNI'
+            , ('tipoDeDocumento_Descripcion') : 'Documento Nacional de Identidad', ('tipoDeDocumento_Formato') : 'DNI', ('nombre') : ''
+            , ('documento') : '12345678', ('email') : 'juanca@yopmail.com', ('direccion') : 'cuba 222', ('localidad') : 'Capital Federal'
+            , ('codigoPostal') : '1428', ('piso') : '1', ('departamento') : 'a', ('regex') : '', ('idConcepto') : '0c44c864-3bfc-4725-8253-f9b90ecaef4d'
+            , ('codigoConcepto') : '07.02.28', ('descripcionConcepto') : 'Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir'
+            , ('importeConcepto') : '1500', ('totalConcepto') : '1500']))
 
 //Parsea el response, el mismo contiene el id para eenviar en el proximo Request body 
 def responsePreParsed = response.getResponseText().toString()
@@ -35,12 +40,16 @@ String ResponseParsed = responsePreParsed.replace('"', '')
 // Almacena en la variable 'response2' el response de de GetToken. Y el request lo envia con la variable generada arriba 'responseParsed'
 ResponseObject response2 = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGetToken', [('buiId') : ResponseParsed]))
 
-//Print de control//println(response2.getResponseBodyContent())
+//Print de control//
+println(response2.getResponseBodyContent())
+
 //parsea el response de GET TOKEN a string.
 def tokenParser = new XmlSlurper().parseText(response2.getResponseBodyContent())
 
 //elimina el 200ok del response para que solo quede el valor de token
 String tokenID = tokenParser.toString().replace('200OK', '')
+
+println('Token Id:' + tokenID)
 
 //concatena la URL de autopago con el token
 String urlAutopago = 'http://10.73.100.48:2485/pago/mediodepago?token=' + tokenID

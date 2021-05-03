@@ -27,7 +27,7 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Basic anNpZWJlbmJlcmc6TEtVcjN1US5sYWxhMTUxMjM0</value>
+      <value>Basic amNhcmxvczphdXRvbWF0aW9uMTIzNA==</value>
    </httpHeaderProperties>
    <katalonVersion>7.9.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>

@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;Dependencia\&quot;: {\n    \&quot;ID\&quot;: \&quot;${dependenciaId}\&quot;,\n    \&quot;Nombre\&quot;: \&quot;${nombreDependencia}\&quot;,\n    \&quot;Codigo\&quot;: ${codigoDependencia},\n    \&quot;BajaFecha\&quot;: null,\n    \&quot;Items\&quot;: []\n  },\n  \&quot;IDTramiteDependencia\&quot;: \&quot;\&quot;,\n  \&quot;DependenciaID\&quot;: \&quot;${dependenciaId}\&quot;,\n  \&quot;VencimientoDependencia\&quot;: null,\n  \&quot;Contribuyente\&quot;: {\n    \&quot;TipoPersona\&quot;: \&quot;Fisica\&quot;,\n    \&quot;TipoDocumento\&quot;: {\n      \&quot;ID\&quot;: \&quot;${tipoDeDocumento_ID}\&quot;,\n      \&quot;Codigo\&quot;: \&quot;${tipoDeDocumento_Codigo}\&quot;,\n      \&quot;Descripcion\&quot;: \&quot;${tipoDeDocumento_Descripcion}\&quot;,\n      \&quot;Regex\&quot;: \&quot;${regex}\&quot;,\n      \&quot;Formato\&quot;: \&quot;${tipoDeDocumento_Formato}\&quot;\n    },\n    \&quot;Nombre\&quot;: \&quot;${nombre}\&quot;,\n    \&quot;Documento\&quot;: \&quot;${documento}\&quot;,\n    \&quot;Email\&quot;: \&quot;${email}\&quot;,\n    \&quot;Direccion\&quot;: \&quot;${direccion}\&quot;,\n    \&quot;Piso\&quot;: \&quot;${piso}\&quot;,\n    \&quot;Departamento\&quot;: \&quot;${departamento}\&quot;,\n    \&quot;Localidad\&quot;: \&quot;${localidad}\&quot;,\n    \&quot;CodigoPostal\&quot;: \&quot;${codigoPostal}\&quot;\n  },\n  \&quot;NroExpediente\&quot;: \&quot;\&quot;,\n  \&quot;Conceptos\&quot;: [\n    {\n      \&quot;ID\&quot;: \&quot;\&quot;,\n      \&quot;ItemID\&quot;: \&quot;${idConcepto}\&quot;,\n      \&quot;Codigo\&quot;: \&quot;${codigoConcepto}\&quot;,\n      \&quot;Descripcion\&quot;: \&quot;${descripcionConcepto}\&quot;,\n      \&quot;Cantidad\&quot;: 1,\n      \&quot;Importe\&quot;: ${importeConcepto},\n      \&quot;Vigencia\&quot;: 0,\n      \&quot;Total\&quot;: ${totalConcepto},\n      \&quot;Detalles\&quot;: []\n    }\n  ]\n}&quot;,
+  &quot;text&quot;: &quot;{\n\&quot;Dependencia\&quot;: {\n\&quot;ID\&quot;: \&quot;${dependenciaId}\&quot;,\n\&quot;Nombre\&quot;: \&quot;${nombreDependencia}\&quot;,\n\&quot;Codigo\&quot;: ${codigoDependencia},\n\&quot;BajaFecha\&quot;: null,\n\&quot;Items\&quot;: []\n},\n\&quot;IDTramiteDependencia\&quot;: \&quot;\&quot;,\n\&quot;DependenciaID\&quot;: \&quot;${dependenciaId}\&quot;,\n\&quot;VencimientoDependencia\&quot;: null,\n\&quot;Contribuyente\&quot;: {\n\&quot;TipoPersona\&quot;: \&quot;Fisica\&quot;,\n\&quot;TipoDocumento\&quot;: {\n\&quot;ID\&quot;: \&quot;${tipoDeDocumento_ID}\&quot;,\n\&quot;Codigo\&quot;: \&quot;${tipoDeDocumento_Codigo}\&quot;,\n\&quot;Descripcion\&quot;: \&quot;${tipoDeDocumento_Descripcion}\&quot;,\n\&quot;Regex\&quot;: \&quot;${regex}\&quot;,\n\&quot;Formato\&quot;: \&quot;${tipoDeDocumento_Formato}\&quot;\n},\n\&quot;Nombre\&quot;: \&quot;${nombre}\&quot;,\n\&quot;Documento\&quot;: \&quot;${documento}\&quot;,\n\&quot;Email\&quot;: \&quot;${email}\&quot;,\n\&quot;Direccion\&quot;: \&quot;${direccion}\&quot;,\n\&quot;Piso\&quot;: \&quot;${piso}\&quot;,\n\&quot;Departamento\&quot;: \&quot;${departamento}\&quot;,\n\&quot;Localidad\&quot;: \&quot;${localidad}\&quot;,\n\&quot;CodigoPostal\&quot;: \&quot;${codigoPostal}\&quot;\n},\n\&quot;NroExpediente\&quot;: \&quot;\&quot;,\n\&quot;Conceptos\&quot;: [\n{\n\&quot;ID\&quot;: \&quot;\&quot;,\n\&quot;ItemID\&quot;: \&quot;${idConcepto}\&quot;,\n\&quot;Codigo\&quot;: \&quot;${codigoConcepto}\&quot;,\n\&quot;Descripcion\&quot;: \&quot;${descripcionConcepto}\&quot;,\n\&quot;Cantidad\&quot;: 1,\n\&quot;Importe\&quot;: ${importeConcepto},\n\&quot;Vigencia\&quot;: 0,\n\&quot;Total\&quot;: ${totalConcepto},\n\&quot;Detalles\&quot;: []\n}\n]\n}&quot;,
   &quot;contentType&quot;: &quot;text/plain&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -20,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
+      <value>application/json</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -162,7 +162,7 @@
       <name>regex</name>
    </variables>
    <variables>
-      <defaultValue>'0c44c864-3bfc-4725-8253-f9b90ecaef4d'</defaultValue>
+      <defaultValue>'B7184412-D8A1-4304-973D-B53895790C43'</defaultValue>
       <description></description>
       <id>0a3249f9-2ba1-4633-a8b6-b3233699360a</id>
       <masked>false</masked>

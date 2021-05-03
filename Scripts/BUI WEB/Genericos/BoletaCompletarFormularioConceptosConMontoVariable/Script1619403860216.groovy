@@ -16,18 +16,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/00-Page_Boleta Unica/span_Concepto'))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica (1)/span_Concepto'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/00-Page_Boleta Unica/input_Codigo_txtCodigo'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica (1)/input_Codigo_txtCodigo'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Object Repository/00-Page_Boleta Unica/input_Codigo_txtCodigo'), CodigoConcepto)
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica (1)/input_Codigo_txtCodigo'), CodigoConcepto)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/00-Page_Boleta Unica/ddConceptoSeleccionado'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica (1)/ddConceptoSeleccionado'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/00-Page_Boleta Unica/ddConceptoSeleccionado'))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica (1)/ddConceptoSeleccionado'))
 
-WebUI.setText(findTestObject('Object Repository/Page_Boleta Unica/input_Valor_txtValor'), MontoVariable)
+WebUI.setText(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica (2)/input_Valor_txtValor'), MontoVariable)
 
 //WebUI.setText(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/input_Codigo_txtCodigo'), '07.02.28 Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir')
-WebUI.click(findTestObject('Object Repository/00-Page_Boleta Unica/button_Agregar'))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica (1)/button_Agregar'))
 

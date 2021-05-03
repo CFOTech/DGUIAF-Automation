@@ -24,15 +24,15 @@ import internal.GlobalVariable as GlobalVariable
 PRIMER PASO: Se genera la boleta y se obtiene el id de la misma
 Envía un RQ al WS GenerarBUI, y guarda el response en la variable response.*/
 ResponseObject response = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGenerar', [('DomainURL') : GlobalVariable.url_BUIAPI]) //Print de control//print(response.getResponseText())
-    )
+  )
 
-//Parsea el response, el mismo contiene el id para eenviar en el proximo Request body 
+//Parsea el response, el mismo contiene el id para eenviar en el proximo Request body
 def responsePreParsed = response.getResponseText().toString()
 
 //elimina las comillas del string extraído del response de GENERAR
 String ResponseParsed = responsePreParsed.replace('"', '')
 
-//Print de control // print(ResponseParsed) 
+//Print de control // print(ResponseParsed)
 /*---------------------------------------------------------------------------------------------*/
 //Segundo Paso: Get Token
 // Almacena en la variable 'response2' el response de de GetToken. Y el request lo envia con la variable generada arriba 'responseParsed'
@@ -51,4 +51,3 @@ String urlAutopago = 'http://10.73.2.97:2485/pago/mediodepago?token=' + tokenID
 //print urlAutopago //Print de control
 //LLama al TC de auto pago donde verificará la existencia de la opción 'Autopago'
 WebUI.callTestCase(findTestCase('WS APIS/Escenarios/BUIAPIVerificaciondeAutoPago'), [('Url_AutoPago') : urlAutopago], FailureHandling.STOP_ON_FAILURE)
-

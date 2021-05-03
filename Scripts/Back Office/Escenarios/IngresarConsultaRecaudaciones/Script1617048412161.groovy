@@ -20,16 +20,16 @@ import org.openqa.selenium.Keys as Keys
 //ingresa al back office
 WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('ObjectsBackOffice/menuReportes'), 5)
+WebUI.waitForElementClickable(findTestObject('ObjectsBackOffice/00-MenuReportes/menuReportes'), 5)
 
 //despliega el menu reporte
-WebUI.click(findTestObject('ObjectsBackOffice/menuReportes'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-MenuReportes/menuReportes'))
 
 //selecciona la opcion Consulta Recaudaciones de reporte
-WebUI.click(findTestObject('ObjectsBackOffice/menuReportesConsultaRecaudaciones'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-MenuReportes/menuReportesConsultaRecaudaciones'))
 
 //valida que se muestra el boton Buscar de consulta Recaudaciones
-WebUI.verifyElementPresent(findTestObject('ObjectsBackOffice/buttonBuscarConsultaRecaudaciones'), 5)
+WebUI.verifyElementPresent(findTestObject('ObjectsBackOffice/00-MenuReportes/buttonBuscarConsultaRecaudaciones'), 5)
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

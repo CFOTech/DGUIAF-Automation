@@ -19,9 +19,9 @@ WebUI.openBrowser(GlobalVariable.url_Portal)
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('ObjectsPortal/divTerminosYCondiciones'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsTerminosYCondiciones/divTerminosYCondiciones'))
 
-WebUI.verifyElementVisible(findTestObject('ObjectsPortal/pTerminosYCondiciones'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('ObjectsPortal/00-ObjectsTerminosYCondiciones/pTerminosYCondiciones'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementVisible(findTestObject('ObjectsPortal/pTerminosYCondicionesIngles'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementVisible(findTestObject('ObjectsPortal/00-ObjectsTerminosYCondiciones/pTerminosYCondicionesIngles'), FailureHandling.STOP_ON_FAILURE)
 

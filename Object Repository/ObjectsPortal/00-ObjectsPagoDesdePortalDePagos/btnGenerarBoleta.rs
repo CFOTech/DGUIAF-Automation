@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnGoogleSiguiente01</name>
+   <name>btnGenerarBoleta</name>
    <tag></tag>
-   <elementGuidId>91e9b8f0-2443-4ba3-a6fb-e204cdd46db9</elementGuidId>
+   <elementGuidId>c26e1482-9d58-4788-a94d-aa89c26c0296</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]</value>
+         <value>//*[@id=&quot;crearBoletaCard&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]</value>
+      <value>//*[@id=&quot;crearBoletaCard&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

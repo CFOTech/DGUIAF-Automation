@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -19,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //presiona el boton que cierra el modal que muestra el PDF
-WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/btnPDFAceptarCerrar'), 5)
+WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/00-ObjectsPDFAceptarCerrar/btnPDFAceptarCerrar'), 5)
 
-WebUI.click(findTestObject('ObjectsBUIWEB/btnPDFAceptarCerrar'))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-ObjectsPDFAceptarCerrar/btnPDFAceptarCerrar'))
 

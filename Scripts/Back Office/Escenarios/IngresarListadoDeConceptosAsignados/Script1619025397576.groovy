@@ -19,10 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementClickable(findTestObject('ObjectsBackOffice/menuReportes'), 5)
+WebUI.waitForElementClickable(findTestObject('ObjectsBackOffice/00-MenuReportes/menuReportes'), 5)
 
 //despliega el menu reporte
-WebUI.click(findTestObject('ObjectsBackOffice/menuReportes'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-MenuReportes/menuReportes'))
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/ListadoDeConceptosAsignados'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -23,17 +23,17 @@ WebUI.waitForPageLoad(2)
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('ObjectsPortal/btnGenerarBoleta'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagos/btnGenerarBoleta'))
 
-WebUI.click(findTestObject('ObjectsPortal/btnIngresarMiBA'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagos/btnIngresarMiBA'))
 
-WebUI.click(findTestObject('ObjectsPortal/btnGoogleContinuar'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagos/btnGoogleContinuar'))
 
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpGoogleUserMail'), GlobalVariable.portal_user_mail)
+WebUI.sendKeys(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagos/inpGoogleUserMail'), GlobalVariable.portal_user_mail)
 
-WebUI.click(findTestObject('ObjectsPortal/btnGoogleSiguiente01'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagos/btnGoogleSiguiente01'))
 
-WebUI.sendKeys(findTestObject('ObjectsPortal/inpGoogleUserPass'), GlobalVariable.portal_user_pass)
+WebUI.sendKeys(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagos/inpGoogleUserPass'), GlobalVariable.portal_user_pass)
 
-WebUI.click(findTestObject('ObjectsPortal/btnGoogleSiguiente02'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagos/btnGoogleSiguiente02'))
 

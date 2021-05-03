@@ -19,7 +19,7 @@ WebUI.openBrowser(GlobalVariable.url_Portal)
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('ObjectsPortal/menuPreguntasFrecuentes'))
+WebUI.click(findTestObject('ObjectsPortal/00-Preguntas Frecuentes/menuPreguntasFrecuentes'))
 
 WebUI.click(findTestObject('ObjectsPortal/00-Preguntas Frecuentes/optionPregunta01'))
 

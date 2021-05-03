@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnIngresarMiBA</name>
+   <name>inpGoogleUserMail</name>
    <tag></tag>
-   <elementGuidId>832fca3b-4a20-4d9c-b698-18c19eb793fa</elementGuidId>
+   <elementGuidId>3ac82f99-05d1-446a-a2fe-fabb0f9ed9e6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>/html/body/div[3]/div/div[3]/div[2]/div/div/a</value>
+         <value>//*[@id=&quot;identifierId&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[3]/div/div[3]/div[2]/div/div/a</value>
+      <value>//*[@id=&quot;identifierId&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

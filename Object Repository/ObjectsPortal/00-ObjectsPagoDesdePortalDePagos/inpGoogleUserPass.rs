@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btnGenerarBoleta</name>
+   <name>inpGoogleUserPass</name>
    <tag></tag>
-   <elementGuidId>c26e1482-9d58-4788-a94d-aa89c26c0296</elementGuidId>
+   <elementGuidId>2b57b1d5-67f7-4a4d-93e3-4e36ba777790</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;crearBoletaCard&quot;]</value>
+         <value>/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;crearBoletaCard&quot;]</value>
+      <value>/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input</value>
    </webElementProperties>
 </WebElementEntity>

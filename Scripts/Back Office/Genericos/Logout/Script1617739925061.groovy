@@ -18,9 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 //se desloguea
-WebUI.waitForElementPresent(findTestObject('ObjectsBackOffice/buttonLogout'), 5)
+WebUI.waitForElementPresent(findTestObject('ObjectsBackOffice/00-LoginLogout/buttonLogout'), 5)
 
-WebUI.click(findTestObject('ObjectsBackOffice/buttonLogout'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-LoginLogout/buttonLogout'))
 
 //cierra el navegador
 WebUI.closeBrowser()

@@ -26,23 +26,23 @@ WebUI.waitForPageLoad(5)
 WebUI.maximizeWindow()
 
 //selecciona el tramite para generar la boleta 'Direccion General de Defensa'
-WebUI.click(findTestObject('ObjectsPortal/linkDireccionGeneralDefensa'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagosSinLogueo/linkDireccionGeneralDefensa'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkEvaluacionSistema'), 5)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagosSinLogueo/linkEvaluacionSistema'), 5)
 
 //selecciona la subopccion 'Evaluacion de sistema'
-WebUI.click(findTestObject('ObjectsPortal/linkEvaluacionSistema'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagosSinLogueo/linkEvaluacionSistema'))
 
 //presiona el boton continuar en la pantalla de conceptos a incluir
-WebUI.click(findTestObject('ObjectsPortal/btnContinuar'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagosSinLogueo/btnContinuar'))
 
 //presiona el boton confirmar los datos y continuar
-WebUI.click(findTestObject('ObjectsPortal/btnConfirmarContinuar'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagosSinLogueo/btnConfirmarContinuar'))
 
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/linkPagarElectronicamente'), 120)
+WebUI.waitForElementPresent(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagosSinLogueo/linkPagarElectronicamente'), 120)
 
 //ingresa al link para pagar la boleta de forma online
-WebUI.click(findTestObject('ObjectsPortal/linkPagarElectronicamente'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagosSinLogueo/linkPagarElectronicamente'))
 
 //selecciona como va a pagar, con tarjeta de credito visa
 WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioTarjetaVisa'), 120)
@@ -50,7 +50,7 @@ WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioTarjetaVisa'), 12
 WebUI.click(findTestObject('ObjectsPortal/radioTarjetaVisa'))
 
 //Presiona el boton Realizar pago
-WebUI.click(findTestObject('ObjectsPortal/btnRealizarPago'))
+WebUI.click(findTestObject('ObjectsPortal/00-ObjectsPagoDesdePortalDePagosSinLogueo/btnRealizarPago'))
 
 //Carga los datos de la tarjeta
 WebUI.waitForElementPresent(findTestObject('ObjectsPortal/inputPagoNumeroTarjeta'), 120)

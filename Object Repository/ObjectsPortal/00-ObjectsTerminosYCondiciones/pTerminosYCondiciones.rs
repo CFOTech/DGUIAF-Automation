@@ -6,12 +6,12 @@
    <elementGuidId>ae7430d2-7d3a-4b4a-a374-4f938cc93aaf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='PREGUNTAS FRECUENTES'])[1]/following::p[1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>p</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='PREGUNTAS FRECUENTES'])[1]/following::p[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

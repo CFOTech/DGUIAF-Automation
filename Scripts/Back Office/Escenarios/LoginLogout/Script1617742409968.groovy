@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('ObjectsBackOffice/labelBienvenido'), 5)
+WebUI.verifyElementPresent(findTestObject('ObjectsBackOffice/00-LoginLogout/labelBienvenido'), 5)
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

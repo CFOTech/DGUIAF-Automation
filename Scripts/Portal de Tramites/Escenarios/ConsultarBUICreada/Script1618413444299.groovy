@@ -45,7 +45,7 @@ WebUI.setText(findTestObject('ObjectsPortal/inpFechaHasta'), fechaHOY)
 
 WebUI.click(findTestObject('ObjectsPortal/btnBuscarBoletaCreada'))
 
-WebUI.scrollToElement(findTestObject('ObjectsPortal/divTerminosYCondiciones'), 0)
+WebUI.scrollToElement(findTestObject('ObjectsPortal/00-ObjectsTerminosYCondiciones/divTerminosYCondiciones'), 0)
 
 WebUI.verifyTextPresent('Pagada', false)
 

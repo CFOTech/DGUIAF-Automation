@@ -23,7 +23,7 @@ import java.lang.Integer as Integer
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('ObjectsBackOffice/menuReportes'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-MenuReportes/menuReportes'))
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/optionConsultaDeRecaudacionesPorConceptoConsolidado'))
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>AgenciaTresdigitos</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>2abbaf25-f971-46ed-990d-07d5a5806239</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>500.01.01</data>
+   <data>500.01.02</data>
+   <data>500.01.03</data>
+   <data>500.01.04</data>
+   <data>500.01.05</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>nroConcepto</name>
+      <size>1</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

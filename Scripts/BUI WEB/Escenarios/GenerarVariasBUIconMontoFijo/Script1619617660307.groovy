@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-for (def CantidaddeBUI = 1; CantidaddeBUI <= 10; CantidaddeBUI++) {
+for (def CantidaddeBUI = 1; CantidaddeBUI <= 5; CantidaddeBUI++) {
     WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosEntidad'), [('Dependencia') : 'Registro Civil '], 
         FailureHandling.STOP_ON_FAILURE)
 
@@ -28,18 +28,24 @@ for (def CantidaddeBUI = 1; CantidaddeBUI <= 10; CantidaddeBUI++) {
             , ('departamento') : '2', ('localidad') : 'caba', ('codigoPostal') : '1234'], FailureHandling.STOP_ON_FAILURE)
 
     for (def row = 1; row <= CantidaddeBUI /* findTestData('Datos de BUI').getRowNumbers()*/ ; row++) {
-        int rndConcepto = (((Math.random() * 3) + 1) as int)
+        int cantConceptos = findTestData('CrearBUIconMontoFijo').getRowNumbers()
+
+        int rndConcepto = (((Math.random() * cantConceptos) + 1) as int)
+
+        println(rndConcepto)
 
         //        def rndMonto = (((Math.random() * 4000) + 1) as int)
         //      print(rndMonto)
         WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioConceptos'), [('CodigoConcepto') : findTestData(
-                    'CrearBUIconMontoFijo').getValue(1, 1)], FailureHandling.STOP_ON_FAILURE)
+                    'CrearBUIconMontoFijo').getValue(1, rndConcepto)], FailureHandling.STOP_ON_FAILURE)
     }
     
     WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GenerarBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
-	
-	WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GuardarNroBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/Page_Boleta Unica/btnPDFAceptar'))
+    WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GuardarNroBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
+	
+    WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/btnPDFAceptar'))
 }
+
+WebUI.closeBrowser()
 

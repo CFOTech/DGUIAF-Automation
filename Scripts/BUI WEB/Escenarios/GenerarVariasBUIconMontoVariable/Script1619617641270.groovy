@@ -20,7 +20,7 @@ import java.lang.Math as Math
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-for (def CantidaddeBUI = 1; CantidaddeBUI <= 10; CantidaddeBUI++) {
+for (def CantidaddeBUI = 1; CantidaddeBUI <= 2; CantidaddeBUI++) {
     WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosEntidad'), [('Dependencia') : 'DAI - Edificio del Plata'], 
         FailureHandling.STOP_ON_FAILURE)
 
@@ -43,7 +43,7 @@ for (def CantidaddeBUI = 1; CantidaddeBUI <= 10; CantidaddeBUI++) {
 	
 	WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GuardarNroBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/Page_Boleta Unica/btnPDFAceptar'))
+    WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/btnPDFAceptar'))
 }
 
 

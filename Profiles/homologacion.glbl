@@ -79,4 +79,14 @@
       <initValue>'4517 7210 0485 6075'</initValue>
       <name>portal_tarjeta_debito</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'27960335363'</initValue>
+      <name>portal_user_agip_cuit</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'11111111'</initValue>
+      <name>portal_user_agip_pass</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

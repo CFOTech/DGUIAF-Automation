@@ -21,8 +21,6 @@ import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.lang.Integer as Integer
 
-WebUI.callTestCase(findTestCase('Back Office/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
 WebUI.click(findTestObject('ObjectsBackOffice/00-MenuReportes/menuReportes'))
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/optionConsultaDeRecaudacionesPorConceptoConsolidado'))
@@ -78,6 +76,9 @@ WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/liOrdenamiento', [('ordenamiento') : Ordenamiento]))
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/btnBuscar'))
+
+WebUI.waitForElementClickable(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/divFooter'), 
+    3)
 
 WebUI.scrollToElement(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/divFooter'), 4)
 

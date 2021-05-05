@@ -9,6 +9,7 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -16,27 +17,30 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/menuReportes'))
+WebUI.delay(5)
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_InformeZ/optionInforme Z'))
+Date today = new Date()
 
-WebUI.sendKeys(findTestObject('ObjectsBackOffice/00-Page_InformeZ/inputFecha'), fecha)
+String todaysDate = today.format('dd-mm-yyyy')
 
-WebUI.sendKeys(findTestObject('ObjectsBackOffice/00-Page_InformeZ/inputFecha'), Keys.chord(Keys.ENTER))
+String nowTime = today.format('HH-MM-SS')
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_InformeZ/dropdownPos'))
+println(todaysDate)
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_InformeZ/liPos', [('pos') : pos]))
+println(nowTime)
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_InformeZ/dropdownCajero'))
+//println('Nombre nuevo valor: ' + nombreNuevo)
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_InformeZ/liCajero', [('cajero') : cajero]))
+def nombreArchivo = ((('Img' + todaysDate) + '_') + nowTime) + '.png'
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_InformeZ/dropdownNroZ'))
+println(nombreArchivo)
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_InformeZ/liNroZ', [('nroz') : nroz]))
+//println "Nombre nuevo archivo: " + nombreArchivo2
+def path = 'Images/' + nombreArchivo
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_InformeZ/btnVistaPrevia'))
+println('Nombre path:' + path)
 
-WebUI.callTestCase(findTestCase('Back Office/Genericos/ScrollFinalDePagina'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot(path)
+
+WebUI.delay(5)
 

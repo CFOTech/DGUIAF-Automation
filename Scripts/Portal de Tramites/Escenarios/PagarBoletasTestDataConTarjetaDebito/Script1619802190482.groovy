@@ -22,10 +22,9 @@ import org.apache.poi.xssf.usermodel.XSSFRow as XSSFRow
 import org.apache.poi.xssf.usermodel.XSSFSheet as XSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFWorkbook as XSSFWorkbook
 
-
-def pathEjecucion = System.getProperty("user.dir")
+def pathEjecucion = System.getProperty('user.dir')
 def pathExcel = pathEjecucion + '\\Boletas.xlsx'
-def pathRelativo = pathExcel.replace('\\','\\\\')
+def pathRelativo = pathExcel.replace('\\', '\\\\')
 
 FileInputStream fileInputPath = new FileInputStream(pathRelativo)
 XSSFWorkbook workbook = new XSSFWorkbook(fileInputPath)
@@ -34,66 +33,41 @@ XSSFSheet sheet = workbook.getSheet('Creadas')
 int cantBoletas = sheet.getLastRowNum()
 
 WebUI.callTestCase(findTestCase('Portal de Tramites/Genericos/LoginAGIP'), [:], FailureHandling.STOP_ON_FAILURE)
-
 def URLConIDdeLogueo = WebUI.getUrl()
 
-for (int i=1; i<=cantBoletas; i++) {
-	def filaEstado = sheet.getRow(i).getCell(2).getStringCellValue()
-	println(filaEstado)
-	if(filaEstado == 'Creada') {
-		String nroBoleta = sheet.getRow(i).getCell(0).getStringCellValue()
-		println(nroBoleta)
-		
-		WebUI.waitForElementClickable(findTestObject('ObjectsPortal/btnPagarUnaBoleta(BUI)'), 5)
-		
-		WebUI.click(findTestObject('ObjectsPortal/btnPagarUnaBoleta(BUI)'))
-		
-		WebUI.setText(findTestObject('ObjectsPortal/inpNroDeBoleta'), nroBoleta)
-		
-		WebUI.click(findTestObject('ObjectsPortal/checkIncluirBoletas'))
-		
-		WebUI.click(findTestObject('ObjectsPortal/btnBuscarBoleta'))
-		
-		WebUI.click(findTestObject('ObjectsPortal/btnPagar'))
-		
-		WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioVisaDebito'), 50)
+for (int i = 1; i <= cantBoletas; i++) {
+    def filaEstado = sheet.getRow(i).getCell(2).getStringCellValue()
 
-		WebUI.click(findTestObject('ObjectsPortal/radioVisaDebito'))
-		
-		WebUI.click(findTestObject('ObjectsPortal/btnRealizarPagoMakePayment'))
-		
-		WebUI.setText(findTestObject('ObjectsPortal/inputPagoNumeroTarjeta'), GlobalVariable.portal_tarjeta_debito)
-		
-		WebUI.setText(findTestObject('ObjectsPortal/inputPagoNombre'), GlobalVariable.portal_tarjeta_nombre)
-		
-		WebUI.setText(findTestObject('ObjectsPortal/inputPagoFechaVencimiento'), GlobalVariable.portal_tarjeta_fecha_vencimiento)
-		
-		WebUI.setText(findTestObject('ObjectsPortal/inputPagoCodigoSeguridad'), GlobalVariable.portal_tarjeta_codigo_seguridad)
-		
-		WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuarNext'))
-		
-		WebUI.verifyElementPresent(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 30)
-		
-		WebUI.verifyElementText(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 'La transacción ha sido APROBADA / Transaction APPROVED')
-		
-		sheet.getRow(i).createCell(2).setCellValue('Pagada')
-		
-		WebUI.navigateToUrl(URLConIDdeLogueo)
-		
-		WebUI.click(findTestObject('ObjectsPortal/btnINICIO'))
-		
-	}
+    println(filaEstado)
+
+    if (filaEstado == 'Creada') {
+        String nroBoletaActual = sheet.getRow(i).getCell(0).getStringCellValue()
+
+        println(nroBoletaActual)
+
+		WebUI.callTestCase(findTestCase('Portal de Tramites/Genericos/PagarBUIConTarjetaDebito'), [('nroBoleta') : nroBoletaActual], FailureHandling.STOP_ON_FAILURE)
+
+        sheet.getRow(i).createCell(2).setCellValue('Pagada')
+
+        WebUI.navigateToUrl(URLConIDdeLogueo)
+
+        WebUI.click(findTestObject('ObjectsPortal/btnINICIO'))
+    }
 }
 
 WebUI.closeBrowser()
+
 def date = new Date()
 String fechaActual = date.format('dd-MM-yyyy')
 
-pathExcelSalida = pathEjecucion + '\\BoletasPagadasDebito '+ fechaActual +'.xlsx'
+pathExcelSalida = (((pathEjecucion + '\\BoletasPagadasDebito ') + fechaActual) + '.xlsx')
+
 FileOutputStream fileOutputPath = new FileOutputStream(pathExcelSalida)
 workbook.write(fileOutputPath)
 fileOutputPath.close()
+
 File excelConSoloBoletasCreadas = new File(pathRelativo)
 excelConSoloBoletasCreadas.delete()
+
 
 

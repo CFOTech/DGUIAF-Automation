@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PagarBUIConTarjetaCredito</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b5761c93-6159-4a4b-9e16-6635917b69ae</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6f681f03-2d62-40d5-86dd-e5241645fc77</id>
+      <masked>false</masked>
+      <name>nroBoleta</name>
+   </variable>
+</TestCaseEntity>

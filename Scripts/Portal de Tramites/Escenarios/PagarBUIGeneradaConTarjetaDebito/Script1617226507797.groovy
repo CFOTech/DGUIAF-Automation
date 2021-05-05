@@ -52,41 +52,10 @@ Object result = slurper.parseText(JsonBoletaString)
 //Se hace un print para verificar en tiempo de ejecucion que se obtenga el numero de forma correcta
 println(result.Numero)
 
-WebUI.openBrowser(GlobalVariable.url_Portal_Sin_Logueo)
+WebUI.callTestCase(findTestCase('Portal de Tramites/Genericos/LoginAGIP'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('ObjectsPortal/btnINICIO'))
-
-WebUI.click(findTestObject('ObjectsPortal/btnPagarUnaBoleta(BUI)'))
-
-WebUI.setText(findTestObject('ObjectsPortal/inpNroDeBoleta'), result.Numero)
-
-WebUI.click(findTestObject('ObjectsPortal/checkIncluirBoletas'))
-
-WebUI.click(findTestObject('ObjectsPortal/btnBuscarBoleta'))
-
-WebUI.click(findTestObject('ObjectsPortal/btnPagar'))
-
-WebUI.waitForElementPresent(findTestObject('ObjectsPortal/radioVisaDebito'), 50)
-
-WebUI.click(findTestObject('ObjectsPortal/radioVisaDebito'))
-
-WebUI.click(findTestObject('ObjectsPortal/btnRealizarPagoMakePayment'))
-
-WebUI.setText(findTestObject('ObjectsPortal/inputPagoNumeroTarjeta'), GlobalVariable.portal_tarjeta_debito)
-
-WebUI.setText(findTestObject('ObjectsPortal/inputPagoNombre'), GlobalVariable.portal_tarjeta_nombre)
-
-WebUI.setText(findTestObject('ObjectsPortal/inputPagoFechaVencimiento'), GlobalVariable.portal_tarjeta_fecha_vencimiento)
-
-WebUI.setText(findTestObject('ObjectsPortal/inputPagoCodigoSeguridad'), GlobalVariable.portal_tarjeta_codigo_seguridad)
-
-WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuarNext'))
-
-WebUI.delay(10)
-
-WebUI.verifyElementText(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 'La transacción ha sido APROBADA / Transaction APPROVED')
+WebUI.callTestCase(findTestCase('Portal de Tramites/Genericos/PagarBUIConTarjetaDebito'), [('nroBoleta') : result.Numero],
+	FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

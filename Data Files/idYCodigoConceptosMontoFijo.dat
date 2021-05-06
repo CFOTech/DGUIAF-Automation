@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>idYCodigoConceptosMontoFijo</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>c3e96eb1-a89d-4eea-965b-007141baf02f</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>01.02.41 1CFFABF4-1966-421E-B3CE-5930A9F09876</data>
+   <data>01.05.02 D9301CED-B1BA-42BE-A919-8E96F3C403D7</data>
+   <data>01.05.04 54D54318-A195-460C-8640-FC513EE49F9A</data>
+   <data>01.05.05 A2FE7345-4CFD-426A-B8AF-586C991D06E7</data>
+   <data>01.05.06 9F577F81-A88D-430B-BB57-4692F2E66B61</data>
+   <data>01.02.01 0E8791E0-D23D-495F-AF65-C3AA1C6B4175</data>
+   <data>01.02.03 2304F37B-7FBE-4755-8A3A-2130921267B3</data>
+   <data>01.02.04 35B279B7-5FB6-4061-B245-598A94F41194</data>
+   <data>01.02.07 58E3A6B7-0A33-40AD-A053-5E87A5AAAEBE</data>
+   <data>01.02.10 B25CE2AB-865E-4204-A254-A4BA8205B4D8</data>
+   <data>01.02.11 534D1534-DBA8-4BD2-9C08-B51BEF842BFA</data>
+   <data>01.02.12 86F7DC31-641D-485E-9BF8-6083BA3AEC72</data>
+   <data>01.02.13 B672D3EA-7338-4218-9C94-749D420460D1</data>
+   <data>01.02.15 E1574B58-849F-4BD7-AE13-1D8FA4B88219</data>
+   <data>01.02.22 2F40B5A1-FA6A-4CFB-B8F6-A39A546E08B3</data>
+   <data>01.02.25 1EE525DF-4838-4CC2-9CEB-319FF3DA9A94</data>
+   <data>01.02.27 7E52B18D-0191-4CA6-BEC4-DC8076534140</data>
+   <data>01.02.30 101304FF-C1EA-4D3A-8602-1098764F8054</data>
+   <data>01.02.34 B6955415-ECEE-4C7C-88A4-0A0A19C0EB00</data>
+   <data>01.02.35 FF1027D4-6512-49E9-916E-89F4D8B5E1D5</data>
+   <data>01.02.39 B9387309-4119-4629-8BCB-92111F78C132</data>
+   <data>01.02.40 FD18C2FA7549BF4CA160F00A76832C74</data>
+   <data>null null</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>Codigo</name>
+      <size>23</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>ID</name>
+      <size>23</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

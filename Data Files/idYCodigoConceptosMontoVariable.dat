@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>idYCodigoConceptosMontoVariable</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>70ac8ed8-ceb7-416c-8800-49afce8f37aa</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>03.04.01 7EA902EC-DF5B-494F-9D5B-BBF22E4910A8</data>
+   <data>03.04.02 A69F132D-7254-4953-A690-5B30F4BB243F</data>
+   <data>03.04.03 7B8796E3-C67E-4369-9964-771B2681B1AA</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>Codigo</name>
+      <size>3</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>ID</name>
+      <size>3</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

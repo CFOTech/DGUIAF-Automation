@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>idYCodigoConceptosAPRA</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>77c55431-6527-45ba-937b-7f4c730b571d</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>20.03.02 8E60BE10-F7CF-4A2D-9564-2DF56F46A862</data>
+   <data>20.03.03 40A7D4EC-9CDD-4118-8ACF-060AFFF3A5F6</data>
+   <data>20.03.04 0EBC9DC5-91C0-44B4-9876-EB5CFC7AE6C7</data>
+   <data>20.03.09 1B8EEFBE-1881-44AB-8520-6D29A468768D</data>
+   <data>20.03.11 A2DA2E31-3F29-41A8-82D3-365B0C1F9C8C</data>
+   <data>20.03.15 EF9A3159-9861-42A1-BFED-7263AB0E293C</data>
+   <data>20.03.22 F2EB49C7-451F-43AC-B5ED-3DDDFD325C47</data>
+   <data>20.03.27 70D22004-5E2F-40AC-83AA-054AE80FBF98</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>Codigo</name>
+      <size>9</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>ID</name>
+      <size>9</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>GenerarBUIVariosConceptosGenerico</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>71f85e88-53eb-4027-8776-4fe12a6dfe0c</testCaseGuid>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>82bc6694-2e9d-4939-9680-495e173fc9a3</id>
+      <masked>false</masked>
+      <name>CantidadConceptos</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>262ddff7-588a-477d-8f6e-48fdda55a098</id>
+      <masked>false</masked>
+      <name>idBUI</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.url_MedioPago</defaultValue>
+      <description></description>
+      <id>33edb4a7-ed81-40be-ae5a-0e199d9a99c0</id>
+      <masked>false</masked>
+      <name>urlBuiWeb</name>
+   </variable>
+</TestCaseEntity>

@@ -16,13 +16,13 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Basic dHJpdmVyYTowMTAyMTk5MS4u</value>
+      <value>Basic amNhcmxvczphdXRvbWF0aW9uMTIzNA==</value>
    </httpHeaderProperties>
    <katalonVersion>7.9.1</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>http://10.73.2.97:6748/service/api/BUI/getBoletaMasPago?ID=${idBoleta}</restUrl>
+   <restUrl>${DomainURL}getBoletaMasPago?ID=${idBoleta}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -32,11 +32,18 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'ade810fb-9d45-40e5-aa47-aeed6bc9d15d'</defaultValue>
+      <defaultValue>'c54e8b6a-a869-4924-9c37-45a3ba324ccf'</defaultValue>
       <description></description>
       <id>08c54d1a-8217-4fa7-b600-4b6eeeb27903</id>
       <masked>false</masked>
       <name>idBoleta</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.url_BUIAPI</defaultValue>
+      <description></description>
+      <id>ca3329d9-6895-4139-8897-49effdd7ba31</id>
+      <masked>false</masked>
+      <name>DomainURL</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

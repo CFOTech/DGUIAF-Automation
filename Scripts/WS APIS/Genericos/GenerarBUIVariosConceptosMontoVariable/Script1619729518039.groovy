@@ -23,24 +23,25 @@ import groovy.json.JsonSlurper as JsonSlurper
 import java.util.Date as Date
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.lang.Math
-import groovy.json.* //libreria para usar jsonOutPut
+import groovy.json.*
 
 def slurper = new JsonSlurper()
 def jsonConceptosArray = new Object[CantidadConceptos]
 def randomNumber
+def randomNumberMonto
 def id
 def codigoConcepto
 
 def jsonGenerarString = "{" +
   "\"Dependencia\": { " +
-    "\"ID\": \"E856123C-57C9-7847-89BF-02FD69A5B695\"," +
-   " \"Nombre\": \"Dirección General de Licencias\", " +
-   "\"Codigo\": 19," +
+    "\"ID\": \" " + idDependencia + "\"," +
+   " \"Nombre\": \" " + nombreDependencia + "\", " +
+   "\"Codigo\":" + codigoDependencia + "," +
    "\"BajaFecha\": null," +
    "\"Items\": []" +
   "}," +
   "\"IDTramiteDependencia\": \"\"," +
-  "\"DependenciaID\": \"E856123C-57C9-7847-89BF-02FD69A5B695\"," +
+  "\"DependenciaID\": \" " + idDependencia + " \"," +
   "\"VencimientoDependencia\": null," +
   "\"Contribuyente\": {" +
     "\"TipoPersona\": \"Fisica\"," +
@@ -63,18 +64,18 @@ def jsonGenerarString = "{" +
   "\"NroExpediente\": \"\","
 
 def jsonComienzoConceptosString = "\"Conceptos\": ["
-    
+	
 def jsonConceptosString = "{" +
-      "\"ID\": \"0c44c864-3bfc-4725-8253-f9b90ecaef4d\"," +
-      "\"ItemID\": \"b7184412-d8a1-4304-973d-b53895790c43\"," +
-      "\"Codigo\": \"07.02.28\"," +
-      //"\"Descripcion\": \"Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir\"," +
-      "\"Cantidad\": 1," +
-      "\"Importe\": 1500," +
-      "\"Vigencia\": 0," +
-      "\"Total\": 1500," +
-      "\"Detalles\": []" +
-    "}"
+	  //"\"ID\": \"0c44c864-3bfc-4725-8253-f9b90ecaef4d\"," +
+	  "\"ItemID\": \"b7184412-d8a1-4304-973d-b53895790c43\"," +
+	  "\"Codigo\": \"07.02.28\"," +
+	  //"\"Descripcion\": \"Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir\"," +
+	  "\"Cantidad\": 1," +
+	  "\"Importe\": 1500," +
+	  "\"Vigencia\": 0," +
+	  "\"Total\": 1500," +
+	  "\"Detalles\": []" +
+	"}"
 	
 def jsonCierreString = "]" + "}"
 
@@ -85,25 +86,29 @@ def jsonConceptos = slurper.parseText(jsonConceptosString)
 // La variable "CantidadConceptos" es una variable local, la cual va a cambiarse manualmente segun la cantidad de conceptos que se quieran agregar a la boleta.
 for(def i=0 ; i < CantidadConceptos ; i++)
 {
-	//Genero un numero random de 0 a 22, ya que el tamaño de la tabla de datos tiene 22 posiciones.
-	randomNumber = (int)(Math.random() * 23)
+	//Genero un numero random desde 0 hasta el maximo de filas que tenga el test data
+	randomNumber = (int)(Math.random() * filasTestData)
+	randomNumberMonto = (int)((Math.random() * 3000)+1) //Genero un numero random para el monto que será variable
 	//Agrego una condicion de que, si random devuelve 0, cambiarlo por el valor 1, ya que la tabla de datos no tiene posicion 0
 	if(randomNumber == 0)
 		{
 			randomNumber = 1
 		}
-	//print de prueba
+	//prints de prueba
 	println randomNumber
+	println randomNumberMonto
 	
 	//Capturo el valor de la tabla de datos
-	codigoConcepto = findTestData('idYCodigoConceptosMontoFijo').getValue(1, randomNumber)
-	id = findTestData('idYCodigoConceptosMontoFijo').getValue(2, randomNumber)
+	codigoConcepto = findTestData(testData).getValue(1, randomNumber)
+	id = findTestData(testData).getValue(2, randomNumber)
 	
 	//Con el valor anteriormente capturado, seteo los campos originales del JSON
 	jsonConceptos.Codigo = codigoConcepto
-	jsonConceptos.ID = id
+	jsonConceptos.ItemID = id
+	jsonConceptos.Importe = randomNumberMonto
+	jsonConceptos.Total = randomNumberMonto
 	
-	//Convierto cada JSON de conceptos en string para poder luego concatenarlo
+	//Convierto cada JSON de conceptos en json para poder luego concatenarlo
 	jsonConceptosArray[i] = JsonOutput.toJson(jsonConceptos)
 }
 
@@ -120,6 +125,8 @@ for(i=0 ; i < CantidadConceptos ; i++)
 //Concateno todas las partes y armo el Json a usar
 jsonGenerarCompleto = jsonGenerarString + jsonConceptosUnidos + jsonCierreString
 
+println jsonGenerarCompleto
+
 jsonGenerarLegible = JsonOutput.prettyPrint(jsonGenerarCompleto) //prettyPrint me devuelve el json en forma de arbol para poder utilizarlo en el body
 //print de prueba
 println jsonGenerarLegible
@@ -130,5 +137,3 @@ idBUI = responseBuiConConceptos.getResponseText()
 
 //print de prueba
 println responseBuiConConceptos.getResponseText()
-
-

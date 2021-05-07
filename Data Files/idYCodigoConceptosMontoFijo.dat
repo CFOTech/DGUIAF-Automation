@@ -30,16 +30,15 @@
    <data>01.02.35 FF1027D4-6512-49E9-916E-89F4D8B5E1D5</data>
    <data>01.02.39 B9387309-4119-4629-8BCB-92111F78C132</data>
    <data>01.02.40 FD18C2FA7549BF4CA160F00A76832C74</data>
-   <data>null null</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>Codigo</name>
-      <size>23</size>
+      <size>22</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>ID</name>
-      <size>23</size>
+      <size>22</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>

@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>GenerarBUIVariosConceptosGenerico</name>
+   <name>GenerarBUIVariosConceptosMontoVariable</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>eaf23d9f-6365-42e5-9fda-136719a57d5b</testCaseGuid>
+   <testCaseGuid>95c95e11-9152-430a-bb54-cc961f861214</testCaseGuid>
    <variable>
       <defaultValue>2</defaultValue>
       <description>Modificar valor segun la cantidad de conceptos que se quieran agregar</description>
-      <id>8f8982fb-9234-4296-a5d7-5e4207f9ec26</id>
+      <id>75a8578d-152a-4eb6-baf3-62c155a7a127</id>
       <masked>false</masked>
       <name>CantidadConceptos</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description>Se modifica por script</description>
-      <id>4a951756-be19-45a9-87db-20f0fe19f831</id>
+      <id>a2d1f779-2efc-436d-a530-e96b10993245</id>
       <masked>false</masked>
       <name>idBUI</name>
    </variable>
    <variable>
-      <defaultValue>'08012035-d347-024d-9e0f-705e251a577c'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>3c26064f-2520-4645-aeba-ef3ebc36debc</id>
+      <id>7b6e19f1-382d-4cbe-9a35-54843cf85af5</id>
       <masked>false</masked>
       <name>idDependencia</name>
    </variable>
    <variable>
-      <defaultValue>'APRA - Agencia de Protección Ambiental'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>07055fe9-c38d-4a5a-9903-9be3dc8182ab</id>
+      <id>6a49a7ee-7ad7-4ada-a90c-4634389ce78b</id>
       <masked>false</masked>
       <name>nombreDependencia</name>
    </variable>
    <variable>
-      <defaultValue>'44'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
-      <id>63d31c20-b819-420d-bcd5-39a505bcf22f</id>
+      <id>82f0d5d4-6c3c-4e5b-8491-799aa3d3ddab</id>
       <masked>false</masked>
       <name>codigoDependencia</name>
    </variable>
    <variable>
-      <defaultValue>'idYCodigoConceptosAPRA'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description>El valor se va a modificar en base al testdata que se va a utilizar. Cada dependencia tiene su TestData</description>
-      <id>5d546dbc-df66-4d18-acaa-d4c612ff0556</id>
+      <id>799cb23f-42e9-4b6a-a2c2-44dc6474f4d2</id>
       <masked>false</masked>
       <name>testData</name>
    </variable>
    <variable>
-      <defaultValue>8</defaultValue>
+      <defaultValue>0</defaultValue>
       <description>El valor se va a modificar teniendo en cuenta la cantidad de filas que tenga el testdata a utilizar</description>
-      <id>a6bd848d-b09a-4c12-989d-16a024cda9a8</id>
+      <id>1b85d1fd-2c5a-4c56-a69e-b9c6a36d6d7c</id>
       <masked>false</masked>
       <name>filasTestData</name>
    </variable>

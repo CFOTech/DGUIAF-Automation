@@ -33,48 +33,48 @@ def codigoConcepto
 
 def jsonGenerarString = "{" +
   "\"Dependencia\": { " +
-	"\"ID\": \"08012035-d347-024d-9e0f-705e251a577c\"," +
-   " \"Nombre\": \"APRA - Agencia de Protección Ambiental\", " +
-   "\"Codigo\": 44," +
+    "\"ID\": \" " + idDependencia + "\"," +
+   " \"Nombre\": \" " + nombreDependencia + "\", " +
+   "\"Codigo\":" + codigoDependencia + "," +
    "\"BajaFecha\": null," +
    "\"Items\": []" +
   "}," +
   "\"IDTramiteDependencia\": \"\"," +
-  "\"DependenciaID\": \"08012035-d347-024d-9e0f-705e251a577c\"," +
+  "\"DependenciaID\": \" " + idDependencia + " \"," +
   "\"VencimientoDependencia\": null," +
   "\"Contribuyente\": {" +
-	"\"TipoPersona\": \"Fisica\"," +
-	"\"TipoDocumento\": {" +
-	  "\"ID\": \"a3853f0e-6da5-4949-870f-d2248b0d80d7\"," +
-	  "\"Codigo\": \"DNI\"," +
-	  "\"Descripcion\": \"Documento Nacional de Identidad\"," +
-	  "\"Regex\": \"\"," +
-	  "\"Formato\": \"DNI\"" +
-	"}," +
-	"\"Nombre\": \"John Voltar\"," +
-	"\"Documento\": \"36244389\"," +
-	"\"Email\": \"qasirsirsir@gmail.com\"," +
-	"\"Direccion\": \"roosevelt\","+
-	"\"Piso\": \"\"," +
-	"\"Departamento\": \"1\"," +
-	"\"Localidad\": \"Capital federal\"," +
-	"\"CodigoPostal\": \"1414\" " +
+    "\"TipoPersona\": \"Fisica\"," +
+    "\"TipoDocumento\": {" +
+      "\"ID\": \"a3853f0e-6da5-4949-870f-d2248b0d80d7\"," +
+      "\"Codigo\": \"DNI\"," +
+      "\"Descripcion\": \"Documento Nacional de Identidad\"," +
+      "\"Regex\": \"\"," +
+      "\"Formato\": \"DNI\"" +
+    "}," +
+    "\"Nombre\": \"John Voltar\"," +
+    "\"Documento\": \"36244389\"," +
+    "\"Email\": \"qasirsirsir@gmail.com\"," +
+    "\"Direccion\": \"roosevelt\","+
+    "\"Piso\": \"\"," +
+    "\"Departamento\": \"1\"," +
+    "\"Localidad\": \"Capital federal\"," +
+    "\"CodigoPostal\": \"1414\" " +
   "}," +
   "\"NroExpediente\": \"\","
 
 def jsonComienzoConceptosString = "\"Conceptos\": ["
-	
+    
 def jsonConceptosString = "{" +
-	  //"\"ID\": \"0c44c864-3bfc-4725-8253-f9b90ecaef4d\"," +
-	  "\"ItemID\": \"b7184412-d8a1-4304-973d-b53895790c43\"," +
-	  "\"Codigo\": \"07.02.28\"," +
-	  //"\"Descripcion\": \"Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir\"," +
-	  "\"Cantidad\": 1," +
-	  //"\"Importe\": 1500," +
-	  //"\"Vigencia\": 0," +
-	  //"\"Total\": 1500," +
-	  "\"Detalles\": []" +
-	"}"
+      //"\"ID\": \"0c44c864-3bfc-4725-8253-f9b90ecaef4d\"," +
+      "\"ItemID\": \"b7184412-d8a1-4304-973d-b53895790c43\"," +
+      "\"Codigo\": \"07.02.28\"," +
+      //"\"Descripcion\": \"Habilit/formación de cond. De vehic. Otorgamientos de licencias de conducir\"," +
+      "\"Cantidad\": 1," +
+      //"\"Importe\": 1500," +
+      //"\"Vigencia\": 0," +
+      //"\"Total\": 1500," +
+      "\"Detalles\": []" +
+    "}"
 	
 def jsonCierreString = "]" + "}"
 
@@ -85,8 +85,8 @@ def jsonConceptos = slurper.parseText(jsonConceptosString)
 // La variable "CantidadConceptos" es una variable local, la cual va a cambiarse manualmente segun la cantidad de conceptos que se quieran agregar a la boleta.
 for(def i=0 ; i < CantidadConceptos ; i++)
 {
-	//Genero un numero random de 0 a 22, ya que el tamaño de la tabla de datos tiene 22 posiciones.
-	randomNumber = (int)(Math.random() * 8)
+	//Genero un numero random desde 0 hasta el maximo de filas que tenga el test data
+	randomNumber = (int)(Math.random() * filasTestData)
 	//Agrego una condicion de que, si random devuelve 0, cambiarlo por el valor 1, ya que la tabla de datos no tiene posicion 0
 	if(randomNumber == 0)
 		{
@@ -96,8 +96,8 @@ for(def i=0 ; i < CantidadConceptos ; i++)
 	println randomNumber
 	
 	//Capturo el valor de la tabla de datos
-	codigoConcepto = findTestData('idYCodigoConceptosAPRA').getValue(1, randomNumber)
-	id = findTestData('idYCodigoConceptosAPRA').getValue(2, randomNumber)
+	codigoConcepto = findTestData(testData).getValue(1, randomNumber)
+	id = findTestData(testData).getValue(2, randomNumber)
 	
 	//Con el valor anteriormente capturado, seteo los campos originales del JSON
 	jsonConceptos.Codigo = codigoConcepto
@@ -126,15 +126,15 @@ println jsonGenerarLegible
 
 ResponseObject responseBuiConConceptos = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGenerarVariosConceptos', [('request_body') : jsonGenerarLegible]))
 
-//Guardo response en variable local para futuros "CallTest"
 idBUI = responseBuiConConceptos.getResponseText()
 
 //print de prueba
 println responseBuiConConceptos.getResponseText()
 
-//Uso response de "BUIAPIGenerarVariosConceptos" 
+//Uso response de "BUIAPIGenerarVariosConceptos"
 def responseBuiConConceptosReplace = responseBuiConConceptos.getResponseText().replace('"','')
 
+//print de prueba
 println responseBuiConConceptosReplace
 
 ResponseObject responseToken = WS.sendRequest(findTestObject('ObjectsWSApi/BUIAPI/BUIAPIGetToken', [('buiId') : responseBuiConConceptosReplace]))
@@ -144,12 +144,7 @@ def tokenParser = new XmlSlurper().parseText(responseToken.getResponseBodyConten
 //le saco el "200OK" para que solo quede el token y asi poder concatenarlo a la URL
 String tokenID = tokenParser.toString().replace('200OK', '')
 
-
-//Concateno URL con el token para poder ingresar al pago de la boleta
-//String urlAutopago = urlBuiWeb + tokenID			/*Comentado porque no funciona variable*/
-//println urlBuiWeb					
-
-String urlAutopago = 'http://10.73.100.48:2485/pago/mediodepago?token=' + tokenID
+String urlAutopago = urlMedioPago + tokenID
 
 WebUI.openBrowser(urlAutopago)
 
@@ -180,39 +175,3 @@ WebUI.click(findTestObject('ObjectsPortal/btnPagoContinuarNext'))
 WebUI.verifyElementPresent(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 30)
 
 WebUI.verifyElementText(findTestObject('ObjectsPortal/labelTransaccionRealizada'), 'La transacción ha sido APROBADA / Transaction APPROVED')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

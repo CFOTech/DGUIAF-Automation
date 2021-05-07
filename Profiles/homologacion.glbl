@@ -89,4 +89,9 @@
       <initValue>'11111111'</initValue>
       <name>portal_user_agip_pass</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.2.97:2485/pago/mediodepago?token='</initValue>
+      <name>url_MedioPago</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

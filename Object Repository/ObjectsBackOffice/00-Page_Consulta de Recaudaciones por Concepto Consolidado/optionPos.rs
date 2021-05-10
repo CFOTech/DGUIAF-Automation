@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = '${Pos}' or . = '${Pos}')]</value>
+         <value>//li[(text() = '${Pos}' or . = '${Pos}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -22,5 +21,12 @@
       <name>text</name>
       <type>Main</type>
       <value>${Pos}</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
    </webElementProperties>
 </WebElementEntity>

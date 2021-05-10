@@ -11,9 +11,23 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//li[(text() = '${Ordenamiento}' or . = '${Ordenamiento}')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>${Ordenamiento}</value>
+   </webElementProperties>
 </WebElementEntity>

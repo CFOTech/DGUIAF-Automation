@@ -63,22 +63,29 @@ WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudacione
 WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/inpCodigo'), 
     codigo)
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/dropdownDependencia'))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/liDependencia', [('dependencia') : Dependencia]))
+if( (!Dependencia.toString().contains('Cualquiera') && Dependencia != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/ddDependencia'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/optionDependencia', [('Dependencia') : Dependencia]))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/dropdownPos'))
+}
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/liPos', [('pos') : Pos]))
+if( (!Pos.toString().contains('Cualquiera') && Pos != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/ddPos'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/optionPos', [('Pos') : Pos]))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/dropdownOrdenamiento'))
+}
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/liOrdenamiento', [('ordenamiento') : Ordenamiento]))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/ddOrdenamiento'))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/btnBuscar'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/optionOrdenamiento', 
+        [('Ordenamiento') : Ordenamiento]))
+
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/btnBuscar'))
 
 WebUI.waitForElementClickable(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/divFooter'), 
     3)
 
-WebUI.scrollToElement(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto/divFooter'), 4)
+WebUI.scrollToElement(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones por Concepto Consolidado/divFooter'), 
+    4)
 

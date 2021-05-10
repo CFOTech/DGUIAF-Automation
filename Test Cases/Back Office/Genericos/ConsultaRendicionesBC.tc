@@ -20,7 +20,7 @@
       <name>codBarras</name>
    </variable>
    <variable>
-      <defaultValue>'Efectivo'</defaultValue>
+      <defaultValue>'- Todos -'</defaultValue>
       <description></description>
       <id>2486f080-ddb5-441e-8940-3c0d842e91bc</id>
       <masked>false</masked>

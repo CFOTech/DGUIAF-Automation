@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@class='t-input form-control' and ../../../..//label[contains(text(),'Fecha Cbte Desde:')]]</value>
+         <value>//input[@class='t-input form-control' and @type='text' and ../../../..//label[contains(text(),'Fecha Cbte Desde:')]]</value>
       </entry>
       <entry>
          <key>CSS</key>

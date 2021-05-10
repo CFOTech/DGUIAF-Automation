@@ -20,21 +20,58 @@ WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/menuReportes'))
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/optionConsultadeRecaudaciones'))
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownDependencia'))
+if( (!dependencia.toString().contains('Cualquiera') && dependencia != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddDependencia'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liDependencia', [('dependencia') : dependencia]))
+}
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liDependenciaParametrizada', [('dependencia') : dependencia]))
+if( (!posDesde.toString().contains('Cualquiera') && posDesde != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddPosDesde'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liPosDesde', [('posDesde') : posDesde]))
+}
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownPosDesde'))
+if( (!posHasta.toString().contains('Cualquiera') && posHasta != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddPosHasta'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liPosHasta', [('posHasta') : posHasta]))
+}
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionPosDesdeParametrizada', [('posDesde') : posDesde]))
+if( (!cajero.toString().contains('Ninguno') && cajero != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddCajero'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liCajero', [('cajero') : cajero]))
+}
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/dropdownPosHasta'))
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputFechaCbteDesde'), fechaCbteDesde)
 
-WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/optionPosHastaParametrizada', [('posHasta') : posHasta]))
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputFechaCbteHasta'), fechaCbteHasta)
 
-WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputFechaCbteDesde'), fechaCbteDesde)
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputFechaProcDesde'), fechaProcDesde)
 
-WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones Consolidadas/inputNroZCons'), nroZ)
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputFechaProcHasta'), fechaProcHasta)
+
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputFechaCreaZDesde'), fechaCreaZDesde)
+
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputFechaCreaZHasta'), fechaCreaZHasta)
+
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputNroZ'), nroZ)
+
+if( (!medioPago.toString().contains('Ninguno') && medioPago != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddMedioPago'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liMedioPago', [('medioPago') : medioPago]))
+}
+
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputCodigo'), codigo)
+
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/inputTramite'), tramite)
+
+if( (!canalDeCobro.toString().contains('Ninguno') && canalDeCobro != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddCanaldeCobro'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liCanalDeCobro', [('canalDeCobro') : canalDeCobro]))
+}
+
+if( (!ordenamiento.toString().contains('Ninguno') && ordenamiento != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/ddOrdenamiento'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/liOrdenamiento', [('ordenamiento') : ordenamiento]))
+}
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Consulta de Recaudaciones/buttonBuscar'))
 

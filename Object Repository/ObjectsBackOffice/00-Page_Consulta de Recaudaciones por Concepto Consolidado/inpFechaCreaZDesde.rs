@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='t-widget t-datepicker']/div[@class='t-picker-wrap']/input[@id='C7a1c7426bd97450ea737d3de90e09b5d']</value>
+         <value>//input[@class='t-input form-control' and @type='text' and ../../../..//label[contains(text(),'Fecha Crea Z Desde:')]]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

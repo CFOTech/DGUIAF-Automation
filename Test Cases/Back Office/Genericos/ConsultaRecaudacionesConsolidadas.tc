@@ -17,7 +17,7 @@
       <description></description>
       <id>01310998-3ac8-4dd5-b18e-7f22af18168f</id>
       <masked>false</masked>
-      <name>posDesde</name>
+      <name>pos</name>
    </variable>
    <variable>
       <defaultValue>'1/12/2020'</defaultValue>
@@ -32,5 +32,75 @@
       <id>39ec7cdd-8b79-4f2d-b5e7-5ec74deb2c94</id>
       <masked>false</masked>
       <name>nroZ</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bfcbeb83-9f7c-49d1-82ac-439d3585a0e9</id>
+      <masked>false</masked>
+      <name>cajero</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7b1048e9-1a06-40d6-955c-373e17175edb</id>
+      <masked>false</masked>
+      <name>fechaCbteHasta</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>80c4de53-712f-4c16-8903-abae18528864</id>
+      <masked>false</masked>
+      <name>fechaProcDesde</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>26bfb32d-3e24-4f69-bcce-6ea3bf3c404e</id>
+      <masked>false</masked>
+      <name>fechaProcHasta</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>377a547c-8842-4d94-9ff8-b7e3d0bfaef9</id>
+      <masked>false</masked>
+      <name>fechaCreaZDesde</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ea5c6990-2e69-402c-aebe-4915b5e2f9cd</id>
+      <masked>false</masked>
+      <name>fechaCreaZHasta</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>94020116-2fdb-4275-a7a8-75d2be494ebb</id>
+      <masked>false</masked>
+      <name>medioPago</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a17869d7-d7d6-4bda-a706-ca54cb699013</id>
+      <masked>false</masked>
+      <name>codigo</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>032508b9-8863-420b-84fe-c6c45bfd41b4</id>
+      <masked>false</masked>
+      <name>tramite</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>59b435d6-f838-4b37-8205-7fa1bb146948</id>
+      <masked>false</masked>
+      <name>ordenamiento</name>
    </variable>
 </TestCaseEntity>

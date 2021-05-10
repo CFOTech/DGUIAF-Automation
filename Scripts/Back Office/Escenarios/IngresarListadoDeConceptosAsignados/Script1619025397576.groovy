@@ -24,7 +24,8 @@ WebUI.waitForElementClickable(findTestObject('ObjectsBackOffice/00-MenuReportes/
 //despliega el menu reporte
 WebUI.click(findTestObject('ObjectsBackOffice/00-MenuReportes/menuReportes'))
 
-WebUI.callTestCase(findTestCase('Back Office/Genericos/ListadoDeConceptosAsignados'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Back Office/Genericos/ListadoDeConceptosAsignados'), [('codigo') : '01.02.00', ('dependencia') : '02-Registro Civil '
+        , ('ordenamiento') : 'Concepto Código - Dependencia Código'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 

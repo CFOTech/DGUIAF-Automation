@@ -19,15 +19,16 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/optionConceptosAsignados'))
 
-WebUI.setText(findTestObject('ObjectsBackOffice/Page_Listado de Conceptos Asignados/inputCodigo'), '')
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Listado de Conceptos Asignados/inputCodigo'), codigo)
 
-WebUI.click(findTestObject('ObjectsBackOffice/Page_Listado de Conceptos Asignados/ddDependencia'))
+if( (!dependencia.toString().contains('Cualquiera') && dependencia != '')) {
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Listado de Conceptos Asignados/ddDependencia'))
+	WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Listado de Conceptos Asignados/liDependencia', [('dependencia') : dependencia]))
+}
 
-WebUI.click(findTestObject('ObjectsBackOffice/Page_Listado de Conceptos Asignados/optionDireccionGraldeTesoreria'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Listado de Conceptos Asignados/ddOrdenamiento'))
 
-WebUI.click(findTestObject('ObjectsBackOffice/Page_Listado de Conceptos Asignados/ddOrdenamiento'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Listado de Conceptos Asignados/liOrdenamiento', [('ordenamiento') : ordenamiento]))
 
-WebUI.click(findTestObject('ObjectsBackOffice/Page_Listado de Conceptos Asignados/optionConceptoCdigoDependenciaCdigo'))
-
-WebUI.click(findTestObject('ObjectsBackOffice/Page_Listado de Conceptos Asignados/btnBuscar'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Listado de Conceptos Asignados/btnBuscar'))
 

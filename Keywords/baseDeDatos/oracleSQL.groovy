@@ -33,6 +33,8 @@ public class oracleSQL {
 	@Keyword
 	def conectarDB(String host, String nombreServicio, String puerto, String usuario, String pass) {
 
+		if(connection != null && !connection.isClosed()) connection.close()
+
 		String conn = "jdbc:oracle:thin:@//" + host + ":" + puerto + "/" + nombreServicio
 		connection = DriverManager.getConnection(conn, usuario, pass)
 		return connection

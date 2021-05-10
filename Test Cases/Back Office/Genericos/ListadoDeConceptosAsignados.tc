@@ -5,4 +5,25 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>9d92149a-295d-488c-b244-ca4e2c1ce81e</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>21f81bd9-44c9-44bd-b5dd-8b396df915c9</id>
+      <masked>false</masked>
+      <name>codigo</name>
+   </variable>
+   <variable>
+      <defaultValue>'02-Registro Civil '</defaultValue>
+      <description></description>
+      <id>be639f4a-79db-496f-8e47-dd2d69bb2f35</id>
+      <masked>false</masked>
+      <name>dependencia</name>
+   </variable>
+   <variable>
+      <defaultValue>'Concepto Código - Dependencia Código'</defaultValue>
+      <description></description>
+      <id>4e85c93d-8a72-4d98-a7f1-4cd4d8f135ff</id>
+      <masked>false</masked>
+      <name>ordenamiento</name>
+   </variable>
 </TestCaseEntity>

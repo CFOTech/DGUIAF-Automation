@@ -11,30 +11,23 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 't-item' and (text() = '${Dependencia]' or . = '${Dependencia]')]</value>
+         <value>//li[(text() = '${Dependencia}' or . = '${Dependencia}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>//*[contains(@class, &quot;t-item&quot;) and text()='${Dependencia}']</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>tag</name>
       <type>Main</type>
-      <value>t-item</value>
+      <value>li</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>${Dependencia]</value>
+      <value>${Dependencia}</value>
    </webElementProperties>
 </WebElementEntity>

@@ -27,6 +27,13 @@
       <name>posHasta</name>
    </variable>
    <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>00f9c8ae-dc04-4df2-bbf8-75bace9fa0fd</id>
+      <masked>false</masked>
+      <name>cajero</name>
+   </variable>
+   <variable>
       <defaultValue>'1/12/2020'</defaultValue>
       <description></description>
       <id>ed1e4763-ed15-4ada-864a-8a6ab1f0a27f</id>
@@ -34,11 +41,39 @@
       <name>fechaCbteDesde</name>
    </variable>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'1/02/2021'</defaultValue>
       <description></description>
       <id>5a84eb1b-7d80-45a4-be08-0d947f413122</id>
       <masked>false</masked>
       <name>fechaCbteHasta</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e7166ea3-3430-45d0-bf7b-1361381c46b4</id>
+      <masked>false</masked>
+      <name>fechaProcDesde</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5006ab8b-cac6-4116-a70b-6ebc1214d706</id>
+      <masked>false</masked>
+      <name>fechaProcHasta</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>309a03a7-5500-45c8-ba0a-00457ba4ce99</id>
+      <masked>false</masked>
+      <name>fechaCreaZDesde</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f5071104-d14f-4257-a4ec-28b8e45a65fa</id>
+      <masked>false</masked>
+      <name>fechaCreaZHasta</name>
    </variable>
    <variable>
       <defaultValue>'1936'</defaultValue>
@@ -46,5 +81,40 @@
       <id>e126e66e-fc52-4319-b167-f2c72d30fa6f</id>
       <masked>false</masked>
       <name>nroZ</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b140f82c-2eef-402d-9d92-d31dbb230f68</id>
+      <masked>false</masked>
+      <name>medioPago</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c62ea341-e092-4db9-a0a6-bda2f9c35cd2</id>
+      <masked>false</masked>
+      <name>codigo</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d483f689-155b-40b3-9597-14520864ce8d</id>
+      <masked>false</masked>
+      <name>tramite</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a46034f3-bacd-4145-b2ae-6e82c2b99e99</id>
+      <masked>false</masked>
+      <name>canalDeCobro</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>49236868-5cbb-4e49-836a-a0077fe97370</id>
+      <masked>false</masked>
+      <name>ordenamiento</name>
    </variable>
 </TestCaseEntity>

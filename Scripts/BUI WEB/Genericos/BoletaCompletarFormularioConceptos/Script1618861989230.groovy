@@ -21,6 +21,8 @@ WebUI.verifyElementVisible(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/in
 
 WebUI.sendKeys(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/input_Codigo_txtCodigo'), CodigoConcepto)
 
+WebUI.delay(1)
+
 WebUI.verifyElementVisible(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/ddConceptoSeleccionado'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/ddConceptoSeleccionado'))

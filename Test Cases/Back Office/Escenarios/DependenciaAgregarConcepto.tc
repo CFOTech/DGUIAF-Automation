@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DependenciaAgregarConcepto</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f3b346c1-9c61-4687-94b7-26478fb13cab</testCaseGuid>
+   <variable>
+      <defaultValue>'Correo Pago Electronico'</defaultValue>
+      <description></description>
+      <id>5ff10724-26e5-45bc-b4f6-d7b2d339da40</id>
+      <masked>false</masked>
+      <name>nombreConcepto</name>
+   </variable>
+   <variable>
+      <defaultValue>'Deptest'</defaultValue>
+      <description></description>
+      <id>59a5c089-594e-419b-804c-00ef2150597b</id>
+      <masked>false</masked>
+      <name>nombreDependencia</name>
+   </variable>
+</TestCaseEntity>

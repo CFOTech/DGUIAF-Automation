@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CrearAgencia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e722bea0-53e5-446b-9dab-87ddf779b878</testCaseGuid>
+   <variable>
+      <defaultValue>'600\r\n'</defaultValue>
+      <description></description>
+      <id>b54710e2-3b09-458e-8add-ba7d3d43e004</id>
+      <masked>false</masked>
+      <name>NroAgencia</name>
+   </variable>
+   <variable>
+      <defaultValue>'Agencia600'</defaultValue>
+      <description></description>
+      <id>365a2516-bde6-4746-9a4e-f1803b62b004</id>
+      <masked>false</masked>
+      <name>NombreAgencia</name>
+   </variable>
+</TestCaseEntity>

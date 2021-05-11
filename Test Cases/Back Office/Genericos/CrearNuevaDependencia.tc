@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CrearNuevaDependencia</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>47e444b5-5666-4124-96ad-7544cc81ca50</testCaseGuid>
+   <variable>
+      <defaultValue>'874'</defaultValue>
+      <description>Codigo de dependencia</description>
+      <id>2941761b-3b3c-4d3d-9795-b7e25e9213ee</id>
+      <masked>false</masked>
+      <name>Codigo</name>
+   </variable>
+   <variable>
+      <defaultValue>'testDependenciaTest'</defaultValue>
+      <description>Nombre de dependencia</description>
+      <id>bc6aa447-f68b-4683-8fe4-e198da79a1c9</id>
+      <masked>false</masked>
+      <name>Nombre</name>
+   </variable>
+   <variable>
+      <defaultValue>'testDependenciaTest@hotmail.com'</defaultValue>
+      <description>Email de dependencia</description>
+      <id>b8c778c1-9f4a-479e-9b41-d20403ba8906</id>
+      <masked>false</masked>
+      <name>Email</name>
+   </variable>
+   <variable>
+      <defaultValue>'default'</defaultValue>
+      <description></description>
+      <id>847ebca8-1b7f-45d3-9818-9252fbe9ccb9</id>
+      <masked>false</masked>
+      <name>Contacto</name>
+   </variable>
+   <variable>
+      <defaultValue>'44445555'</defaultValue>
+      <description>Telefono de dependencia</description>
+      <id>6ff03832-1b0f-44e4-81bf-820343f904a2</id>
+      <masked>false</masked>
+      <name>Telefono</name>
+   </variable>
+   <variable>
+      <defaultValue>'171.25.236.60'</defaultValue>
+      <description>Ip de dependencia</description>
+      <id>b47f36e4-b6b7-46a3-b1e9-f3fb4b2307d0</id>
+      <masked>false</masked>
+      <name>Ip</name>
+   </variable>
+   <variable>
+      <defaultValue>'Av. Chiclana 2200'</defaultValue>
+      <description></description>
+      <id>216aca38-1f08-4e17-a572-745895a8305b</id>
+      <masked>false</masked>
+      <name>Direccion</name>
+   </variable>
+</TestCaseEntity>

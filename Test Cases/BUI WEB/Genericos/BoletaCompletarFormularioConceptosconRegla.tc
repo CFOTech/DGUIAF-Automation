@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>BoletaCompletarFormularioConceptosconRegla</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff78cf1f-eb24-408c-93d1-918ad166e016</testCaseGuid>
+   <variable>
+      <defaultValue>'100'</defaultValue>
+      <description></description>
+      <id>b42297c5-e7ce-4c7b-8443-0c23631598f4</id>
+      <masked>false</masked>
+      <name>valorRegla</name>
+   </variable>
+   <variable>
+      <defaultValue>'20.03.30'</defaultValue>
+      <description></description>
+      <id>4f443621-fe67-4a5a-aebd-0332baa5b56f</id>
+      <masked>false</masked>
+      <name>Concepto</name>
+   </variable>
+</TestCaseEntity>

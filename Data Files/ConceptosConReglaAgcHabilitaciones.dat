@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>ConceptosConReglaAgcHabilitaciones</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>5f762e20-9de2-4749-8df0-fb22634599e7</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>20.03.30 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>20.03.30 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 40</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 50</data>
+   <data>22.18.03 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>22.18.03 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>22.18.05 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 3000</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 3000</data>
+   <data>22.18.03 AGC+Habilitaciones-Inspecciones-Permisos 3000</data>
+   <data>22.18.05 AGC+Habilitaciones-Inspecciones-Permisos 3000</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 1500</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 1500</data>
+   <data>22.18.03 AGC+Habilitaciones-Inspecciones-Permisos 1500</data>
+   <data>22.18.05 AGC+Habilitaciones-Inspecciones-Permisos 1500</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>22.18.03 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>22.18.05 AGC+Habilitaciones-Inspecciones-Permisos 100</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>22.12.56 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>22.18.03 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>22.18.05 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>22.12.56 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 50</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 50</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 50</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 50</data>
+   <data>22.18.03 AGC+Habilitaciones-Inspecciones-Permisos 50</data>
+   <data>22.18.05 AGC+Habilitaciones-Inspecciones-Permisos 50</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>22.12.56 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>20.29.10 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>22.18.01 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>22.18.03 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>22.18.05 AGC+Habilitaciones-Inspecciones-Permisos 500</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>02.01.09 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>22.12.56 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <data>22.12.56 AGC+Habilitaciones-Inspecciones-Permisos 0</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>idConcepto</name>
+      <size>55</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>1</columnIndex>
+      <name>Dependencia</name>
+      <size>55</size>
+   </internalDataColumns>
+   <internalDataColumns>
+      <columnIndex>2</columnIndex>
+      <name>Regla</name>
+      <size>55</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

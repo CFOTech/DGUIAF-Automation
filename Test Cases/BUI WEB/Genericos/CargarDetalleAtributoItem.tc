@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CargarDetalleAtributoItem</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>96cc9dad-27c7-44b4-8f7b-367e48a79c18</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>db906940-5325-4714-b8ec-27405947347a</id>
+      <masked>false</masked>
+      <name>dependenciaNombre</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c72fe1ed-760a-4e4d-ac96-b871df047a9f</id>
+      <masked>false</masked>
+      <name>itemNombre</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>402123a6-ff40-4059-9e5b-34690e74df81</id>
+      <masked>false</masked>
+      <name>itemCodigo</name>
+   </variable>
+</TestCaseEntity>

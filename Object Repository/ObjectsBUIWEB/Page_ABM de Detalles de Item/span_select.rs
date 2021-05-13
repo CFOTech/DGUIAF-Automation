@@ -3,22 +3,18 @@
    <description></description>
    <name>span_select</name>
    <tag></tag>
-   <elementGuidId>72dd4ccd-c452-42cc-89ed-fcebfb8f13a1</elementGuidId>
+   <elementGuidId>52f28c6c-887d-483c-9444-ba406028415c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>span.k-dropdown-wrap.k-state-default.k-state-focused.k-state-hover > span.k-select > span.k-icon.k-i-arrow-s</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = 'select' or . = 'select')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
-         <value>//form[@id='addModifyForm']/div/div/div[2]/div[3]/div[2]/span/span/span[2]/span</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='- Seleccione una dependencia -'])[1]/following::span[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.k-select</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,7 +35,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>k-icon k-i-arrow-s</value>
+      <value>k-select</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -53,48 +49,34 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;addModifyForm&quot;)/div[@class=&quot;container width700&quot;]/div[@class=&quot;panel panel-primary&quot;]/div[@class=&quot;panel-body&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-3&quot;]/span[@class=&quot;k-widget k-dropdown k-header txtCodigo&quot;]/span[@class=&quot;k-dropdown-wrap k-state-default k-state-focused k-state-hover&quot;]/span[@class=&quot;k-select&quot;]/span[@class=&quot;k-icon k-i-arrow-s&quot;]</value>
+      <value>/html[@class=&quot;k-webkit k-webkit90&quot;]/body[1]/div[@class=&quot;container&quot;]/div[@class=&quot;panel panel-primary&quot;]/div[@class=&quot;panel-body&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-12&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-9&quot;]/span[@class=&quot;k-widget k-dropdown k-header ddlDependencias k-state-border-down&quot;]/span[@class=&quot;k-dropdown-wrap k-state-default k-state-focused k-state-hover k-state-active k-state-border-down&quot;]/span[@class=&quot;k-select&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//form[@id='addModifyForm']/div/div/div[2]/div[3]/div[2]/span/span/span[2]/span</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='- Seleccione una dependencia -'])[1]/following::span[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='- Sin asociación -'])[1]/following::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Dependencia'])[1]/following::span[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lista Asociada'])[2]/following::span[5]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Agregar'])[1]/preceding::span[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancelar'])[1]/preceding::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Item'])[1]/preceding::span[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/span/span/span[2]/span</value>
+      <value>//span[2]</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -17,11 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+dependenciaNombre = getBinding().getVariables().getAt('dependenciaVar')
+
+println('Dependencia: ' + dependenciaNombre.toString())
+
 WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/span_select'))
 
-String dependenciaNombre = getBinding().getVariables().getAt('dependenciaVar')
-
-WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/li_dependencia', [('nombreDependencia') : dependenciaNombre]))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/li_dependencia', [('dependenciaParam') : dependenciaNombre]))
 
 String itemCodigo = getBinding().getVariables().getAt('itemCodVar')
 

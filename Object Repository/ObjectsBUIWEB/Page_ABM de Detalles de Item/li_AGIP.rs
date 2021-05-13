@@ -1,31 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_select</name>
+   <name>li_AGIP</name>
    <tag></tag>
-   <elementGuidId>72dd4ccd-c452-42cc-89ed-fcebfb8f13a1</elementGuidId>
+   <elementGuidId>a2b771a3-b09f-4769-915a-ee680f8b6b42</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>span.k-dropdown-wrap.k-state-default.k-state-focused.k-state-hover > span.k-select > span.k-icon.k-i-arrow-s</value>
+         <value>li.k-item.k-state-hover</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'select' or . = 'select')]</value>
+         <value>//*[(text() = 'AGIP' or . = 'AGIP')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//form[@id='addModifyForm']/div/div/div[2]/div[3]/div[2]/span/span/span[2]/span</value>
+         <value>//ul[@id='ddlDependencias_listbox']/li[4]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>span</value>
+      <value>li</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>-1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>option</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -39,62 +53,69 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>k-icon k-i-arrow-s</value>
+      <value>k-item k-state-hover</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>select</value>
+      <value>AGIP</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;addModifyForm&quot;)/div[@class=&quot;container width700&quot;]/div[@class=&quot;panel panel-primary&quot;]/div[@class=&quot;panel-body&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-md-3&quot;]/span[@class=&quot;k-widget k-dropdown k-header txtCodigo&quot;]/span[@class=&quot;k-dropdown-wrap k-state-default k-state-focused k-state-hover&quot;]/span[@class=&quot;k-select&quot;]/span[@class=&quot;k-icon k-i-arrow-s&quot;]</value>
+      <value>id(&quot;ddlDependencias_listbox&quot;)/li[@class=&quot;k-item k-state-hover&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//form[@id='addModifyForm']/div/div/div[2]/div[3]/div[2]/span/span/span[2]/span</value>
+      <value>//ul[@id='ddlDependencias_listbox']/li[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='- Sin asociación -'])[1]/following::span[2]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='AGC Habilitaciones-Inspecciones-Permisos'])[1]/following::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lista Asociada'])[2]/following::span[5]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACA Libertador'])[1]/following::li[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Agregar'])[1]/preceding::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='APRA - Agencia de Protección Ambiental'])[1]/preceding::li[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancelar'])[1]/preceding::span[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bienal Arte Joven Buenos Aires'])[1]/preceding::li[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='AGIP']/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/span/span/span[2]/span</value>
+      <value>//div[4]/div/ul/li[4]</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PEAPIGetTokenBUIPagarConDebito</name>
+   <name>MenuIngresarAtributoDetalle</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a28806c8-d5b7-4e60-b781-33ce19b7fa6c</testCaseGuid>
+   <testCaseGuid>58a9d4b0-ee0f-4259-8eb4-4e4618bcaec2</testCaseGuid>
 </TestCaseEntity>

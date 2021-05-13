@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>PEAPIGetTokenBUIPagaConCredito</name>
+   <name>MenuIngresarAtributoItem</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>8d2ec1a4-9966-458f-a9d2-6b1bc283834a</testCaseGuid>
+   <testCaseGuid>a7f13391-7239-433c-82a8-dc2ea0f8e313</testCaseGuid>
 </TestCaseEntity>

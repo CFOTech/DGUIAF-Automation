@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DependenciaCrearDetalleAtributo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efe392a7-da07-4e22-a41f-358c767b503e</testCaseGuid>
+   <variable>
+      <defaultValue>'Deptest'</defaultValue>
+      <description></description>
+      <id>b30ff875-89e7-4382-9a28-a52d58074e35</id>
+      <masked>false</masked>
+      <name>dependenciaVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'98.01.01'</defaultValue>
+      <description></description>
+      <id>857a5525-b3a6-4ad8-9e7e-38e2d0d5a3f5</id>
+      <masked>false</masked>
+      <name>itemCodVar</name>
+   </variable>
+   <variable>
+      <defaultValue>'98.01.01 Correo Pago Electronico'</defaultValue>
+      <description></description>
+      <id>05cceea4-229d-4237-816d-c3cacfee6237</id>
+      <masked>false</masked>
+      <name>itemVar</name>
+   </variable>
+</TestCaseEntity>

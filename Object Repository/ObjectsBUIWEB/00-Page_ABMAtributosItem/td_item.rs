@@ -13,6 +13,10 @@
          <key>XPATH</key>
          <value>//div[@id='gridContent']/div[2]/table/tbody/tr/td</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = '${itemParam}' or . = '${itemParam}')]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
@@ -35,7 +39,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>98.01.01 Correo Pago Electronico</value>
+      <value>${itemParam}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -84,7 +88,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)=${itemNombre}]/parent::*</value>
+      <value>//*/text()[normalize-space(.)=${itemParam}]/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

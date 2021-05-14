@@ -17,7 +17,7 @@
       <description></description>
       <id>d3757433-e249-4eaf-b90c-ef1d2363ff62</id>
       <masked>false</masked>
-      <name>itemNombre</name>
+      <name>itemDescripcion</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>

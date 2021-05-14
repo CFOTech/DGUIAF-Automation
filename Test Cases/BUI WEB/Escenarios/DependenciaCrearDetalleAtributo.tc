@@ -13,14 +13,14 @@
       <name>dependenciaVar</name>
    </variable>
    <variable>
-      <defaultValue>'02.13.11'</defaultValue>
+      <defaultValue>'02.01.18'</defaultValue>
       <description>98.01.01</description>
       <id>857a5525-b3a6-4ad8-9e7e-38e2d0d5a3f5</id>
       <masked>false</masked>
       <name>itemCodVar</name>
    </variable>
    <variable>
-      <defaultValue>'02.13.11 Fondo de garantia turistica. Material Bibliografico (valor hasta)'</defaultValue>
+      <defaultValue>'02.01.18 Sepulturas. Traslado de monumentos'</defaultValue>
       <description>98.01.01 Correo Pago Electronico</description>
       <id>05cceea4-229d-4237-816d-c3cacfee6237</id>
       <masked>false</masked>

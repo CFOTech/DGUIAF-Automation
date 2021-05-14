@@ -6,16 +6,16 @@
    <elementGuidId>8e8c9dae-9843-4b0d-99f9-b61845951b78</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//li[@id='ItemID_option_selected']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#ItemID_option_selected</value>
       </entry>
       <entry>
+         <key>XPATH</key>
+         <value>//li[@id='ItemID_option_selected']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'ItemID_option_selected' and (text() = '${itemNombre}' or . = '${itemNombre}')]</value>
+         <value>//*[@id = 'ItemID_option_selected' and (text() = '${itemParam}' or . = '${itemParam}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -67,7 +67,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>${itemNombre}</value>
+      <value>${itemParam}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -123,7 +123,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='98.01.01 Correo Pago Electronico']/parent::*</value>
+      <value>//*/text()[normalize-space(.)=${itemParam}]/parent::*</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

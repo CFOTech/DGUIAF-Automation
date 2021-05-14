@@ -6,16 +6,15 @@
    <elementGuidId>f2c2de5f-9ade-4793-9944-9b1f65c952fb</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//ul[@id='ddlDependencias_listbox']/li[33]</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[(text() = '${dependenciaNombre}' or . = '${dependenciaNombre}')]</value>
+         <value>//*[(text() = '${dependenciaParam}' or . = '${dependenciaParam}')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -60,7 +59,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>${dependenciaNombre}</value>
+      <value>${dependenciaParam}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

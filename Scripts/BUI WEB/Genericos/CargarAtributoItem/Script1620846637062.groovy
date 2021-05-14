@@ -17,19 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMAtributosItem/span_select'))
-
 String dependenciaNombre = getBinding().getVariables().getAt('dependenciaVar')
 
-WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMAtributosItem/li_dependencia', [('dependenciaNombre') : dependenciaNombre]))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMAtributosItem/span_select'))
 
-String itemCodigo = getBinding().getVariables().getAt('itemCodVar')
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMAtributosItem/li_dependencia', [('dependenciaParam') : dependenciaNombre]))
 
 String itemDescripcion = getBinding().getVariables().getAt('itemVar')
 
+String itemCodigo = getBinding().getVariables().getAt('itemCodVar')
+
 WebUI.setText(findTestObject('ObjectsBUIWEB/00-Page_ABMAtributosItem/input_Item_ItemID'), itemCodigo)
 
-WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMAtributosItem/td_item', [('itemNombre') : itemDescripcion]))
+WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMAtributosItem/li_item', [('itemParam') : itemDescripcion]))
 
 WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMAtributosItem/button_Atributo'))
 

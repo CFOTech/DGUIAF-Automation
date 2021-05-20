@@ -17,6 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+//Creo la linea 21. Chaykowski
+def nombreDetalle = getBinding().getVariables().getAt('detalleNombreVar')
+
 dependenciaNombre = getBinding().getVariables().getAt('dependenciaVar')
 
 println('Dependencia: ' + dependenciaNombre.toString())
@@ -36,10 +39,10 @@ WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesIte
 WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/button_Detalle'))
 
 WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/input_Nombre_Nombre'), 3)
+//Modifico linea 43 y 45, cambiando el string que se usaba para detalles por una variable
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/input_Nombre_Nombre'), nombreDetalle)
 
-WebUI.sendKeys(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/input_Nombre_Nombre'), 'PruebaNombreDetalle')
-
-WebUI.sendKeys(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/input_Descripcion_Descripcion'), 'PruebaDescripcionDetalle')
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/input_Descripcion_Descripcion'), nombreDetalle)
 
 WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/span_- Sin asociacin -'))
 
@@ -51,7 +54,7 @@ WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/button_Agregar
 
 WebUI.waitForElementPresent(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/td_NombreDetalle'), 3)
 
-WebUI.verifyElementText(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/td_NombreDetalle'), 'PruebaNombreDetalle')
+/*WebUI.verifyElementText(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/td_NombreDetalle'), nombreDetalle)
 
-WebUI.verifyElementText(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/td_DescripcionDetalle'), 'PruebaDescripcionDetalle')
-
+WebUI.verifyElementText(findTestObject('ObjectsBUIWEB/00-Page_ABMDetallesItem/td_DescripcionDetalle'), nombreDetalle)
+*/

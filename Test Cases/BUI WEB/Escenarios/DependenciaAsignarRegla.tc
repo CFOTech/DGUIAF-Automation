@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DependenciaAsignarRegla</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f4a0b7a7-b20b-4848-8e6d-7300e59e87a0</testCaseGuid>
+   <variable>
+      <defaultValue>'AGIP'</defaultValue>
+      <description></description>
+      <id>42e60c1e-a2bd-4f81-93bc-870019529093</id>
+      <masked>false</masked>
+      <name>dependencia</name>
+   </variable>
+   <variable>
+      <defaultValue>'02.13.12'</defaultValue>
+      <description></description>
+      <id>04d4baf3-64e3-46d9-ac3b-14fe322f3b26</id>
+      <masked>false</masked>
+      <name>itemCod</name>
+   </variable>
+   <variable>
+      <defaultValue>'02.13.12 Duplicado de título arrendamiento de nicho y sepultura'</defaultValue>
+      <description></description>
+      <id>13231210-2055-4446-8fba-9ddbbe1b9932</id>
+      <masked>false</masked>
+      <name>item</name>
+   </variable>
+   <variable>
+      <defaultValue>'DetallePruebaTestDos'</defaultValue>
+      <description></description>
+      <id>62bdc04a-59a4-43bc-86a4-fb60a2599aa5</id>
+      <masked>false</masked>
+      <name>detalleNombre</name>
+   </variable>
+</TestCaseEntity>

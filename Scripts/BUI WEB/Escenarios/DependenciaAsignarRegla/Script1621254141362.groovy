@@ -17,10 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Escenarios/DependenciaCrearDetalleAtributo'), [('dependenciaVar') : dependencia
+        , ('itemCodVar') : itemCod, ('itemVar') : item, ('detalleNombreVar') : detalleNombre], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/MenuIngresarAtributoDetalle'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('BUI WEB/Genericos/CargarDetalleAtributoItem'), [('dependenciaVar') : dependenciaVar, ('itemCodVar') : itemCodVar
-        , ('itemVar') : itemVar, ('detalleNombreVar') : detalleNombreVar], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('BUI WEB/Genericos/CargarReglaADetalle'), [('dependencia') : dependencia, ('itemCod') : itemCod
+        , ('item') : item, ('detalleNombre') : detalleNombre], FailureHandling.STOP_ON_FAILURE)
 

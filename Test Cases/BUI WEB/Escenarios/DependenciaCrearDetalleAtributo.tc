@@ -6,24 +6,31 @@
    <comment></comment>
    <testCaseGuid>efe392a7-da07-4e22-a41f-358c767b503e</testCaseGuid>
    <variable>
-      <defaultValue>'AGIP'</defaultValue>
+      <defaultValue>'DAI - Edificio del Plata'</defaultValue>
       <description>Deptest</description>
       <id>b30ff875-89e7-4382-9a28-a52d58074e35</id>
       <masked>false</masked>
       <name>dependenciaVar</name>
    </variable>
    <variable>
-      <defaultValue>'02.01.18'</defaultValue>
+      <defaultValue>'03.04.01'</defaultValue>
       <description>98.01.01</description>
       <id>857a5525-b3a6-4ad8-9e7e-38e2d0d5a3f5</id>
       <masked>false</masked>
       <name>itemCodVar</name>
    </variable>
    <variable>
-      <defaultValue>'02.01.18 Sepulturas. Traslado de monumentos'</defaultValue>
+      <defaultValue>'03.04.01 Pago Voluntario al 50%'</defaultValue>
       <description>98.01.01 Correo Pago Electronico</description>
       <id>05cceea4-229d-4237-816d-c3cacfee6237</id>
       <masked>false</masked>
       <name>itemVar</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e1ca175b-8bef-4567-af92-d78d0f11a182</id>
+      <masked>false</masked>
+      <name>detalleNombreVar</name>
    </variable>
 </TestCaseEntity>

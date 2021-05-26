@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='C5b6a89dd8cdf44b38abbd93a6925e3dc']</value>
+         <value>//a[contains(text(),'Asignar Conceptos')]</value>
       </entry>
       <entry>
          <key>CSS</key>

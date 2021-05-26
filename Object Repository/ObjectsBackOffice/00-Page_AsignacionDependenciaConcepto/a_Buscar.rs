@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='divGrid_Cfd9e0287213e4819bed9d432c2b2be8d_Filter_btnBuscar']</value>
+         <value>//a[contains(text(),'Buscar')]</value>
       </entry>
       <entry>
          <key>CSS</key>

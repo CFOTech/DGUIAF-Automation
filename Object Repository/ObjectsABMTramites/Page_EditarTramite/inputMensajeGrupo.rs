@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_campoNombre</name>
+   <name>inputMensajeGrupo</name>
    <tag></tag>
-   <elementGuidId>c40534c8-05f7-4223-abb3-038cba8ec31b</elementGuidId>
+   <elementGuidId>848b2e2d-15b1-4db9-a579-21e16681aaec</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@class='form-control' and ../..//label[contains(text(),'Nombre')]]</value>
+         <value>(//input[@type='text'])[6]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#C78ceabb9668a43cfb498be8dc96f1646</value>
+         <value>div.col-lg-12.col-md-12.col-sm-12 > div.input-group > input.input-sm.form-control.ng-pristine.ng-valid</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,6 +24,20 @@
       <value>input</value>
    </webElementProperties>
    <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>input-sm form-control ng-pristine ng-valid</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ng-model</name>
+      <type>Main</type>
+      <value>grupo.mensaje</value>
+   </webElementProperties>
+   <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
@@ -33,64 +47,29 @@
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-control</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>C78ceabb9668a43cfb498be8dc96f1646</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>C78ceabb9668a43cfb498be8dc96f1646</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
-      <type>Main</type>
-      <value>filtrar por nombre</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onchange</name>
-      <type>Main</type>
-      <value>C78ceabb9668a43cfb498be8dc96f1646_OnChange();</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;C78ceabb9668a43cfb498be8dc96f1646&quot;)</value>
+      <value>id(&quot;ng-wrapper&quot;)/div[@class=&quot;panel panel-default ng-scope&quot;]/div[@class=&quot;panel-body&quot;]/div[@class=&quot;ng-scope well&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-12 col-md-12 col-sm-12&quot;]/div[@class=&quot;input-group&quot;]/input[@class=&quot;input-sm form-control ng-pristine ng-valid&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='C78ceabb9668a43cfb498be8dc96f1646']</value>
+      <value>(//input[@type='text'])[6]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='WCContainer_C78ceabb9668a43cfb498be8dc96f1646']/div[2]/input</value>
+      <value>//div[@id='ng-wrapper']/div/div[2]/div[8]/div[3]/div/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[3]/div/div[2]/input</value>
+      <value>//div[3]/div/div/input</value>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AgregarConceptosDelTramite</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c93f3699-90cf-4b62-af5a-6d5964c57b6f</testCaseGuid>
+   <variable>
+      <defaultValue>'1.2.4 Testigos no obligatorios'</defaultValue>
+      <description></description>
+      <id>83ba5d82-9941-4530-aff9-12846bd5a7ef</id>
+      <masked>false</masked>
+      <name>conceptoDelTramite</name>
+   </variable>
+</TestCaseEntity>

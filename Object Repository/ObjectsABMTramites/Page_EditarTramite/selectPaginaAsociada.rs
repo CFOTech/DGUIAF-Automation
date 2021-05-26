@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>selectPaginaAsociada</name>
+   <tag></tag>
+   <elementGuidId>bcb49222-f609-4dc9-9dfa-5fcddc8895db</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='ng-wrapper']/div/div[2]/div[4]/div[2]/div/div[2]/span/select</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>select.ng-pristine.ng-valid</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ng-model</name>
+      <type>Main</type>
+      <value>edicion.tramite.pagina</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ng-options</name>
+      <type>Main</type>
+      <value>pagina.Descripcion for pagina in edicion.paginas</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>ng-pristine ng-valid</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>-- Elija una página --Información InstitucionalGuia de Tramites - Solicitud de lic. de ConducirGuia de Tramites - Consultas y ReclamosLugares de Pago - Sucursales Banco CiudadGuia de Tramites - Recomendaciones de NavegacionGuia- Certificado de Uso ConformeGuia - Certificado Solicitud Datos CatastralesGuia - Certificación TestimonialGuia- Copia Helio de PlanosGuia - Carnet FoguistaGuia-Obleas de Desinfestación y DesinfecciónGuia-Obleas para MatafuegosGuia-Cambio DT Emp DesinfCambio DT Emp Limp Tanques de AguaGuia-Insc Reg DT EmpPriv Desinfest/DesinfGuía General de Trámites de APRAGuia General de Subproductos EcoparqueGuia - Inicio CEPGuia - Registro CEPGuia- I/R RegAct EP Desinf c/CertifGuia-I/R DT EP Limp Tanques de AguaGuia-I/R RegAct EP Limp Tanques de Agua c/CertifGuia- Oblea AscensoresGuia General de CementeriosCentro Cultural Recoleta - GUIALugares de Pago - Cajas GCBA sólo ATMGuía - Ceremonia de casamiento en lugares emblemáticos/domicilioGuía - Licencias para Inhumar en distintas jurisdiccionesGuía General AGCGuia General de la ContaduriaGuia General DAIGuia General SubTransporteLugares de Pago por Dependencia/TrámiteGuia General BasetGuia General Registro CivilGuia General de la DGROCGuia General de EmpleoGuia General Seguridad PrivadaGuía General Trámites DG Defensa CivilGuía General AGIP</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;ng-wrapper&quot;)/div[@class=&quot;panel panel-default ng-scope&quot;]/div[@class=&quot;panel-body&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-6 col-md-6 col-sm-6 col-xs-6&quot;]/div[@class=&quot;panel panel-default&quot;]/div[@class=&quot;panel-body&quot;]/span[1]/select[@class=&quot;ng-pristine ng-valid&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='ng-wrapper']/div/div[2]/div[4]/div[2]/div/div[2]/span/select</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Página asociada'])[1]/following::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Borrar asociación'])[1]/following::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Borrar asociación'])[2]/preceding::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forzar emisión de BUI'])[1]/preceding::select[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div[2]/span/select</value>
+   </webElementXpaths>
+</WebElementEntity>

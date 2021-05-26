@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='C46fb4f3772e54ec3b5eb44a007fa161d']</value>
+         <value>//a[contains(text(),'Asignar Agencias')]</value>
       </entry>
       <entry>
          <key>CSS</key>

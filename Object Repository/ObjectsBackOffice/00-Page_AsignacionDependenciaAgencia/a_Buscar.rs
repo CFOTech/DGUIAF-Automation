@@ -10,12 +10,12 @@
          <value>#divGrid_C0fad5a899dfe4bbeb576aa2dfa7bcbf6_Filter_btnBuscar</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'divGrid_C0fad5a899dfe4bbeb576aa2dfa7bcbf6_Filter_btnBuscar' and @href = '#' and (text() = 'Buscar' or . = 'Buscar')]</value>
+         <key>XPATH</key>
+         <value>//a[contains(text(),'Buscar')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='divGrid_C0fad5a899dfe4bbeb576aa2dfa7bcbf6_Filter_btnBuscar']</value>
+         <key>BASIC</key>
+         <value>//*[@id = 'divGrid_C0fad5a899dfe4bbeb576aa2dfa7bcbf6_Filter_btnBuscar' and @href = '#' and (text() = 'Buscar' or . = 'Buscar')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

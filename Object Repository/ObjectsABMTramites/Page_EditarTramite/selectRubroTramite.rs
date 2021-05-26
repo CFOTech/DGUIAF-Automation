@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>a_Seleccionar</name>
+   <name>selectRubroTramite</name>
    <tag></tag>
-   <elementGuidId>693d8e67-b240-4f90-925c-303f58dea26c</elementGuidId>
+   <elementGuidId>d3c20813-347f-4582-ac81-44f277664cb8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[contains(text(),'Seleccionar')]</value>
+         <value>//div[@id='ng-wrapper']/div/div[2]/div[4]/div/div/div[2]/span/select</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#C54b89a8827fe43909abb00ff09f72251</value>
+         <value>select.ng-pristine.ng-valid</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,118 +21,83 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>a</value>
+      <value>select</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>data-ng-model</name>
       <type>Main</type>
-      <value>C54b89a8827fe43909abb00ff09f72251</value>
+      <value>edicion.tramite.rubro</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>data-ng-options</name>
       <type>Main</type>
-      <value>C54b89a8827fe43909abb00ff09f72251</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>href</name>
-      <type>Main</type>
-      <value>#</value>
+      <value>rubro.descripcion for rubro in edicion.rubros</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>marginTopBottom10 t-button ca-C54b89a8827fe43909abb00ff09f72251</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>onclick</name>
-      <type>Main</type>
-      <value>ABMAssign_SelectItem('e9c97b06-a8ff-d651-e053-fd02490ab005')</value>
+      <value>ng-pristine ng-valid</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Seleccionar</value>
+      <value>-- Elija un rubro --Central de Defunciones - Cementerio ChacaritaDirección General Defensa Civil (DGDCIV)Dirección General de Compras y ContratacionesAgencia de Protección Ambiental (APRA)Agencia Gubernamental de Control (AGC)Dirección General de Contaduría (DGC)Dirección General de CementeriosDirección General de EmpleoSubsecretaría de Trabajo, Industria y ComercioEcoparqueAGIPDirección General de LicenciasCentro Cultural RecoletaRegistro CivilSubproductos EcoparqueInstituto Superior de Seguridad PublicaDirección General de Obras y Catastro (DGROC)GOTRE - SS TransporteCertificado de Legalidad (Licencias)</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;C54b89a8827fe43909abb00ff09f72251&quot;)</value>
+      <value>id(&quot;ng-wrapper&quot;)/div[@class=&quot;panel panel-default ng-scope&quot;]/div[@class=&quot;panel-body&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-lg-6 col-md-6 col-sm-6 col-xs-6&quot;]/div[@class=&quot;panel panel-default&quot;]/div[@class=&quot;panel-body&quot;]/span[1]/select[@class=&quot;ng-pristine ng-valid&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//a[@id='C54b89a8827fe43909abb00ff09f72251']</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='div_C54b89a8827fe43909abb00ff09f72251']/a</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:link</name>
-      <type>Main</type>
-      <value>//a[contains(text(),'Seleccionar')]</value>
+      <value>//div[@id='ng-wrapper']/div/div[2]/div[4]/div/div/div[2]/span/select</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Correo Argentino'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rubro del trámite'])[1]/following::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Seleccionar'])[1]/following::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/following::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='|&lt;'])[1]/preceding::a[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Borrar asociación'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='>|'])[1]/preceding::a[1]</value>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:href</name>
-      <type>Main</type>
-      <value>(//a[contains(@href, '#')])[20]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Página asociada'])[1]/preceding::select[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[3]/div/a</value>
+      <value>//select</value>
    </webElementXpaths>
 </WebElementEntity>

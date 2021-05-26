@@ -14,7 +14,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import adicionales.Web
+import adicionales.Web as Web
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Home Page/menuAdministracion'))
 
@@ -24,11 +24,13 @@ WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Conceptos/btnNuevo'))
 
 if (periodoTarifaria != '') {
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/ddPeriodoTarifaria'))
+
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/liPeriodoTarifaria', [('periodoTarifaria') : periodoTarifaria]))
 }
 
 if (normativaAprobatoria != '') {
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/ddNormativaAprobatoria'))
+
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/liNormativaAprobatoria', [('normativaAprobatoria') : normativaAprobatoria]))
 }
 
@@ -36,6 +38,7 @@ WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/inputNorm
 
 if (sigla != '') {
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/ddSigla'))
+
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/liSigla', [('sigla') : sigla]))
 }
 
@@ -51,6 +54,7 @@ WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/inputCod3
 
 if (estado != '') {
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/ddEstado'))
+
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/liEstado', [('estado') : estado]))
 }
 
@@ -66,44 +70,57 @@ WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/inputReng
 
 if (agenciaAsignada != '') {
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/ddAgenciaAsignada'))
+
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/liAgenciaAsignada', [('agenciaAsignada') : agenciaAsignada]))
+
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/ddAgenciaAsignada'))
 }
 
 WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/inputValor'), valor)
 
-CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsRedondeable'), esRedondeable)
+CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsRedondeable'), 
+    esRedondeable)
 
-CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkTienePrecioFijo'), tienePrecioFijo)
+CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkTienePrecioFijo'), 
+    tienePrecioFijo)
 
-CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkCantidadVariable'), cantVariable)
+CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkCantidadVariable'), 
+    cantVariable)
 
-CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsDevolucion'), esDevolucion)
+CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsDevolucion'), 
+    esDevolucion)
 
-CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkPermiteIngresoManual'), permiteIngresoManual)
+CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkPermiteIngresoManual'), 
+    permiteIngresoManual)
 
 WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/inputTimbres'), timbres)
 
-CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkRequiereTimbre'), requiereTimbre)
+CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkRequiereTimbre'), 
+    requiereTimbre)
 
 WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/inputDiasDeAnulacion'), diasDeAnulacion)
 
-CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsCompartido'), esCompartido)
+CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsCompartido'), 
+    esCompartido)
 
 CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsRecibo'), esRecibo)
 
-CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsSerializado'), esSerializado)
+CustomKeywords.'adicionales.Web.checkOnoCheck'(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/chkEsSerializado'), 
+    esSerializado)
 
 WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/inputInformaWS'), informaWS)
 
 if (tipoDeStock != '') {
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/ddTipoDeStock'))
+
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/liTipoDeStock', [('tipoDeStock') : tipoDeStock]))
 }
 
 if (tipo != '') {
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/ddTipo'))
+
     WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/liTipo', [('tipo') : tipo]))
 }
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/btnCrear'))
+

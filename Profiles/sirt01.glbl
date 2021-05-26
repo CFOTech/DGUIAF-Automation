@@ -94,4 +94,9 @@
       <initValue>'4517 7210 0485 6075'</initValue>
       <name>portal_tarjeta_debito</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.100.48:2942/ABM/Login/'</initValue>
+      <name>url_ABM_tramites</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

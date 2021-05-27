@@ -6,15 +6,15 @@
    <comment></comment>
    <testCaseGuid>80da5f7f-e987-456a-be7c-a8f92c573997</testCaseGuid>
    <variable>
-      <defaultValue>'Deptest'</defaultValue>
-      <description></description>
+      <defaultValue>'test01'</defaultValue>
+      <description>Deptest</description>
       <id>7f4f2949-2a2d-4fd3-8322-84f6d0b81a60</id>
       <masked>false</masked>
       <name>nombreDependencia</name>
    </variable>
    <variable>
-      <defaultValue>'Correo Argentino'</defaultValue>
-      <description></description>
+      <defaultValue>'Donaciones Ba Taxi'</defaultValue>
+      <description>Correo Argentino</description>
       <id>28fe0c01-734a-48c1-a824-216a2df5f83c</id>
       <masked>false</masked>
       <name>nombreAgencia</name>

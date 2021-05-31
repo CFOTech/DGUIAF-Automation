@@ -20,15 +20,17 @@ import java.lang.Math as Math
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-for (def CantidaddeBUI = 1; CantidaddeBUI <= 2; CantidaddeBUI++) {
+for (def CantidaddeBUI = 1; CantidaddeBUI <= 20; CantidaddeBUI++) {
     WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosEntidad'), [('Dependencia') : 'DAI - Edificio del Plata'], 
         FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosContribuyente'), [('dni') : '12345678'
             , ('apellidoYNombre') : 'juan carlos', ('correoElectronico') : 'jcarlos@test.com', ('direccion') : '123', ('piso') : '1'
             , ('departamento') : '2', ('localidad') : 'caba', ('codigoPostal') : '1234'], FailureHandling.STOP_ON_FAILURE)
-
-    for (def row = 1; row <= CantidaddeBUI /* findTestData('Datos de BUI').getRowNumbers()*/ ; row++) {
+	
+	def cantConceptosRandom = (((Math.random() * 3) + 1) as int)
+	
+    for (def row = 1; row <= cantConceptosRandom /* findTestData('Datos de BUI').getRowNumbers()*/ ; row++) {
         int rndConcepto = (((Math.random() * 3) + 1) as int)
 
         def rndMonto = (((Math.random() * 4000) + 1) as int)

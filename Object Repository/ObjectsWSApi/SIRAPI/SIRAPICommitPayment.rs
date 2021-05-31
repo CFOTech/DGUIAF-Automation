@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>SIRAPIRequestToken</name>
+   <name>SIRAPICommitPayment</name>
    <tag></tag>
-   <elementGuidId>c4508e1e-612c-42ff-a7b2-47401267f421</elementGuidId>
+   <elementGuidId>e18a2301-3364-401a-b796-ef3c2c2cf00b</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
@@ -16,7 +16,7 @@
       <matchCondition>equals</matchCondition>
       <name>SOAPAction</name>
       <type>Main</type>
-      <value>http://tempuri.org/IPaymentService/RequestToken</value>
+      <value>http://tempuri.org/IPaymentService/CommitPayment</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,7 +25,7 @@
       <type>Main</type>
       <value>text/xml; charset=utf-8</value>
    </httpHeaderProperties>
-   <katalonVersion>7.9.1</katalonVersion>
+   <katalonVersion>7.9.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <restRequestMethod></restRequestMethod>
    <restUrl></restUrl>
@@ -33,35 +33,45 @@
    <soapBody>&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot; xmlns:sir=&quot;http://schemas.datacontract.org/2004/07/SIR.API.DataContract.PaymentService&quot;>
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
-      &lt;tem:RequestToken>
-         &lt;!--Optional:-->
-         &lt;tem:posData>
-            &lt;!--Optional:-->
-            &lt;sir:IpAddress>172.31.61.107&lt;/sir:IpAddress>
-            &lt;!--Optional:-->
-            &lt;sir:PosId>39065d50-8ebe-499f-8afc-39b466934248&lt;/sir:PosId>
-            &lt;!--Optional:-->
-            &lt;sir:PrinterNumber>0000&lt;/sir:PrinterNumber>
-         &lt;/tem:posData>
-         &lt;!--Optional:-->
-         &lt;tem:user>pos489&lt;/tem:user>
-         &lt;!--Optional:-->
-         &lt;tem:pass>20170828489&lt;/tem:pass>
-         &lt;!--Optional:-->
-         &lt;tem:nroLegajo>440&lt;/tem:nroLegajo>
-      &lt;/tem:RequestToken>
+      &lt;tem:CommitPayment>
+         &lt;tem:token>0a2ebe09-dd5a-4f5f-8c73-ad3600d11adf&lt;/tem:token>
+         &lt;tem:datosPago>
+            &lt;sir:CantCuotas>3&lt;/sir:CantCuotas>
+            &lt;sir:CodigoAutorizacion>12345678&lt;/sir:CodigoAutorizacion>
+            &lt;sir:Conceptos>
+               &lt;sir:Concepto>
+                  &lt;sir:Barcode>3900B0A8A735451198400DDD9E243637030001626500000100002706217&lt;/sir:Barcode>
+                  &lt;sir:Cantidad>3&lt;/sir:Cantidad>
+                  &lt;sir:Codigo>03.04.03&lt;/sir:Codigo>
+                  &lt;sir:Descripcion>Plan de Facilidades&lt;/sir:Descripcion>
+                  &lt;sir:NroOT>0&lt;/sir:NroOT>
+                  &lt;sir:TextoLey>Precios de acuerdo a la ley n° 6383&lt;/sir:TextoLey>
+                  &lt;sir:Valor>100.00&lt;/sir:Valor>
+               &lt;/sir:Concepto>
+            &lt;/sir:Conceptos>
+            &lt;sir:EstaAnulado>false&lt;/sir:EstaAnulado>
+            &lt;sir:Fecha>2021-05-28T13:00:00&lt;/sir:Fecha>
+            &lt;sir:MedioPago>Credito&lt;/sir:MedioPago>
+            &lt;sir:Monto>100.00&lt;/sir:Monto>
+            &lt;sir:NroCbte>96456385&lt;/sir:NroCbte>
+            &lt;sir:NroVoucher>96456385&lt;/sir:NroVoucher>
+            &lt;sir:Observacion>Prueba QA Automation&lt;/sir:Observacion>
+            &lt;sir:Tarjeta>Visa&lt;/sir:Tarjeta>
+            &lt;sir:TitularTarjeta>Juan Perez&lt;/sir:TitularTarjeta>
+         &lt;/tem:datosPago>
+      &lt;/tem:CommitPayment>
    &lt;/soapenv:Body>
 &lt;/soapenv:Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint>${DomainURL}/SIRAPI/SIR.API.PaymentService.svc</soapServiceEndpoint>
-   <soapServiceFunction>RequestToken</soapServiceFunction>
+   <soapServiceFunction>CommitPayment</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.url_SIRAPI</defaultValue>
       <description></description>
-      <id>db96df6f-ddde-4aaf-85c4-a84214a2b0db</id>
+      <id>454a1241-99e4-4cb5-b8ed-decb485db007</id>
       <masked>false</masked>
       <name>DomainURL</name>
    </variables>

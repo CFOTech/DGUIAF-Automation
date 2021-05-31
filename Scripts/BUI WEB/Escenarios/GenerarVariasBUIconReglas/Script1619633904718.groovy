@@ -45,6 +45,6 @@ for (def CantidaddeBUI = 6; CantidaddeBUI <= 10; CantidaddeBUI++) {
 
     WebUI.callTestCase(findTestCase('BUI WEB/Genericos/GuardarNroBoleta'), [:], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/Page_Boleta Unica/btnPDFAceptar'))
+    WebUI.click(findTestObject('ObjectsBUIWEB/00-Page_Boleta Unica/btnPDFAceptar'))
 }
 

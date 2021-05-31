@@ -30,9 +30,9 @@ WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Dependencias/a_Asignar Age
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/DependenciaBuscarAgencia'), [('agenciaVar') : nombreAgencia], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForElementPresent(findTestObject('null'), 2)
+WebUI.waitForElementPresent(findTestObject('ObjectsBackOffice/00-Page_AsignacionDependenciaAgencia/a_Seleccionar'), 2)
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('ObjectsBackOffice/00-Page_AsignacionDependenciaAgencia/a_Seleccionar'))
 
 WebUI.callTestCase(findTestCase('Back Office/Genericos/ScrollFinalDePagina'), [:], FailureHandling.STOP_ON_FAILURE)
 

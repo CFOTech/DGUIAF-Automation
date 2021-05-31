@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ArchivoRendicion</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f39575dc-ede5-47e9-b42c-eba2e95d1270</testCaseGuid>
+   <variable>
+      <defaultValue>'PRUEBA'</defaultValue>
+      <description></description>
+      <id>6e9b021d-a629-447b-bb64-96efef2bc2e1</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4b2b1d7d-84da-4822-971a-9b3ef4c50450</id>
+      <masked>false</masked>
+      <name>variable_0</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ca2154da-d466-4bd4-8456-dd3ea959d7de</id>
+      <masked>false</masked>
+      <name>variable_1</name>
+   </variable>
+</TestCaseEntity>

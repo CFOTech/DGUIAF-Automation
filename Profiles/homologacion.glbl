@@ -31,6 +31,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'http://10.73.2.97:1040'</initValue>
+      <name>url_SIRAPI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'http://10.73.2.97:7000/Home/'</initValue>
       <name>url_BackOffice</name>
    </GlobalVariableEntity>

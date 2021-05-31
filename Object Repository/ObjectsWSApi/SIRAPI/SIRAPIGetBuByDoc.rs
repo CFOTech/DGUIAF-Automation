@@ -12,25 +12,18 @@
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
    <httpHeaderProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>SOAPAction</name>
+      <type>Main</type>
+      <value>http://tempuri.org/IPaymentService/GetBuByDoc</value>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/soap+xml</value>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Accept</name>
-      <type>Main</type>
-      <value>utf-8</value>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
-      <type>Main</type>
-      <value>Basic amNhcmxvczphdXRvbWF0aW9uMTIzNA==</value>
+      <value>text/xml; charset=utf-8</value>
    </httpHeaderProperties>
    <katalonVersion>7.9.1</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
@@ -41,19 +34,24 @@
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
       &lt;tem:GetBuByDoc>
-         &lt;!--Optional:-->
-         &lt;tem:nroDocumento>30123456&lt;/tem:nroDocumento>
-         &lt;!--Optional:-->
+         &lt;tem:nroDocumento>12345678&lt;/tem:nroDocumento>
          &lt;tem:tipoDocumento>DNI&lt;/tem:tipoDocumento>
       &lt;/tem:GetBuByDoc>
    &lt;/soapenv:Body>
 &lt;/soapenv:Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
-   <soapServiceEndpoint>http://10.73.2.97:1040/SIR.API.PaymentService.svc?WDSL</soapServiceEndpoint>
-   <soapServiceFunction></soapServiceFunction>
+   <soapServiceEndpoint>${DomainURL}/SIRAPI/SIR.API.PaymentService.svc</soapServiceEndpoint>
+   <soapServiceFunction>GetBuByDoc</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.url_SIRAPI</defaultValue>
+      <description></description>
+      <id>61c397d3-4e18-4fc3-bbfe-b759a32f425d</id>
+      <masked>false</masked>
+      <name>DomainURL</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -67,5 +65,5 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
-   <wsdlAddress>http://10.73.2.97:1040/SIR.API.PaymentService.svc</wsdlAddress>
+   <wsdlAddress>${DomainURL}/SIRAPI/SIR.API.PaymentService.svc?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

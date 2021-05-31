@@ -19,15 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('BUI WEB/Genericos/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-for (def CantidaddeBUI = 1; CantidaddeBUI <= 5; CantidaddeBUI++) {
+for (def CantidaddeBUI = 1; CantidaddeBUI <= 20; CantidaddeBUI++) {
     WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosEntidad'), [('Dependencia') : 'Registro Civil '], 
         FailureHandling.STOP_ON_FAILURE)
 
     WebUI.callTestCase(findTestCase('BUI WEB/Genericos/BoletaCompletarFormularioDatosContribuyente'), [('dni') : '12345678'
             , ('apellidoYNombre') : 'juan carlos', ('correoElectronico') : 'jcarlos@test.com', ('direccion') : '123', ('piso') : '1'
             , ('departamento') : '2', ('localidad') : 'caba', ('codigoPostal') : '1234'], FailureHandling.STOP_ON_FAILURE)
-
-    for (def row = 1; row <= CantidaddeBUI /* findTestData('Datos de BUI').getRowNumbers()*/ ; row++) {
+	
+	
+	
+	def cantConceptosRandom = (((Math.random() * 8) + 1) as int)
+	
+    for (def row = 1; row <= cantConceptosRandom /* findTestData('Datos de BUI').getRowNumbers()*/ ; row++) {
         int cantConceptos = findTestData('CrearBUIconMontoFijo').getRowNumbers()
 
         int rndConcepto = (((Math.random() * cantConceptos) + 1) as int)

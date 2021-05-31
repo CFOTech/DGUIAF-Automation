@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>SIRAPIRequestToken</name>
+   <name>SIRAPIParseBarcode</name>
    <tag></tag>
-   <elementGuidId>c4508e1e-612c-42ff-a7b2-47401267f421</elementGuidId>
+   <elementGuidId>076af548-ad3c-4dc4-8feb-fc97e4df5451</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>0</connectionTimeout>
@@ -16,7 +16,7 @@
       <matchCondition>equals</matchCondition>
       <name>SOAPAction</name>
       <type>Main</type>
-      <value>http://tempuri.org/IPaymentService/RequestToken</value>
+      <value>http://tempuri.org/IPaymentService/ParseBarcode</value>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>false</isSelected>
@@ -25,43 +25,30 @@
       <type>Main</type>
       <value>text/xml; charset=utf-8</value>
    </httpHeaderProperties>
-   <katalonVersion>7.9.1</katalonVersion>
+   <katalonVersion>7.9.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
    <restRequestMethod></restRequestMethod>
    <restUrl></restUrl>
    <serviceType>SOAP</serviceType>
-   <soapBody>&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot; xmlns:sir=&quot;http://schemas.datacontract.org/2004/07/SIR.API.DataContract.PaymentService&quot;>
+   <soapBody>&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot;>
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
-      &lt;tem:RequestToken>
-         &lt;!--Optional:-->
-         &lt;tem:posData>
-            &lt;!--Optional:-->
-            &lt;sir:IpAddress>172.31.61.107&lt;/sir:IpAddress>
-            &lt;!--Optional:-->
-            &lt;sir:PosId>39065d50-8ebe-499f-8afc-39b466934248&lt;/sir:PosId>
-            &lt;!--Optional:-->
-            &lt;sir:PrinterNumber>0000&lt;/sir:PrinterNumber>
-         &lt;/tem:posData>
-         &lt;!--Optional:-->
-         &lt;tem:user>pos489&lt;/tem:user>
-         &lt;!--Optional:-->
-         &lt;tem:pass>20170828489&lt;/tem:pass>
-         &lt;!--Optional:-->
-         &lt;tem:nroLegajo>440&lt;/tem:nroLegajo>
-      &lt;/tem:RequestToken>
+      &lt;tem:ParseBarcode>
+         &lt;tem:token>0a2ebe09-dd5a-4f5f-8c73-ad3600d11adf&lt;/tem:token>
+         &lt;tem:barcode>3900B0A8A735451198400DDD9E243637030001626500000100002706217&lt;/tem:barcode>
+      &lt;/tem:ParseBarcode>
    &lt;/soapenv:Body>
 &lt;/soapenv:Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint>${DomainURL}/SIRAPI/SIR.API.PaymentService.svc</soapServiceEndpoint>
-   <soapServiceFunction>RequestToken</soapServiceFunction>
+   <soapServiceFunction>ParseBarcode</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.url_SIRAPI</defaultValue>
       <description></description>
-      <id>db96df6f-ddde-4aaf-85c4-a84214a2b0db</id>
+      <id>644a8938-14b9-4c4a-8c37-b0b6a11d833d</id>
       <masked>false</masked>
       <name>DomainURL</name>
    </variables>

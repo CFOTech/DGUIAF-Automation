@@ -17,7 +17,7 @@ String fechaHOY = date.format('ddMMYY')
 
 //Definicion del path de ejecucion para crear el archivo de rendicion en la misma carpeta de katalon
 def pathEjecucion = System.getProperty("user.dir")
-def pathTxt = pathEjecucion + '\\RENDBCBA029'+ fechaHOY +'.txt'
+def pathTxt = pathEjecucion + '\\txt\\RENDBCBA029'+ fechaHOY +'.txt'
 def pathRelativo = pathTxt.replace('\\','\\\\')
 println(pathRelativo)
 Path pathArchivoRendicion = Paths.get(pathRelativo)

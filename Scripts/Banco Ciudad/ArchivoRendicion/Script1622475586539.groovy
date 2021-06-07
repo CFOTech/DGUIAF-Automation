@@ -28,11 +28,8 @@ CustomKeywords.'baseDeDatos.oracleSQL.conectarDB'('ORADB11', 'SIRH', '1521','JSI
 def queryBCiudad = "SELECT bu.boleta.NUMERO, bu.boleta.ESTADO, to_char(bu.boleta.total,'99999999.99') as TOTAL, bu.boleta.CODBARRAS, bu.boleta.DEPENDENCIAID,  sir.dependencia.nombre, sir.dependencia.codigo FROM bu.boleta INNER JOIN sir.dependencia ON bu.boleta.dependenciaid= sir.dependencia.id WHERE bu.boleta.estado = '1' order by sir.dependencia.codigo"
 ResultSet resultadoQuery = CustomKeywords.'baseDeDatos.oracleSQL.ejecutarQuery'(queryBCiudad)
 
-def querySumaTotal = "SELECT SIR.dependencia.codigo AS codigo, SUM (bu.boleta.total) AS TotalDependencia from bu.boleta INNER JOIN sir.dependencia ON bu.boleta.dependenciaid= sir.dependencia.id WHERE bu.boleta.estado = '1' GROUP BY SIR.dependencia.codigo"
-ResultSet resultadoSuma = CustomKeywords.'baseDeDatos.oracleSQL.ejecutarQuery'(querySumaTotal)
-
-def queryContador = "SELECT SIR.dependencia.codigo AS codigo, count (bu.boleta.total) AS ContadorBoletas from bu.boleta INNER JOIN sir.dependencia ON bu.boleta.dependenciaid= sir.dependencia.id WHERE bu.boleta.estado = '1' GROUP BY SIR.dependencia.codigo"
-ResultSet resultadoContador = CustomKeywords.'baseDeDatos.oracleSQL.ejecutarQuery'(queryContador)
+def queryCantidadYSuma = "SELECT SIR.dependencia.codigo AS codigo, SUM (bu.boleta.total) AS TotalDependencia, count (bu.boleta.total) AS ContadorBoletas  from bu.boleta INNER JOIN sir.dependencia ON bu.boleta.dependenciaid= sir.dependencia.id WHERE bu.boleta.estado = '1' GROUP BY SIR.dependencia.codigo"
+ResultSet resultadoCantYSuma = CustomKeywords.'baseDeDatos.oracleSQL.ejecutarQuery'(queryCantidadYSuma)
 
 //Armado de registro cabeza
 fechaHOY = date.format('yyMMdd')
@@ -59,19 +56,14 @@ def nroComprobante = '0000000000' //Preguntar si puede ser aleatorio
 def filler52 = new String(new char[52]).replace('\0', ' ')
 
 HashMap<Integer, Integer> mapImporteTotal = new HashMap<Integer, Integer>()
-while(resultadoSuma.next()) {
-	def codigo = resultadoSuma.getNString("codigo")
-	def montoTotal = resultadoSuma.getNString("TotalDependencia")
+HashMap<Integer, Integer> mapCantTalones = new HashMap<Integer, Integer>()
+while(resultadoCantYSuma.next()) {
+	def codigo = resultadoCantYSuma.getNString("codigo")
+	def montoTotal = resultadoCantYSuma.getNString("TotalDependencia")
+	def contBoletas = resultadoCantYSuma.getNString("ContadorBoletas")
+	mapCantTalones.put(codigo, contBoletas)
 	mapImporteTotal.put(codigo, montoTotal)
 }
-
-HashMap<Integer, Integer> mapCantTalones = new HashMap<Integer, Integer>()
-while(resultadoContador.next()) {
-	def codigo = resultadoContador.getNString("codigo")
-	def contBoletas = resultadoContador.getNString("ContadorBoletas")
-	mapCantTalones.put(codigo, contBoletas)
-}
-
 
 while(resultadoQuery.next()) {
 	def valorDependenciaActual = resultadoQuery.getNString("CODIGO")
@@ -83,8 +75,8 @@ while(resultadoQuery.next()) {
 	else importeTotal = importeTotal + "00"
 	importeTotal = String.format("%017d", Integer.parseInt(importeTotal))
 	
-	def stringDependencia = '10'+ nroDependencia +'0000000000'+ nroLote + fechaHOY + marcaProceso +importeTotal + importeComisiones + cantTalones + denCodIntegrador + marcaGrabacion + marcaGrabacion + nroCuenta + filler32 + "  "+ codTransaccion + codIntegrador
-	def stringTipoDePago = '11'+ nroDependencia +'0900'+ fechaHOY + nroLote + fechaHOY + marcaProceso + tipoPago + '0' + importeTotal + importeComisiones + cantTalones+ filler52 + "   "+ codTransaccion + codIntegrador
+	def stringDependencia = '10'+ nroDependencia +'0000000000'+ nroLote + fechaHOY + marcaProceso +importeTotal + importeComisiones + cantTalones + denCodIntegrador + marcaGrabacion + nroCuenta + filler32 + codTransaccion + codIntegrador
+	def stringTipoDePago = '11'+ nroDependencia +'0900'+ fechaHOY + nroLote + fechaHOY + marcaProceso + tipoPago + '0' + importeTotal + importeComisiones + cantTalones+ filler52 + codTransaccion + codIntegrador
 	
 	Files.write(pathArchivoRendicion, (stringDependencia + System.lineSeparator()).getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)
 	Files.write(pathArchivoRendicion, (stringTipoDePago + System.lineSeparator()).getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)
@@ -97,8 +89,8 @@ while(resultadoQuery.next()) {
 		if(importeBoleta.contains(".")) importeBoleta = importeBoleta.replaceAll("\\.", "")
 		else importeBoleta = importeBoleta + "00"
 		if(importeBoleta.contains(" ")) importeBoleta = importeBoleta.replaceAll(" ", "0")
-		importeBoleta = String.format("%017d", Integer.parseInt(importeBoleta))
-		def stringDetalleRegistro = '12'+ nroDependencia + '0900' + fechaHOY + nroLote + fechaHOY + marcaProceso + tipoPago + '0' + '0' + '000' + CodBarras + importeBoleta + nroComprobante + '000' + codIntegrador
+		importeBoleta = String.format("%013d", Integer.parseInt(importeBoleta))
+		def stringDetalleRegistro = '12'+ nroDependencia + '0900' + fechaHOY + nroLote + fechaHOY + marcaProceso + tipoPago + '0' + '0' + '000' + CodBarras + ' ' + importeBoleta + nroComprobante + '000' + codIntegrador
 		Files.write(pathArchivoRendicion, (stringDetalleRegistro + System.lineSeparator()).getBytes(StandardCharsets.UTF_8),StandardOpenOption.APPEND)	
 		
 		valorDependenciaActual= resultadoQuery.getString("CODIGO")

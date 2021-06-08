@@ -22,7 +22,7 @@
    <maxResponseSize>0</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>${DomainURL}/GetById?ID=77cdc8ab-0f7d-4565-bcab-fa40bad30428</restUrl>
+   <restUrl>${DomainURL}/GetById?ID=${idBoleta}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

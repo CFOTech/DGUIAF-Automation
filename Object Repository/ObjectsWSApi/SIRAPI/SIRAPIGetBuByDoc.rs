@@ -34,14 +34,14 @@
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
       &lt;tem:GetBuByDoc>
-         &lt;tem:nroDocumento>12345678&lt;/tem:nroDocumento>
+         &lt;tem:nroDocumento>${nroDocumento}&lt;/tem:nroDocumento>
          &lt;tem:tipoDocumento>DNI&lt;/tem:tipoDocumento>
       &lt;/tem:GetBuByDoc>
    &lt;/soapenv:Body>
 &lt;/soapenv:Envelope></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
-   <soapServiceEndpoint>${DomainURL}/SIRAPI/SIR.API.PaymentService.svc</soapServiceEndpoint>
+   <soapServiceEndpoint>${DomainURL}/SIR.API.PaymentService.svc</soapServiceEndpoint>
    <soapServiceFunction>GetBuByDoc</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
@@ -51,6 +51,13 @@
       <id>61c397d3-4e18-4fc3-bbfe-b759a32f425d</id>
       <masked>false</masked>
       <name>DomainURL</name>
+   </variables>
+   <variables>
+      <defaultValue>'35726700'</defaultValue>
+      <description></description>
+      <id>10260acf-7e2a-417e-a12f-a4f2cab97a50</id>
+      <masked>false</masked>
+      <name>nroDocumento</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -64,6 +71,7 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+</verificationScript>
    <wsdlAddress>${DomainURL}/SIRAPI/SIR.API.PaymentService.svc?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

@@ -34,8 +34,8 @@
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
       &lt;tem:ParseBarcode>
-         &lt;tem:token>0a2ebe09-dd5a-4f5f-8c73-ad3600d11adf&lt;/tem:token>
-         &lt;tem:barcode>3900B0A8A735451198400DDD9E243637030001626500000100002706217&lt;/tem:barcode>
+         &lt;tem:token>${token}&lt;/tem:token>
+         &lt;tem:barcode>${barCode}&lt;/tem:barcode>
       &lt;/tem:ParseBarcode>
    &lt;/soapenv:Body>
 &lt;/soapenv:Envelope></soapBody>
@@ -52,6 +52,20 @@
       <masked>false</masked>
       <name>DomainURL</name>
    </variables>
+   <variables>
+      <defaultValue>'591F66DD00CB41A3BC3C12A232580BA6070015334100001500000707214'</defaultValue>
+      <description></description>
+      <id>d8dcd17c-2743-4647-853b-6726f5b5fb3a</id>
+      <masked>false</masked>
+      <name>barCode</name>
+   </variables>
+   <variables>
+      <defaultValue>'96335efa-1344-4fb5-91b9-ad4000f8ecf7'</defaultValue>
+      <description></description>
+      <id>00973125-96e6-49c6-8061-7763306eb398</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -64,6 +78,11 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+
+
+
+assertThat(response.getResponseText()).contains('Katalon Test Project')</verificationScript>
    <wsdlAddress>${DomainURL}/SIRAPI/SIR.API.PaymentService.svc?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

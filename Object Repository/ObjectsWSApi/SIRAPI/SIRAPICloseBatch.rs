@@ -6,7 +6,7 @@
    <elementGuidId>a87da458-c0d4-4706-a7dc-e17b776835d4</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>-1</connectionTimeout>
+   <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -26,75 +26,47 @@
       <value>text/xml; charset=utf-8</value>
    </httpHeaderProperties>
    <katalonVersion>7.9.0</katalonVersion>
-   <maxResponseSize>-1</maxResponseSize>
+   <maxResponseSize>0</maxResponseSize>
    <restRequestMethod></restRequestMethod>
    <restUrl></restUrl>
    <serviceType>SOAP</serviceType>
    <soapBody>&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org/&quot; xmlns:sir=&quot;http://schemas.datacontract.org/2004/07/SIR.API.DataContract.PaymentService&quot;>
-   &lt;soapenv:Header/>
-   &lt;soapenv:Body>
-      &lt;tem:CloseBatch>
-         &lt;tem:token>gero et&lt;/tem:token>
-         &lt;tem:datosCierre>
-            &lt;sir:Fecha>2013-11-23T11:44:07&lt;/sir:Fecha>
-            &lt;sir:NroLoteAmex>10&lt;/sir:NroLoteAmex>
-            &lt;sir:NroLoteArgencard>10&lt;/sir:NroLoteArgencard>
-            &lt;sir:NroLoteCabal>10&lt;/sir:NroLoteCabal>
-            &lt;sir:NroLoteMaster>10&lt;/sir:NroLoteMaster>
-            &lt;sir:NroLoteVisa>10&lt;/sir:NroLoteVisa>
-            &lt;sir:NroTerminal>ventos tempestatesque&lt;/sir:NroTerminal>
-            &lt;sir:NroZ>3&lt;/sir:NroZ>
-            &lt;sir:Operaciones>
-               &lt;sir:PaymentDataIn>
-                  &lt;sir:CantCuotas>3&lt;/sir:CantCuotas>
-                  &lt;sir:CodigoAutorizacion>temperat iras&lt;/sir:CodigoAutorizacion>
-                  &lt;sir:Conceptos>
-                     &lt;sir:Concepto>
-                        &lt;sir:Barcode>turbine corripuit&lt;/sir:Barcode>
-                        &lt;sir:Cantidad>3&lt;/sir:Cantidad>
-                        &lt;sir:Codigo>regemque dedit&lt;/sir:Codigo>
-                        &lt;sir:Descripcion>fremunt celsa&lt;/sir:Descripcion>
-                        &lt;sir:NroOT>10&lt;/sir:NroOT>
-                        &lt;sir:TextoLey>ferant rapidi&lt;/sir:TextoLey>
-                        &lt;sir:Valor>1000.00&lt;/sir:Valor>
-                     &lt;/sir:Concepto>
-                  &lt;/sir:Conceptos>
-                  &lt;sir:EstaAnulado>false&lt;/sir:EstaAnulado>
-                  &lt;sir:Fecha>2009-10-14T04:16:36&lt;/sir:Fecha>
-                  &lt;sir:MedioPago>flammato secum dea&lt;/sir:MedioPago>
-                  &lt;sir:Monto>1000.00&lt;/sir:Monto>
-                  &lt;sir:NroCbte>profundum quippe ferant&lt;/sir:NroCbte>
-                  &lt;sir:NroComercio>nubibus ignem disiecitque&lt;/sir:NroComercio>
-                  &lt;sir:NroLote>3&lt;/sir:NroLote>
-                  &lt;sir:NroTarjeta>ac vinclis et&lt;/sir:NroTarjeta>
-                  &lt;sir:NroTerminal>rapidum iaculata e&lt;/sir:NroTerminal>
-                  &lt;sir:NroVoucher>caelumque profundum&lt;/sir:NroVoucher>
-                  &lt;sir:Observacion>circum claustra&lt;/sir:Observacion>
-                  &lt;sir:Tarjeta>coniunx una&lt;/sir:Tarjeta>
-                  &lt;sir:TitularTarjeta>arce sceptra&lt;/sir:TitularTarjeta>
-               &lt;/sir:PaymentDataIn>
-            &lt;/sir:Operaciones>
-            &lt;sir:TotalAmexCredito>1000.00&lt;/sir:TotalAmexCredito>
-            &lt;sir:TotalAmexDebito>1000.00&lt;/sir:TotalAmexDebito>
-            &lt;sir:TotalArgencardCredito>1000.00&lt;/sir:TotalArgencardCredito>
-            &lt;sir:TotalCabalCredito>1000.00&lt;/sir:TotalCabalCredito>
-            &lt;sir:TotalCabalDebito>1000.00&lt;/sir:TotalCabalDebito>
-            &lt;sir:TotalCheque>1000.00&lt;/sir:TotalCheque>
-            &lt;sir:TotalEfectivo>1000.00&lt;/sir:TotalEfectivo>
-            &lt;sir:TotalMasterCredito>1000.00&lt;/sir:TotalMasterCredito>
-            &lt;sir:TotalMasterDebito>1000.00&lt;/sir:TotalMasterDebito>
-            &lt;sir:TotalRapipago>1000.00&lt;/sir:TotalRapipago>
-            &lt;sir:TotalVisaCredito>1000.00&lt;/sir:TotalVisaCredito>
-            &lt;sir:TotalVisaDebito>1000.00&lt;/sir:TotalVisaDebito>
-         &lt;/tem:datosCierre>
-      &lt;/tem:CloseBatch>
-   &lt;/soapenv:Body>
-&lt;/soapenv:Envelope></soapBody>
+	&lt;soapenv:Header/>
+	&lt;soapenv:Body>
+		&lt;tem:CloseBatch>
+			&lt;tem:token>${token}&lt;/tem:token>
+			&lt;tem:datosCierre>
+				&lt;sir:Fecha>${fecha}&lt;/sir:Fecha>
+				&lt;sir:NroLoteAmex>${loteAmex}&lt;/sir:NroLoteAmex>
+				&lt;sir:NroLoteArgencard>${loteArgencard}&lt;/sir:NroLoteArgencard>
+				&lt;sir:NroLoteCabal>${loteCabal}&lt;/sir:NroLoteCabal>
+				&lt;sir:NroLoteMaster>${loteMaster}&lt;/sir:NroLoteMaster>
+				&lt;sir:NroLoteVisa>${loteVisa}&lt;/sir:NroLoteVisa>
+				&lt;sir:NroTerminal>${nroTerminal}&lt;/sir:NroTerminal>
+				&lt;sir:NroZ>${nroZ}&lt;/sir:NroZ>
+				&lt;sir:Operaciones/>
+				&lt;sir:TotalAmexCredito>${totalAmexCredito}&lt;/sir:TotalAmexCredito>
+				&lt;sir:TotalAmexDebito>${totalAmexDebito}&lt;/sir:TotalAmexDebito>
+				&lt;sir:TotalArgencardCredito>${totalArgencardCredito}&lt;/sir:TotalArgencardCredito>
+				&lt;sir:TotalCabalCredito>${totalCabalCredito}&lt;/sir:TotalCabalCredito>
+				&lt;sir:TotalCabalDebito>${totalCabalDebito}&lt;/sir:TotalCabalDebito>
+				&lt;sir:TotalCheque>${totalCheque}&lt;/sir:TotalCheque>
+				&lt;sir:TotalEfectivo>${totalEfectivo}&lt;/sir:TotalEfectivo>
+				&lt;sir:TotalMasterCredito>${totalMasterCredito}&lt;/sir:TotalMasterCredito>
+				&lt;sir:TotalMasterDebito>${totalMasterDebito}&lt;/sir:TotalMasterDebito>
+				&lt;sir:TotalRapipago>${totalRapipago}&lt;/sir:TotalRapipago>
+				&lt;sir:TotalVisaCredito>${totalVisaCredito}&lt;/sir:TotalVisaCredito>
+				&lt;sir:TotalVisaDebito>${totalVisaDebito}&lt;/sir:TotalVisaDebito>
+			&lt;/tem:datosCierre>
+		&lt;/tem:CloseBatch>
+	&lt;/soapenv:Body>
+&lt;/soapenv:Envelope>
+</soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceEndpoint>${DomainURL}/SIRAPI/SIR.API.PaymentService.svc</soapServiceEndpoint>
    <soapServiceFunction>CloseBatch</soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
+   <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.url_SIRAPI</defaultValue>
@@ -102,6 +74,153 @@
       <id>6e0b3935-57a0-46ce-af23-7e855ee9edc1</id>
       <masked>false</masked>
       <name>DomainURL</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>23f8a915-fe81-425a-963e-d608598c7b94</id>
+      <masked>false</masked>
+      <name>token</name>
+   </variables>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4230b741-e008-484a-8481-3ef07d1a0f14</id>
+      <masked>false</masked>
+      <name>fecha</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>668208c1-4153-44ce-8b08-970ddaba330f</id>
+      <masked>false</masked>
+      <name>loteAmex</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>c87ef441-9786-40b1-8223-57959e553ba4</id>
+      <masked>false</masked>
+      <name>loteArgencard</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>ad251b59-6b62-47a6-91bc-23419bef1c8b</id>
+      <masked>false</masked>
+      <name>loteCabal</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>91c05372-8f0f-4617-a8ad-2d7ccc17447d</id>
+      <masked>false</masked>
+      <name>loteMaster</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>68374add-5a11-4fbc-ae96-7f7f185f0008</id>
+      <masked>false</masked>
+      <name>loteVisa</name>
+   </variables>
+   <variables>
+      <defaultValue>'987654329'</defaultValue>
+      <description></description>
+      <id>69e70c63-220c-46cf-b423-a9f618007285</id>
+      <masked>false</masked>
+      <name>nroTerminal</name>
+   </variables>
+   <variables>
+      <defaultValue>'999964399'</defaultValue>
+      <description></description>
+      <id>05c5913c-3ff9-431c-b5ce-32ca0818fdc0</id>
+      <masked>false</masked>
+      <name>nroZ</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>78e85883-6cd8-4b7c-8637-229a4cf5b2e1</id>
+      <masked>false</masked>
+      <name>totalAmexCredito</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>df41eec1-ba60-4b65-8829-fd7cb021aaf1</id>
+      <masked>false</masked>
+      <name>totalAmexDebito</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>619f74be-4588-4b42-ab31-e221ed370403</id>
+      <masked>false</masked>
+      <name>totalArgencardCredito</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>380deb21-6e4f-4387-9c0f-bc71b0c02447</id>
+      <masked>false</masked>
+      <name>totalCabalCredito</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>9dbab4bd-dbef-4d18-9dc2-04cd8a3cbf24</id>
+      <masked>false</masked>
+      <name>totalCabalDebito</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>35bd4959-91fc-41f9-9b20-3f86673ea2ac</id>
+      <masked>false</masked>
+      <name>totalCheque</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>3e50bd9a-19dd-46fa-953b-efcf56da4ea7</id>
+      <masked>false</masked>
+      <name>totalEfectivo</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>46a3122c-c3eb-410b-b181-8b717f35f429</id>
+      <masked>false</masked>
+      <name>totalMasterCredito</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>ac9556b8-f465-4022-965f-b595815a4e3e</id>
+      <masked>false</masked>
+      <name>totalMasterDebito</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>41f80894-1225-4142-b05a-6652436f25f7</id>
+      <masked>false</masked>
+      <name>totalRapipago</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>6b438d6d-67f0-4e06-8351-6bed2b8eac6f</id>
+      <masked>false</masked>
+      <name>totalVisaCredito</name>
+   </variables>
+   <variables>
+      <defaultValue>'0'</defaultValue>
+      <description></description>
+      <id>c87ef441-9786-40b1-8223-57959e553ba4</id>
+      <masked>false</masked>
+      <name>totalVisaDebito</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

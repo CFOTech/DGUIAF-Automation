@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Ejecutador SIRTools</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>97a07b00-c7f7-4130-96c8-881109ebee20</testCaseGuid>
+   <variable>
+      <defaultValue>'SIR.BcoCiudad'</defaultValue>
+      <description></description>
+      <id>c4bd0e9a-6ce5-46ec-89c2-1a15fe7ca285</id>
+      <masked>false</masked>
+      <name>aplicacion</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a44a8649-5660-4db5-a290-14f03fce31ab</id>
+      <masked>false</masked>
+      <name>parametros</name>
+   </variable>
+</TestCaseEntity>

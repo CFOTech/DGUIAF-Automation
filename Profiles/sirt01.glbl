@@ -56,6 +56,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'http://10.73.100.48:333/'</initValue>
+      <name>url_SIRTools</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>'qasirsirsir@gmail.com'</initValue>
       <name>portal_user_mail</name>
    </GlobalVariableEntity>
@@ -103,5 +108,35 @@
       <description></description>
       <initValue>'http://10.73.100.48:2942/ABM/Login/'</initValue>
       <name>url_ABM_tramites</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/SIRT/PTBA/SALIDA/'</initValue>
+      <name>path_FTP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ORADB11'</initValue>
+      <name>bd_host</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'SIRT'</initValue>
+      <name>bd_nombre_servicio</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1521'</initValue>
+      <name>bd_puerto</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'JSIEBENBERG'</initValue>
+      <name>bd_usuario</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'JSIEBENBERG$$2021'</initValue>
+      <name>bd_pass</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -26,7 +26,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Acceder al Sistema/inputNombre'), GlobalVariable.user)
 
-WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Acceder al Sistema/inputContraseña'), GlobalVariable.password)
+WebUI.setText(findTestObject('ObjectsBackOffice/00-Page_Acceder al Sistema/inputContraseña'), GlobalVariable.passwordword)
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Acceder al Sistema/btnIngresar'))
 

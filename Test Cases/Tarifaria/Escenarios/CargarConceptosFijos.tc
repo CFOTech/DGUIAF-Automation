@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CargarConceptosFijos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>94f18684-d4c7-4d4c-b432-d35e22cc0019</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f23dd9c0-bc7b-4ead-8fa0-b021012553ef</id>
+      <masked>false</masked>
+      <name>varPeriodoTarifario</name>
+   </variable>
+</TestCaseEntity>

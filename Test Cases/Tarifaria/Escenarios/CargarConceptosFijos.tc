@@ -6,10 +6,24 @@
    <comment></comment>
    <testCaseGuid>94f18684-d4c7-4d4c-b432-d35e22cc0019</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>1</defaultValue>
       <description></description>
-      <id>f23dd9c0-bc7b-4ead-8fa0-b021012553ef</id>
+      <id>0cdaa385-ef1d-4b54-89d1-51c1ad01d0a6</id>
       <masked>false</masked>
-      <name>varPeriodoTarifario</name>
+      <name>varFila1</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>42698ab8-2769-4ae5-adec-180c995e3f1f</id>
+      <masked>false</masked>
+      <name>varFila2</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>a35ec620-28b6-4e32-a402-9478f33b0ec1</id>
+      <masked>false</masked>
+      <name>varFila3</name>
    </variable>
 </TestCaseEntity>

@@ -124,3 +124,7 @@ if (tipo != '') {
 
 WebUI.click(findTestObject('ObjectsBackOffice/00-Page_Nuevo Concepto/btnCrear'))
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Page_Nueva Agencia/p_Grabado Exitoso'),15)
+
+WebUI.click(findTestObject('Object Repository/Page_Nueva Agencia/span_SIR - BackOffice_ui-button-icon-primar_11d6ba'))
+

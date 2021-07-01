@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 WebUI.sendKeys(findTestObject('ObjectsBUIWEB/userLogin'), GlobalVariable.user)
 
 //ingresa la contraseña
-WebUI.sendKeys(findTestObject('ObjectsBUIWEB/passLogin'), GlobalVariable.passwordword)
+WebUI.sendKeys(findTestObject('ObjectsBUIWEB/passLogin'), GlobalVariable.password)
 
 //se loguea
 WebUI.click(findTestObject('ObjectsBUIWEB/buttonLogin'))

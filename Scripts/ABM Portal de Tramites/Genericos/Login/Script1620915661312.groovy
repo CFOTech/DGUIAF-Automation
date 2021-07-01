@@ -23,7 +23,7 @@ WebUI.maximizeWindow()
 
 WebUI.setText(findTestObject('ObjectsABMTramites/Page_Login/inputUsuarioLogin'), GlobalVariable.user)
 
-WebUI.setText(findTestObject('ObjectsABMTramites/Page_Login/inputContraseniaLogin'), GlobalVariable.passwordword)
+WebUI.setText(findTestObject('ObjectsABMTramites/Page_Login/inputContraseniaLogin'), GlobalVariable.password)
 
 WebUI.click(findTestObject('ObjectsABMTramites/Page_Login/btnIngresar'))
 

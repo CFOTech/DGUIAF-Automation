@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>EditarConceptos</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77a47d6f-bb02-4774-ae8e-abeb6fe53cb0</testCaseGuid>
+   <variable>
+      <defaultValue>'03.04.03'</defaultValue>
+      <description></description>
+      <id>4d64eda8-a0d4-40f7-a177-55e2b1ac5b5f</id>
+      <masked>false</masked>
+      <name>codigoConceptoAEditar</name>
+   </variable>
+   <variable>
+      <defaultValue>'2022'</defaultValue>
+      <description></description>
+      <id>561ba8f3-3419-4144-9dc6-e934ccf56212</id>
+      <masked>false</masked>
+      <name>periodoTarifaria</name>
+   </variable>
+   <variable>
+      <defaultValue>'2500'</defaultValue>
+      <description></description>
+      <id>39263c89-6f4a-4b86-9f75-54649475a57a</id>
+      <masked>false</masked>
+      <name>valorConcepto</name>
+   </variable>
+</TestCaseEntity>

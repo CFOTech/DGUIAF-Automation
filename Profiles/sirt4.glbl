@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Ab123456'</initValue>
+      <initValue>'automation1234'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

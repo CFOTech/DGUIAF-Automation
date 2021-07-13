@@ -35,4 +35,28 @@
          <variableId>a35ec620-28b6-4e32-a402-9478f33b0ec1</variableId>
       </variableLink>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c1b5ecb2-6445-49c9-912a-a8670884ccd7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Tarifaria/Escenarios/ValidarABMTramitesMontoPE</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f52f5acb-74d2-485a-8c5e-11b0011a3940</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>be2a6e57-7fad-4132-b8d5-e6dcb5507f44</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2b4d423a-30ed-4ded-a145-e918e43c06f6</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>sirt2</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'pfernandez'</initValue>
+      <name>user</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Ab123456'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.100.48:4748/WEB/Usuario/SignIn?ReturnUrl=%2fweb/'</initValue>
+      <name>url_BUIWEB</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.100.48:4486/PagosService.asmx?WSDL'</initValue>
+      <name>url_PEAPI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.100.48:4748/service/api/BUI/'</initValue>
+      <name>url_BUIAPI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.100.48:4840/SIRAPI/SIR.API.PaymentService.svc'</initValue>
+      <name>url_SIRAPI</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.73.100.48:90/Home/Acceder/'</initValue>
+      <name>url_BackOffice</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

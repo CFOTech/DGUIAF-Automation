@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ValidarABMTramitesMontoPE</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6db288c-0846-43f5-8557-49301e5c1e83</testCaseGuid>
+   <variable>
+      <defaultValue>1</defaultValue>
+      <description></description>
+      <id>f52f5acb-74d2-485a-8c5e-11b0011a3940</id>
+      <masked>false</masked>
+      <name>colDescripcion</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>be2a6e57-7fad-4132-b8d5-e6dcb5507f44</id>
+      <masked>false</masked>
+      <name>colCodigo</name>
+   </variable>
+   <variable>
+      <defaultValue>3</defaultValue>
+      <description></description>
+      <id>2b4d423a-30ed-4ded-a145-e918e43c06f6</id>
+      <masked>false</masked>
+      <name>colMonto</name>
+   </variable>
+</TestCaseEntity>
